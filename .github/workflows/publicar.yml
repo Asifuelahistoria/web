@@ -1,0 +1,84 @@
+name: Publicar web
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 10 * * *"   # cada día: trae los videos nuevos de YouTube
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jinja2 markdown pyyaml
+
+      - name: Ordenar archivos subidos desde la web de GitHub
+        run: |
+          python - <<'PY'
+          import os, glob, shutil
+          reglas = [
+            ("*.html", "templates"), ("icono-whatsapp.svg", "templates"),
+            ("dictadores-*.yaml", "content"), ("episodios.yaml", "content"), ("biblioteca.yaml", "content"),
+            ("libro-*.yaml", "content"), ("videos.json", "data"), ("sync_youtube.py", "scripts"),
+            ("*.css", "static/css"), ("*.png", "static/img"), ("*.jpg", "static/img"), ("*.webp", "static/img"),
+          ]
+          movidos = 0
+          for patron, destino in reglas:
+              for f in glob.glob(patron):
+                  os.makedirs(destino, exist_ok=True)
+                  shutil.move(f, os.path.join(destino, f)); movidos += 1
+          if os.path.exists("publicar.yml"):
+              os.remove("publicar.yml"); movidos += 1
+          print("archivos ordenados:", movidos)
+          PY
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "web-bot"
+            git config user.email "web-bot@users.noreply.github.com"
+            git add -A
+            git commit -m "Ordenar archivos en carpetas"
+            git push
+          fi
+
+      - name: Sincronizar videos de YouTube
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python scripts/sync_youtube.py
+
+      - name: Guardar lista de videos
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git config user.name "web-bot"
+            git config user.email "web-bot@users.noreply.github.com"
+            git add data/videos.json
+            git commit -m "Actualizar videos de YouTube"
+            git push
+          fi
+
+      - run: python build.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
