@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+{% set titulo = "Así murieron los dictadores" %}
+{% set descripcion = "La serie completa de Así Fue la Historia sobre cómo murieron los dictadores: " ~ (dictadores|length) ~ " expedientes, de Trujillo y Somoza a Pinochet, Videla, Franco, Gadafi y Ceaușescu." %}
+{% block jsonld %}
+<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"CreativeWorkSeries","name":titulo,"description":descripcion,"inLanguage":"es","url":canon if base_url else None,"author":{"@type":"Organization","name":cfg.nombre}} | tojson }}</script>
+{% endblock %}
+{% block contenido %}
+<section class="portada">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><span>Series</span></nav>
+    <span class="etiqueta oro">Serie documental · {{ episodios|length }} episodios</span>
+    <h1>Así murieron <span>los dictadores</span></h1>
+    <p class="bajada">Gobernaron con el miedo y se creyeron eternos. Esta serie reconstruye el último capítulo de {{ dictadores|length }} dictadores y gobernantes polémicos: dónde estaban, quién los traicionó y qué quedó de ellos.</p>
+  </div>
+</section>
+
+<section class="seccion" aria-labelledby="finales-titulo">
+  <div class="envoltura">
+    <div class="seccion-cabeza">
+      <div>
+        <span class="etiqueta oro">El registro</span>
+        <h2 id="finales-titulo">Seis maneras de caer</h2>
+        <p class="bajada">Los {{ dictadores|length }} expedientes de la serie, agrupados según cómo terminó cada uno.</p>
+      </div>
+    </div>
+    <div class="finales">
+      {% for g in grupos %}
+      <div class="final">
+        <span class="cifra">{{ g.lista|length }}</span>
+        <h3>{{ g.nombre }}</h3>
+        <p>{{ g.frase }}</p>
+        <ul>{% for d in g.lista %}<li><a href="{{ url('dictadores/' ~ d.slug) }}">{{ d.nombre }}</a><span>{{ d.anio_muerte }}</span></li>{% endfor %}</ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="seccion" aria-labelledby="eps-titulo">
+  <div class="envoltura">
+    <div class="seccion-cabeza"><div><span class="etiqueta oro">Episodios</span><h2 id="eps-titulo">Los documentales</h2></div></div>
+    <div class="episodios">
+      {% for e in episodios %}
+      <article class="episodio">
+        {{ m.miniatura(e, url, cfg) }}
+        <div class="texto">
+          <span class="etiqueta">Episodio {{ e.numero }} · {{ e.fecha_larga }} · {{ e.duracion }} min</span>
+          <h3><a href="{{ url('videos/' ~ e.slug) }}">{{ e.titulo }}</a></h3>
+          <p>{{ e.bajada }}</p>
+          <ul class="chips">{% for d in e.lista %}<li><a href="{{ url('dictadores/' ~ d.slug) }}">{{ d.nombre }}</a></li>{% endfor %}</ul>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="seccion" aria-labelledby="crono-titulo">
+  <div class="envoltura">
+    <div class="seccion-cabeza">
+      <div>
+        <span class="etiqueta oro">Cronología</span>
+        <h2 id="crono-titulo">Un siglo de finales</h2>
+        <p class="bajada">De Porfirio Díaz en París, en 1915, a Alberto Fujimori en Lima, en 2024.</p>
+      </div>
+    </div>
+    <ol class="cronologia">
+      {% for d in cronologia %}
+      <li>
+        <span class="anio">{{ d.anio_muerte }}</span>
+        <span><a href="{{ url('dictadores/' ~ d.slug) }}">{{ d.nombre }}</a><span class="lugar">{{ d.muerte_larga }} · {{ d.lugar }}</span></span>
+        <span class="sello">{{ d.sello }}</span>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% endblock %}

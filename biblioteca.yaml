@@ -1,0 +1,37 @@
+# Libros recomendados. Los enlaces se arman como búsqueda en Amazon con tu tracking ID.
+# Para fijar un libro exacto, añade "asin: XXXXXXXXXX".
+- titulo: "La fiesta del Chivo"
+  autor: "Mario Vargas Llosa"
+  tipo: Novela
+  tema: "Los últimos días de Trujillo y la conspiración del 30 de mayo de 1961."
+  dictadores: [rafael-leonidas-trujillo, ramfis-trujillo, hector-bienvenido-trujillo]
+- titulo: "En el tiempo de las mariposas"
+  autor: "Julia Álvarez"
+  tipo: Novela
+  tema: "La historia de las hermanas Mirabal bajo la dictadura de Trujillo."
+  dictadores: [rafael-leonidas-trujillo]
+- titulo: "Nunca más"
+  autor: "CONADEP"
+  tipo: Informe
+  tema: "El informe de la Comisión Nacional sobre la Desaparición de Personas, Argentina, 1984."
+  dictadores: [jorge-rafael-videla]
+- titulo: "Operación Cóndor"
+  autor: "John Dinges"
+  tipo: Investigación
+  tema: "Cómo las dictaduras del Cono Sur coordinaron la represión más allá de sus fronteras."
+  dictadores: [augusto-pinochet, jorge-rafael-videla, alfredo-stroessner, hugo-banzer]
+- titulo: "Yo el Supremo"
+  autor: "Augusto Roa Bastos"
+  tipo: Novela
+  tema: "La gran novela paraguaya sobre el poder absoluto, escrita durante la era Stroessner."
+  dictadores: [alfredo-stroessner]
+- titulo: "El otoño del patriarca"
+  autor: "Gabriel García Márquez"
+  tipo: Novela
+  tema: "El retrato de un dictador caribeño eterno, inspirado en varios tiranos reales."
+  dictadores: []
+- titulo: "El señor presidente"
+  autor: "Miguel Ángel Asturias"
+  tipo: Novela
+  tema: "La novela fundacional sobre el dictador latinoamericano, inspirada en Estrada Cabrera."
+  dictadores: []

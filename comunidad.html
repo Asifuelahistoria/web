@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% set titulo = "Comunidad" %}
+{% set descripcion = "Únete a la comunidad de Así Fue la Historia en WhatsApp y YouTube." %}
+{% block contenido %}
+<section class="portada">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><span>Comunidad</span></nav>
+    <h1>La <span>comunidad</span></h1>
+    <p class="bajada">Miles de personas de toda América Latina, España y Estados Unidos siguen estas historias. Estas son las formas de estar al día y conversar con nosotros.</p>
+  </div>
+</section>
+<section class="seccion">
+  <div class="envoltura rejilla">
+    <div class="caja"><span class="etiqueta oro">WhatsApp</span><h3>Canal de WhatsApp</h3><p>El aviso de cada documental nuevo, fotos de archivo y adelantos de los libros, directo en tu teléfono.</p><a class="boton" href="{{ cfg.whatsapp }}" target="_blank" rel="noopener">Unirme</a></div>
+    <div class="caja"><span class="etiqueta oro">YouTube</span><h3>Suscríbete al canal</h3><p>Documentales nuevos cada lunes, miércoles y viernes. Activa la campana para no perderte ninguno.</p><a class="boton" href="{{ cfg.youtube_canal }}?sub_confirmation=1" target="_blank" rel="noopener">Suscribirme</a></div>
+    <div class="caja"><span class="etiqueta oro">Conversación</span><h3>Comenta y propón temas</h3><p>Leemos los comentarios de cada video. Muchos de los próximos documentales salen de lo que nos piden ahí.</p><a class="boton fantasma" href="{{ cfg.youtube_canal }}" target="_blank" rel="noopener">Ir a los videos</a></div>
+  </div>
+</section>
+{% endblock %}
+{% block franja %}{% endblock %}

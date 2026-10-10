@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+{% set titulo = e.titulo %}
+{% set descripcion = e.bajada %}
+{% block jsonld %}
+{% if e.youtube_id %}
+<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"VideoObject","name":e.titulo,"description":e.bajada,"thumbnailUrl":"https://i.ytimg.com/vi/" ~ e.youtube_id ~ "/hqdefault.jpg","uploadDate":(e.video.publicado if e.video else e.fecha),"embedUrl":"https://www.youtube-nocookie.com/embed/" ~ e.youtube_id,"inLanguage":"es","publisher":{"@type":"Organization","name":cfg.nombre}} | tojson }}</script>
+{% endif %}
+{% endblock %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:40px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><a href="{{ url('series/asi-murieron-los-dictadores') }}">Así murieron los dictadores</a><span>/</span><span>Episodio {{ e.numero }}</span></nav>
+    <span class="etiqueta oro">Episodio {{ e.numero }} · {{ e.fecha_larga }} · {{ e.duracion }} min</span>
+    <h1 style="font-size:clamp(2.8rem,7vw,5.6rem);max-width:16ch">{{ e.titulo }}</h1>
+    <p class="bajada">{{ e.bajada }}</p>
+  </div>
+</section>
+<div class="envoltura" style="max-width:980px">
+  {{ m.reproductor(e, cfg, preview) }}
+</div>
+{% if e.lista %}<section class="seccion" aria-labelledby="cap-titulo">
+  <div class="envoltura">
+    <div class="seccion-cabeza">
+      <div>
+        <span class="etiqueta oro">En este episodio</span>
+        <h2 id="cap-titulo">{{ e.lista|length }} expedientes, en el orden del video</h2>
+      </div>
+    </div>
+    <ol class="cronologia">
+      {% for d in e.lista %}
+      <li>
+        <span class="anio">{{ '%02d' % loop.index }}</span>
+        <span><a href="{{ url('dictadores/' ~ d.slug) }}">{{ d.nombre }}</a><span class="lugar">{{ d.pais }} · murió el {{ d.muerte_larga }}</span></span>
+        <span class="sello">{{ d.sello }}</span>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>{% endif %}
+<section class="seccion" aria-labelledby="mas-titulo">
+  <div class="envoltura">
+    <div class="seccion-cabeza"><div><span class="etiqueta oro">Sigue la serie</span><h2 id="mas-titulo">Otros episodios</h2></div></div>
+    <div class="episodios">
+      {% for o in episodios if o.slug != e.slug %}{% if loop.index <= 2 %}
+      <article class="episodio">
+        {{ m.miniatura(o, url, cfg) }}
+        <div class="texto">
+          <span class="etiqueta">Episodio {{ o.numero }}</span>
+          <h3><a href="{{ url('videos/' ~ o.slug) }}">{{ o.titulo }}</a></h3>
+          <p>{{ o.bajada }}</p>
+        </div>
+      </article>
+      {% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

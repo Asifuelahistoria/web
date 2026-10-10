@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+{% set titulo = "Expedientes: cómo murieron los dictadores" %}
+{% set descripcion = "Fichas de " ~ (dictadores|length) ~ " dictadores y gobernantes polémicos: cuánto duraron en el poder, dónde y cómo murieron." %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:40px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><span>Expedientes</span></nav>
+    <h1>Los <span>expedientes</span></h1>
+    <p class="bajada">{{ dictadores|length }} dictadores y gobernantes polémicos, ordenados según cómo terminaron.</p>
+  </div>
+</section>
+{% for g in grupos %}
+<section class="seccion" aria-labelledby="g-{{ g.clave }}" style="padding-block:48px">
+  <div class="envoltura">
+    <div class="seccion-cabeza"><div><span class="etiqueta oro">{{ g.lista|length }} expedientes</span><h2 id="g-{{ g.clave }}">{{ g.nombre }}</h2><p class="bajada">{{ g.frase }}.</p></div></div>
+    <div class="rejilla">{% for d in g.lista %}{{ m.ficha(d, url) }}{% endfor %}</div>
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

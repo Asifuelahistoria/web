@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+{% set titulo = "Todos los videos" %}
+{% set descripcion = "Todos los documentales de Así Fue la Historia: dictaduras, revoluciones, guerrillas y misterios de América Latina." %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:40px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><span>Videos</span></nav>
+    <h1>Los <span>documentales</span></h1>
+    <p class="bajada">{% if videos %}{{ videos|length }} documentales publicados en el canal, del más reciente al más antiguo.{% else %}Todos los documentales del canal, organizados por serie.{% endif %}</p>
+  </div>
+</section>
+<section class="seccion" aria-labelledby="serie-v">
+  <div class="envoltura">
+    <div class="seccion-cabeza"><div><span class="etiqueta oro">Serie</span><h2 id="serie-v">Así murieron los dictadores</h2></div><a class="boton fantasma" href="{{ url('series/asi-murieron-los-dictadores') }}">Ver la serie</a></div>
+    <div class="rejilla">
+      {% for e in episodios %}
+      <div style="display:grid;gap:12px;min-width:0">
+        {{ m.miniatura(e, url, cfg) }}
+        <span class="etiqueta">Episodio {{ e.numero }} · {{ e.fecha_larga }}</span>
+        <h3><a href="{{ url('videos/' ~ e.slug) }}" style="color:var(--papel);text-decoration:none">{{ e.titulo }}</a></h3>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% if videos %}
+<section class="seccion" aria-labelledby="todos-v">
+  <div class="envoltura">
+    <div class="seccion-cabeza"><div><span class="etiqueta oro">Archivo completo</span><h2 id="todos-v">Todos los videos</h2></div></div>
+    <div class="rejilla">
+      {% for v in videos %}
+      <a href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener" style="display:grid;gap:10px;text-decoration:none;color:var(--papel);min-width:0">
+        <span class="miniatura"><img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="play" aria-hidden="true"></span></span>
+        <span class="etiqueta">{{ v.publicado[:10] | fecha }}</span>
+        <span style="font-family:var(--display);font-size:1.6rem;line-height:1">{{ v.titulo }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% else %}
+<section class="seccion"><div class="envoltura"><div class="aviso"><h3>El archivo completo del canal</h3><p>Muy pronto esta página mostrará automáticamente cada documental publicado en YouTube. Mientras tanto, puedes verlos todos en el canal.</p><div class="acciones"><a class="boton" href="{{ cfg.youtube_canal }}/videos" target="_blank" rel="noopener">Ver todos en YouTube</a></div></div></div></section>
+{% endif %}
+{% endblock %}

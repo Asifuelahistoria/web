@@ -1,0 +1,15 @@
+# Configuración general de la web. Editar aquí, no en las plantillas.
+nombre: "Así Fue la Historia"
+lema: "Dictaduras, revoluciones y misterios de la historia de América Latina, contados como fueron."
+descripcion: "Documentales de historia política de América Latina: dictadores, revoluciones, guerrillas y misterios de la Guerra Fría. Videos, artículos, fotos y libros de Así Fue la Historia."
+# Dominio definitivo (sin https://). Vacío mientras no esté conectado.
+dominio: "www.asifuelahistoria.com"
+idioma: "es"
+youtube_canal: "https://www.youtube.com/@Asifuelahistoria"
+youtube_canal_id: "UCdgUQ1Uqae5AkLpMtOZuXQg"
+whatsapp: "https://whatsapp.com/channel/0029Vb6QNaZKGGGRTJmgoo00"
+# Amazon Afiliados: tu "tracking ID" (ej. asifue-20). Vacío = enlaces sin comisión.
+amazon_tag: ""
+# Payhip: enlace del producto del libro. Vacío = el libro aparece como "Próximamente".
+payhip_libro_dictadores: ""
+precio_libro: "US$1.99"

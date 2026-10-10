@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% set titulo = "Sobre el canal" %}
+{% block contenido %}
+<section class="portada">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><span>Sobre el canal</span></nav>
+    <h1>Sobre <span>Así Fue la Historia</span></h1>
+  </div>
+</section>
+<section class="seccion" style="padding-top:0">
+  <div class="envoltura prosa lectura">
+    <p>Así Fue la Historia es un canal de documentales sobre la historia política de América Latina: dictaduras, revoluciones, guerrillas, golpes de Estado y los misterios de la Guerra Fría.</p>
+    <p>Cada historia empieza por el contexto. Antes de hablar de un personaje contamos cómo era su país y qué pasaba alrededor. Después reconstruimos los momentos clave con fechas, cifras y testimonios de la época.</p>
+    <p>No hacemos propaganda de ningún lado. Contamos lo que pasó, con fuentes, y dejamos que cada persona saque sus conclusiones.</p>
+    <h2>Esta web</h2>
+    <p>Aquí reunimos todos los documentales del canal, los expedientes de cada personaje, las fotos de archivo restauradas y los libros que nacen de cada serie. Si encuentras un error en una fecha o un dato, escríbenos en los comentarios del video y lo corregimos.</p>
+  </div>
+</section>
+{% endblock %}

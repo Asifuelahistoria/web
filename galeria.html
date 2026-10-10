@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% set titulo = "Fotos históricas" %}
+{% set descripcion = "Fotografías históricas restauradas de América Latina, con fecha, lugar, fuente y el documental donde se cuenta cada historia." %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:40px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><span>Fotos</span></nav>
+    <h1>Fotos <span>históricas</span></h1>
+    <p class="bajada">Fotografías de archivo restauradas, cada una con su fecha, su lugar, su fuente original y el documental donde contamos esa historia.</p>
+  </div>
+</section>
+<section class="seccion">
+  <div class="envoltura">
+    <div class="aviso">
+      <span class="etiqueta oro">En preparación</span>
+      <h3>Las primeras fotos llegan con la serie "Así murieron los dictadores"</h3>
+      <p>Solo publicamos imágenes de dominio público o con licencia libre, siempre con su fuente. Las fotos restauradas o coloreadas llevan esa marca para no confundirlas con el original.</p>
+      <div class="acciones"><a class="boton" href="{{ cfg.whatsapp }}" target="_blank" rel="noopener">Avísame cuando estén</a></div>
+    </div>
+  </div>
+</section>
+{% endblock %}

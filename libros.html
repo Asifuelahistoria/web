@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% set titulo = "Libros de Así Fue la Historia" %}
+{% set descripcion = "Libros digitales basados en nuestros documentales. El primero: Así murieron los dictadores, con " ~ (dictadores|length) ~ " expedientes ampliados." %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:40px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><span>Libros</span></nav>
+    <h1>Los <span>libros</span></h1>
+    <p class="bajada">Cada serie del canal se convierte en un libro digital: los guiones ampliados con más contexto, fechas y fuentes, a un precio que cualquiera puede pagar.</p>
+  </div>
+</section>
+<section class="seccion" aria-labelledby="l1">
+  <div class="envoltura libro">
+    <div class="tapa" aria-hidden="true">
+      <span class="a">Así Fue la Historia</span>
+      <span class="t">Así<br>murieron<span>los dictadores</span></span>
+      <span class="a">{{ dictadores|length }} expedientes · 1915–2024</span>
+    </div>
+    <div style="display:grid;gap:20px;min-width:0">
+      <span class="etiqueta oro">{% if cfg.payhip_libro_dictadores %}Disponible{% else %}Próximamente{% endif %} · Libro digital (PDF y ePub)</span>
+      <h2 id="l1">Así murieron los dictadores</h2>
+      <p class="bajada">De Porfirio Díaz a Alberto Fujimori: cómo terminaron {{ dictadores|length }} hombres que gobernaron con el miedo. Cada capítulo incluye el contexto del país, la escena final reconstruida y un código QR que te lleva al documental.</p>
+      <div class="precio">{{ cfg.precio_libro }}</div>
+      <div class="acciones">
+        {% if cfg.payhip_libro_dictadores %}
+        <a class="boton" href="{{ cfg.payhip_libro_dictadores }}" target="_blank" rel="noopener">Comprar ahora</a>
+        {% else %}
+        <a class="boton" href="{{ cfg.whatsapp }}" target="_blank" rel="noopener">Avísame cuando salga</a>
+        {% endif %}
+      </div>
+      <p style="margin:0;font-size:.95rem;color:var(--ceniza)">Pago seguro con tarjeta o PayPal. Descarga inmediata.</p>
+    </div>
+  </div>
+</section>
+<section class="seccion" aria-labelledby="indice">
+  <div class="envoltura">
+    <div class="seccion-cabeza"><div><span class="etiqueta oro">Índice</span><h2 id="indice">Lo que vas a leer</h2></div></div>
+    {% for g in grupos %}
+    <h3 style="margin:28px 0 12px;color:var(--oro)">Parte {{ loop.index }}. {{ g.nombre }}</h3>
+    <ol class="indice">{% for d in g.lista %}<li>{{ d.nombre }} <span style="color:var(--ceniza)">({{ d.pais }}, {{ d.anio_muerte }})</span></li>{% endfor %}</ol>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

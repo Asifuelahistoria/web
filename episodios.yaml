@@ -1,0 +1,54 @@
+# Episodios publicados de la serie "Así murieron los dictadores".
+- slug: asi-murieron-los-dictadores-mas-temidos-del-siglo-xx
+  numero: 1
+  titulo: "Así murieron los dictadores más temidos del siglo XX"
+  fecha: "2025-07-19"
+  duracion: "23:30"
+  youtube_id: "CtBRkx9Ftds"
+  bajada: "El episodio que abrió la serie. Trujillo emboscado, Somoza volado en Asunción, Pinochet sin condena, Videla en prisión, Stroessner en el exilio, Banzer despedido con honores, Fujimori y Fidel Castro."
+  dictadores: [rafael-leonidas-trujillo, anastasio-somoza-debayle, augusto-pinochet, jorge-rafael-videla, alfredo-stroessner, hugo-banzer, alberto-fujimori, fidel-castro]
+
+- slug: asi-murieron-los-dictadores-mas-temidos-del-siglo-xx-parte-2
+  numero: 2
+  titulo: "Así murieron los dictadores más temidos del siglo XX: segunda parte"
+  fecha: "2025-07-28"
+  duracion: "25:45"
+  youtube_id: "wELfmI1NoAA"
+  bajada: "La segunda parte recorre los regímenes más oscuros de América Latina, de Marcos Pérez Jiménez en Venezuela a Carlos Humberto Romero en El Salvador."
+  dictadores: []
+
+- slug: asi-murieron-los-dictadores-que-desafiaron-a-estados-unidos
+  numero: 3
+  titulo: "Así murieron los dictadores que desafiaron a Estados Unidos"
+  fecha: "2025-09-04"
+  duracion: "21:15"
+  youtube_id: "BF0zVPj8l44"
+  bajada: "Noriega, Saddam Hussein, Gadafi, Milošević, Mugabe y Ceaușescu. Fueron aliados o enemigos de Washington y terminaron en una celda, en la horca o frente a un pelotón."
+  dictadores: [manuel-antonio-noriega, saddam-hussein, muamar-el-gadafi, slobodan-milosevic, robert-mugabe, nicolae-ceausescu]
+
+- slug: asi-terminaron-los-cuerpos-de-los-dictadores
+  numero: 4
+  titulo: "Así terminaron los cuerpos de los dictadores más temidos"
+  fecha: "2025-12-24"
+  duracion: "14:05"
+  youtube_id: "o2GI8Xxnxzs"
+  bajada: "Cuando un dictador muere empieza la vida política de su cadáver. Qué pasó con los restos de Hugo Chávez, Francisco Franco y Augusto Pinochet."
+  dictadores: [hugo-chavez, francisco-franco, augusto-pinochet]
+
+- slug: asi-murieron-los-hijos-de-los-dictadores
+  numero: 5
+  titulo: "Así murieron los hijos de los dictadores más temidos de América Latina"
+  fecha: "2026-09-17"
+  duracion: "21:20"
+  youtube_id: "Ve8RwiRtdU8"
+  bajada: "Un choque en Madrid, un lanzagranadas en Asunción y un infarto en Puerto Príncipe. Los herederos de Trujillo, Somoza y Duvalier, y por qué ninguno fue condenado."
+  dictadores: [ramfis-trujillo, anastasio-somoza-debayle, jean-claude-duvalier]
+
+- slug: asi-murieron-roldos-y-torrijos
+  numero: 6
+  titulo: "78 días de diferencia: así murieron Roldós y Torrijos"
+  fecha: "2026-09-26"
+  duracion: "18:49"
+  youtube_id: "Hk51YsLh4Lc"
+  bajada: "Dos presidentes de países vecinos y la misma muerte, con 78 días de diferencia: una avioneta contra una montaña. Jaime Roldós en Ecuador y Omar Torrijos en Panamá."
+  dictadores: [omar-torrijos]

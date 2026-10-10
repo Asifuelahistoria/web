@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% set titulo = "Política de privacidad" if tipo == "privacidad" else "Aviso de afiliados" %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:24px"><div class="envoltura"><h1 style="font-size:clamp(2.6rem,7vw,4.6rem)">{{ titulo }}</h1></div></section>
+<section class="seccion" style="padding-top:0"><div class="envoltura prosa lectura">
+{% if tipo == "privacidad" %}
+<p>Esta web no tiene cuentas de usuario ni formularios, y no guarda datos personales de quienes la visitan.</p>
+<p>Algunos servicios externos pueden recibir datos técnicos de tu visita, como tu dirección IP: los videos se muestran con el reproductor de YouTube en modo de privacidad mejorada, las tipografías se cargan desde Google Fonts y las compras de libros se procesan en Payhip o Amazon, cada uno con su propia política de privacidad.</p>
+<p>Si tienes dudas sobre tus datos, escríbenos a través de los comentarios del canal de YouTube.</p>
+{% else %}
+<p>Como Afiliado de Amazon, el canal Así Fue la Historia obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables.</p>
+<p>Algunos enlaces a libros en esta web son enlaces de afiliado. Si compras a través de ellos, el canal recibe una pequeña comisión sin que pagues nada extra. Solo recomendamos libros que consideramos útiles para entender cada historia.</p>
+{% endif %}
+</div></section>
+{% endblock %}
