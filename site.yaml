@@ -11,5 +11,5 @@ whatsapp: "https://whatsapp.com/channel/0029Vb6QNaZKGGGRTJmgoo00"
 # Amazon Afiliados: tu "tracking ID" (ej. asifue-20). Vacío = enlaces sin comisión.
 amazon_tag: ""
 # Payhip: enlace del producto del libro. Vacío = el libro aparece como "Próximamente".
-payhip_libro_dictadores: ""
+payhip_libro_dictadores: "https://payhip.com/b/FWmJM"
 precio_libro: "US$1.99"
