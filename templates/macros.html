@@ -27,3 +27,20 @@
 </div>
 {% endif %}
 {%- endmacro %}
+
+
+{% macro boletin(cfg, compacto=false) -%}
+<form class="boletin{% if compacto %} compacto{% endif %}" action="{{ cfg.kit_form_action }}" method="post">
+  <div class="boletin-texto">
+    <span class="etiqueta oro">Boletín semanal · gratis</span>
+    <h2>Recibe gratis el primer capítulo del libro</h2>
+    <p>Suscríbete al boletín de Así Fue la Historia: cada semana, los documentales nuevos y los libros para entender cada historia. De regalo, el capítulo de Trujillo, Somoza y Gadafi en PDF.</p>
+  </div>
+  <div class="boletin-campos">
+    <label class="oculto" for="boletin-correo{{ '-c' if compacto }}">Tu correo electrónico</label>
+    <input id="boletin-correo{{ '-c' if compacto }}" type="email" name="email_address" placeholder="Tu correo electrónico" required autocomplete="email">
+    <button class="boton" type="submit">Quiero el capítulo gratis</button>
+    <small>Sin spam. Te das de baja con un clic. <a href="/privacidad/">Privacidad</a>.</small>
+  </div>
+</form>
+{%- endmacro %}

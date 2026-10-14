@@ -217,3 +217,17 @@ h3 { font-size: 1.75rem; line-height: 1; }
 .migas a { color: var(--ceniza); text-decoration: none; }
 .migas a:hover { color: var(--oro); }
 .vista-previa { background: var(--kraft); color: #fbf6ec; font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.06em; text-align: center; padding: 8px 16px; }
+
+/* Boletín */
+.banda-boletin { background: var(--carbon-2); border-top: 1px solid var(--linea); }
+.banda-boletin .envoltura { padding-block: 44px; }
+.boletin { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 20px 48px; align-items: center; }
+@media (max-width: 760px) { .boletin { grid-template-columns: minmax(0, 1fr); } }
+.boletin h2 { font-size: clamp(2rem, 4vw, 3rem); margin: 8px 0 6px; }
+.boletin p { margin: 0; color: var(--ceniza); max-width: 56ch; }
+.boletin-campos { display: grid; gap: 10px; }
+.boletin input[type=email] { font: inherit; font-size: 1.05rem; padding: 14px 16px; border-radius: 4px; border: 1px solid var(--kraft-claro); background: var(--noche); color: var(--papel); min-width: 0; }
+.boletin input[type=email]:focus { outline: 2px solid var(--oro); outline-offset: 1px; }
+.boletin small { color: var(--ceniza); font-size: .85rem; }
+.boletin.compacto { grid-template-columns: minmax(0, 1fr); padding: 24px; border: 1px solid var(--oro); border-radius: 4px; background: var(--noche); }
+.oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

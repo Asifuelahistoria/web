@@ -41,6 +41,10 @@
 {% block contenido %}{% endblock %}
 </main>
 {% block franja %}
+{% if cfg.kit_form_action %}{% import "macros.html" as mb %}
+<section class="banda-boletin" aria-label="Boletín semanal">
+  <div class="envoltura">{{ mb.boletin(cfg) }}</div>
+</section>{% endif %}
 <section class="franja" aria-labelledby="franja-titulo">
   <div class="envoltura">
     <div>
