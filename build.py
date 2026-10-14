@@ -110,6 +110,10 @@ def main():
         b["url"] = (f"https://www.amazon.com/dp/{b['asin']}" + (f"?tag={cfg['amazon_tag']}" if tag else "")
                     if b.get("asin") else f"https://www.amazon.com/s?k={q}{tag}")
         b["afiliado"] = bool(tag)
+        tag_es = cfg.get("amazon_tag_es") or ""
+        b["url_es"] = (f"https://www.amazon.es/dp/{b['asin_es']}" if b.get("asin_es")
+                       else f"https://www.amazon.es/s?k={q}") + (("&" if "?" in (f"/s?k={q}" if not b.get("asin_es") else "") else "?") + f"tag={tag_es}" if tag_es else "")
+        b["afiliado_es"] = bool(tag_es)
 
     # Videos del canal relacionados con cada expediente (por apellido)
     claves = {"saddam-hussein": "saddam", "fidel-castro": "fidel", "porfirio-diaz": "porfirio",

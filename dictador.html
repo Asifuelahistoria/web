@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+{% set titulo = "Cómo murió " ~ d.nombre %}
+{% set descripcion = d.resumen %}
+{% set og_tipo = "article" %}
+{% block jsonld %}
+<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"Article","headline":titulo,"description":d.resumen,"inLanguage":"es","author":{"@type":"Organization","name":cfg.nombre},"publisher":{"@type":"Organization","name":cfg.nombre},"about":{"@type":"Person","name":d.nombre,"deathDate":d.muerte|string,"deathPlace":d.lugar,"nationality":d.pais}} | tojson }}</script>
+{% endblock %}
+{% block contenido %}
+{% set n = (cronologia.index(d) + 1) %}
+<section class="expediente">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><a href="{{ url('dictadores') }}">Expedientes</a><span>/</span><span>{{ d.nombre }}</span></nav>
+    <article class="carpeta" data-pestana="Expediente {{ '%02d' % n }} · Así murieron los dictadores">
+      <span class="sello grande">{{ d.sello }}</span>
+      <div style="display:grid;gap:10px">
+        <h1>{{ d.nombre }}</h1>
+        {% if d.apodo %}<p class="apodo">{{ d.apodo }}</p>{% endif %}
+      </div>
+      <p class="resumen-exp">{{ d.resumen }}</p>
+      <dl class="campos">
+        <div><dt>País</dt><dd>{{ d.pais }}</dd></div>
+        <div><dt>En el poder</dt><dd>{{ d.poder }}</dd></div>
+        <div><dt>Murió</dt><dd>{{ d.muerte_larga }}</dd></div>
+        <div><dt>Lugar</dt><dd>{{ d.lugar }}</dd></div>
+        <div><dt>Edad</dt><dd>{{ d.edad }} años</dd></div>
+        <div><dt>Final</dt><dd>{{ d.final_info.nombre }}</dd></div>
+      </dl>
+    </article>
+  </div>
+</section>
+
+<div class="envoltura articulo">
+  <div class="prosa">{{ d.html | safe }}
+    {% for e in d.eps[:1] %}
+    <h2>Míralo en video</h2>
+    {{ m.reproductor(e, cfg, preview) }}
+    <p style="margin-top:12px;font-size:1rem;color:var(--ceniza)">Del episodio <a href="{{ url('videos/' ~ e.slug) }}">{{ e.titulo }}</a>.</p>
+    {% endfor %}
+  </div>
+  <aside class="lateral">
+    {% if d.eps %}
+    <div class="caja">
+      <span class="etiqueta oro">Aparece en</span>
+      <ul>{% for e in d.eps %}<li><a href="{{ url('videos/' ~ e.slug) }}">{{ e.titulo }}</a><small>Episodio {{ e.numero }} · {{ e.duracion }} min</small></li>{% endfor %}</ul>
+    </div>
+    {% endif %}
+    {% if d.videos_rel %}
+    <div class="caja">
+      <span class="etiqueta oro">Más documentales del canal</span>
+      <ul>{% for v in d.videos_rel %}<li><a href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">{{ v.titulo }}</a><small>{{ v.publicado[:10] | fecha }}</small></li>{% endfor %}</ul>
+    </div>
+    {% endif %}
+    {% if relacionados %}
+    <div class="caja">
+      <span class="etiqueta oro">Mismo final: {{ d.final_info.nombre|lower }}</span>
+      <ul>{% for r in relacionados %}<li><a href="{{ url('dictadores/' ~ r.slug) }}">{{ r.nombre }}</a><small>{{ r.pais }} · {{ r.anio_muerte }}</small></li>{% endfor %}</ul>
+    </div>
+    {% endif %}
+    {% if libros %}
+    <div class="caja">
+      <span class="etiqueta oro">Para leer más</span>
+      <ul>{% for b in libros %}<li><a href="{{ b.url }}" target="_blank" rel="{% if b.afiliado %}sponsored {% endif %}noopener">{{ b.titulo }}</a><small>{{ b.autor }} · {{ b.tipo }} · <a href="{{ b.url_es }}" target="_blank" rel="{% if b.afiliado_es %}sponsored {% endif %}noopener">Amazon España</a></small></li>{% endfor %}</ul>
+      {% if libros|selectattr('afiliado')|list %}<p style="font-size:.8rem">Enlaces de afiliado: si compras, el canal recibe una pequeña comisión.</p>{% endif %}
+    </div>
+    {% endif %}
+    <div class="caja">
+      <h3>El libro de la serie</h3>
+      <p>Todos los expedientes, ampliados, en un libro digital barato.</p>
+      <a class="boton fantasma" href="{{ url('libros') }}">Ver el libro</a>
+    </div>
+  </aside>
+</div>
+{% endblock %}

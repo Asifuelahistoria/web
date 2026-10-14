@@ -10,6 +10,8 @@ youtube_canal_id: "UCdgUQ1Uqae5AkLpMtOZuXQg"
 whatsapp: "https://whatsapp.com/channel/0029Vb6QNaZKGGGRTJmgoo00"
 # Amazon Afiliados: tu "tracking ID" (ej. asifue-20). Vacío = enlaces sin comisión.
 amazon_tag: ""
+# Amazon Afiliados España (amazon.es).
+amazon_tag_es: "asifuelahisto-21"
 # Payhip: enlace del producto del libro. Vacío = el libro aparece como "Próximamente".
 payhip_libro_dictadores: "https://payhip.com/b/FWmJM"
 precio_libro: "US$1.99"

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% set titulo = "Biblioteca recomendada" %}
+{% set descripcion = "Libros recomendados para entender las dictaduras de América Latina: novelas, investigaciones e informes." %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:40px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><span>Biblioteca</span></nav>
+    <h1>La <span>biblioteca</span></h1>
+    <p class="bajada">Los libros que recomendamos para ir más allá de cada documental: investigaciones, informes oficiales y las novelas que mejor retrataron a los dictadores.</p>
+  </div>
+</section>
+<section class="seccion">
+  <div class="envoltura">
+    <div class="libros-rec">
+      {% for b in biblioteca %}
+      <article class="libro-rec">
+        <div style="min-width:0">
+          <span class="etiqueta">{{ b.tipo }} · {{ b.autor }}</span>
+          <h3>{{ b.titulo }}</h3>
+          <p>{{ b.tema }}</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <a class="boton fantasma" href="{{ b.url }}" target="_blank" rel="{% if b.afiliado %}sponsored {% endif %}noopener">Amazon (América)</a>
+        <a class="boton fantasma" href="{{ b.url_es }}" target="_blank" rel="{% if b.afiliado_es %}sponsored {% endif %}noopener">Amazon España</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <p style="font-size:.9rem;color:var(--ceniza);margin-top:20px">Como Afiliado de Amazon, el canal obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables. <a href="{{ url('aviso-de-afiliados') }}">Más información</a>.</p>
+  </div>
+</section>
+{% endblock %}
