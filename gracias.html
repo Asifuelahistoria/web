@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% set titulo = "Revisa tu correo" %}
+{% set descripcion = "Confirma tu suscripción al boletín de Así Fue la Historia." %}
+{% block contenido %}
+<section class="portada">
+  <div class="envoltura" style="max-width:760px">
+    <span class="etiqueta oro">Un paso más</span>
+    <h1>Revisa tu <span>correo</span></h1>
+    <p class="bajada">Te acabamos de enviar un correo con el asunto «Confirma tu correo y recibe tu capítulo gratis». Pulsa el botón que trae y se descargará el primer capítulo de <em>Así murieron los dictadores</em>.</p>
+    <p class="bajada" style="font-size:1rem;color:var(--ceniza)">¿No lo ves? Mira en la carpeta de spam o en «Promociones», y si está ahí, márcalo como «No es spam» para que te lleguen bien los boletines.</p>
+    <div class="acciones"><a class="boton" href="{{ url('videos') }}">Mientras tanto, ver documentales</a></div>
+  </div>
+</section>
+{% endblock %}
+{% block franja %}{% endblock %}

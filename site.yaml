@@ -15,3 +15,5 @@ amazon_tag_es: "asifuelahisto-21"
 # Payhip: enlace del producto del libro. Vacío = el libro aparece como "Próximamente".
 payhip_libro_dictadores: "https://payhip.com/b/FWmJM"
 precio_libro: "US$1.99"
+# Kit (boletín semanal): dirección del formulario de suscripción.
+kit_form_action: "https://app.kit.com/forms/10046121/subscriptions"
