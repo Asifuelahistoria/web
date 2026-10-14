@@ -1,0 +1,144 @@
+# Libros recomendados por tema para cada video del canal.
+# Cada video recibe los libros de los temas cuyas palabras aparecen en su título
+# (sin tildes ni mayúsculas), en este orden, hasta 4 libros. Página: /v/<id>/
+# Para añadir un tema nuevo: copia un bloque y cambia palabras y libros.
+- tema: Hermanas Mirabal
+  palabras: [mirabal, minerva, "maria teresa"]
+  libros:
+    - {titulo: "En el tiempo de las mariposas", autor: "Julia Álvarez", asin: "0452286867"}
+    - {titulo: "Vivas en su jardín", autor: "Dedé Mirabal", asin: "B0037B35WO"}
+- tema: Trujillo y República Dominicana
+  palabras: [trujillo, ramfis, rhadames, balaguer, dominicana, dominicano, caamano, palmeros, "orlando martinez", galindez, "ciudad trujillo", "1965", moca]
+  libros:
+    - {titulo: "La fiesta del Chivo", autor: "Mario Vargas Llosa", asin: "8466382690"}
+    - {titulo: "Trujillo: la trágica aventura del poder personal", autor: "Robert D. Crassweller", asin: "B00H3VY5Z0"}
+    - {titulo: "La era de Trujillo", autor: "Jesús de Galíndez", asin: "B084QLSJ38"}
+- tema: Haití y los Duvalier
+  palabras: [duvalier, "papa doc", haiti, haitianos]
+  libros:
+    - {titulo: "Los comediantes", autor: "Graham Greene", asin: "8435013669"}
+    - {titulo: "El reino de este mundo", autor: "Alejo Carpentier", asin: "B0B7KP56X7"}
+- tema: Familia Castro
+  palabras: [juanita castro, mariela castro, "hijo de fidel", "hermana de fidel"]
+  libros:
+    - {titulo: "Fidel y Raúl, mis hermanos: la historia secreta", autor: "Juanita Castro", asin: "B00656FF0I"}
+- tema: Camilo Cienfuegos y Huber Matos
+  palabras: [camilo, "huber matos"]
+  libros:
+    - {titulo: "Cómo llegó la noche", autor: "Huber Matos", asin: "1948517051"}
+- tema: Che Guevara
+  palabras: [che guevara, "el che", "del che", "al che", sankara]
+  libros:
+    - {titulo: "Che Guevara: una vida revolucionaria", autor: "Jon Lee Anderson", asin: "B00V91DSCG"}
+- tema: Mafia en Cuba
+  palabras: [mafia, luciano, capone, "cosa nostra"]
+  libros:
+    - {titulo: "Nocturno de La Habana", autor: "T. J. English", asin: "848306930X"}
+    - {titulo: "Cosa Nostra: historia de la mafia siciliana", autor: "John Dickie", asin: "1403970424"}
+- tema: Cuba y Fidel Castro
+  palabras: [fidel, castro, cuba, cubana, cubano, cubanos, batista, cabana, mariel, balseros, paya, padilla, ochoa, cochinos, misiles, "la coubre", escambray, mangosta, "humboldt 7", "peter pan", "11j", malecon, canimar, "13 de marzo", "vuelo 455", "cubana 455", "frank pais", "william morgan", "tres patines", "celia cruz", elian, guantanamo, moncada, granma, "tarara", "santa clara"]
+  libros:
+    - {titulo: "Antes que anochezca", autor: "Reinaldo Arenas", asin: "8483835711"}
+    - {titulo: "Contra toda esperanza", autor: "Armando Valladares", asin: "0990851532"}
+    - {titulo: "Castro's Secrets", autor: "Brian Latell", asin: "B007PP24SY"}
+- tema: Crisis de los misiles
+  palabras: [misiles, "tercera guerra"]
+  libros:
+    - {titulo: "Trece días", autor: "Robert F. Kennedy"}
+- tema: Chávez, Maduro y Venezuela
+  palabras: [chavez, chavismo, maduro, venezuela, venezolanos, cabello, "delcy", "cilia flores", caldera, bolivariana, "carteles de los soles", "cartel de los soles", "reten de catia", hutchison]
+  libros:
+    - {titulo: "Hugo Chávez sin uniforme", autor: "Cristina Marcano y Alberto Barrera Tyszka", asin: "8483066548"}
+    - {titulo: "Comandante: la Venezuela de Hugo Chávez", autor: "Rory Carroll", asin: "841560128X"}
+- tema: Pinochet y Chile
+  palabras: [pinochet, chile, allende, lonquen, "caravana de la muerte", "chicago boys", neruda]
+  libros:
+    - {titulo: "Los zarpazos del puma", autor: "Patricia Verdugo", asin: "B01DMCG9RK"}
+    - {titulo: "La historia oculta del régimen militar", autor: "Ascanio Cavallo", asin: "9562580598"}
+- tema: Dictadura argentina
+  palabras: [argentina, argentino, argentinos, videla, "guerra sucia", lapices, montoneros, malvinas, "isabel peron", alfonsin, frondizi]
+  libros:
+    - {titulo: "Nunca más", autor: "CONADEP", asin: "B00D8WPIG8"}
+    - {titulo: "La noche de los lápices", autor: "María Seoane y Héctor Ruiz Núñez", asin: "B007KDHOU4"}
+    - {titulo: "El vuelo", autor: "Horacio Verbitsky", asin: "9507426086"}
+- tema: Eva Perón
+  palabras: [evita]
+  libros:
+    - {titulo: "Santa Evita", autor: "Tomás Eloy Martínez", asin: "1644735474"}
+- tema: Stroessner y Paraguay
+  palabras: [stroessner, paraguay, "35 anos en el poder", bodega]
+  libros:
+    - {titulo: "El último supremo: la crónica de Alfredo Stroessner", autor: "Bernardo Neri Farina", asin: "9995312603"}
+    - {titulo: "Los años del Cóndor", autor: "John Dinges", asin: "B0965YG3X8"}
+- tema: Panamá, Noriega y Torrijos
+  palabras: [noriega, torrijos, panama, roldos]
+  libros:
+    - {titulo: "Nuestro hombre en Panamá", autor: "John Dinges", asin: "B000SIHMI2"}
+    - {titulo: "Confesiones de un gánster económico", autor: "John Perkins", asin: "8492801050"}
+- tema: Perú, Fujimori y Sendero
+  palabras: [fujimori, montesinos, peru, sendero, lucanamarca, belaunde]
+  libros:
+    - {titulo: "La cuarta espada", autor: "Santiago Roncagliolo", asin: "B071GS2HSG"}
+    - {titulo: "El pez en el agua", autor: "Mario Vargas Llosa"}
+- tema: México
+  palabras: [tlatelolco, ayotzinapa, mexico, "porfirio", "pri", buendia, "revolucion de mexico", "revolucion mexicana", amlo, juarez, zambada, chapo]
+  libros:
+    - {titulo: "La noche de Tlatelolco", autor: "Elena Poniatowska", asin: "6073900589"}
+    - {titulo: "La verdadera noche de Iguala", autor: "Anabel Hernández", asin: "6073149263"}
+    - {titulo: "Místico de la autoridad: Porfirio Díaz", autor: "Enrique Krauze", asin: "9681622863"}
+- tema: Narcotráfico
+  palabras: [griselda, lehder, zambada, chapo, cartel, "carteles", escobar, dea]
+  libros:
+    - {titulo: "Los señores del narco", autor: "Anabel Hernández", asin: "1644732068"}
+    - {titulo: "Matar a Pablo Escobar", autor: "Mark Bowden", asin: "849867252X"}
+- tema: Nicaragua
+  palabras: [nicaragua, somoza, murillo, ortega, sandinista]
+  libros:
+    - {titulo: "Adiós muchachos", autor: "Sergio Ramírez", asin: "B00634M802"}
+- tema: Colombia
+  palabras: [colombia, gaitan, garzon, turbay, petro, pozzetto]
+  libros:
+    - {titulo: "Noticia de un secuestro", autor: "Gabriel García Márquez", asin: "6070730135"}
+- tema: CIA en América Latina
+  palabras: [cia, guatemala, "condor", "castillo armas", "estados unidos invadio", "invasion estadounidense"]
+  libros:
+    - {titulo: "Legado de cenizas: la historia de la CIA", autor: "Tim Weiner", asin: "B0FRTZJQ1T"}
+    - {titulo: "Fruta amarga: la CIA en Guatemala", autor: "Stephen Schlesinger y Stephen Kinzer", asin: "9682311969"}
+- tema: España
+  palabras: [franco, eta, "carrero blanco", espana, "bebes robados"]
+  libros:
+    - {titulo: "Franco: caudillo de España", autor: "Paul Preston", asin: "B016SGKF2M"}
+- tema: Irán
+  palabras: [iran, jamenei]
+  libros:
+    - {titulo: "Persépolis", autor: "Marjane Satrapi", asin: "037571457X"}
+    - {titulo: "Leer Lolita en Teherán", autor: "Azar Nafisi", asin: "8415945876"}
+- tema: Rusia y la Unión Soviética
+  palabras: [trotsky, zares, bolcheviques, stalin, sovietica, "ejercito rojo", kgb]
+  libros:
+    - {titulo: "Los Románov", autor: "Simon Sebag Montefiore", asin: "B01IC88JEU"}
+    - {titulo: "La corte del zar rojo", autor: "Simon Sebag Montefiore", asin: "8491994777"}
+- tema: Nazismo y Segunda Guerra Mundial
+  palabras: [hitler, nazi, gestapo, barbie, "ana frank", "segunda guerra", oppenheimer]
+  libros:
+    - {titulo: "El diario de Ana Frank", autor: "Ana Frank", asin: "6073917325"}
+    - {titulo: "Auge y caída del Tercer Reich", autor: "William L. Shirer", asin: "B09WDY5DHF"}
+- tema: África
+  palabras: [lumumba, sankara, ruanda, gadafi, mugabe]
+  libros:
+    - {titulo: "El fantasma del rey Leopoldo", autor: "Adam Hochschild", asin: "848307799X"}
+- tema: Simón Bolívar
+  palabras: [bolivar]
+  libros:
+    - {titulo: "El general en su laberinto", autor: "Gabriel García Márquez", asin: "1400034965"}
+- tema: Ecuador y Bolivia
+  palabras: [correa, ecuador, bolivia, "evo morales", banzer]
+  libros:
+    - {titulo: "Las venas abiertas de América Latina", autor: "Eduardo Galeano", asin: "8432320692"}
+# Tema general: se usa solo si ningún otro coincide.
+- tema: Dictadores
+  general: true
+  palabras: [dictador, dictadores, tirano, tiranos, regimen, dictadura, "el poder", guerrilleros, "asesinatos politicos", "lado oculto del poder"]
+  libros:
+    - {titulo: "Dictadores: el culto a la personalidad en el siglo XX", autor: "Frank Dikötter", asin: "8419036749"}
+    - {titulo: "Las venas abiertas de América Latina", autor: "Eduardo Galeano", asin: "8432320692"}

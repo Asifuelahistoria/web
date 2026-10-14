@@ -145,7 +145,9 @@ def main():
 
     def libro_links(lb):
         q = f"{lb['titulo']} {lb['autor']}".replace(" ", "+")
-        return dict(lb, url=f"https://www.amazon.com/s?k={q}" + (f"&tag={tag}" if tag else ""),
+        com = (f"https://www.amazon.com/dp/{lb['asin']}" + (f"?tag={tag}" if tag else "")) if lb.get("asin") \
+            else f"https://www.amazon.com/s?k={q}" + (f"&tag={tag}" if tag else "")
+        return dict(lb, url=com,
                     url_es=f"https://www.amazon.es/s?k={q}" + (f"&tag={tag_es}" if tag_es else ""))
 
     def tiene(texto, palabra):
@@ -223,6 +225,10 @@ def main():
     (DIST / "libros-por-video.txt").write_text(
         "\n".join(f"{v['id']}\t{base_url}/v/{v['id']}/\t{v['titulo']}" for v in con_libros) + "\n",
         encoding="utf-8")
+    (DIST / "libros-por-video.json").write_text(json.dumps(
+        [{"id": v["id"], "titulo": v["titulo"], "libros": [{"titulo": b["titulo"], "autor": b["autor"], "url": b["url"]}
+                                                           for b in v["libros"]]} for v in con_libros],
+        ensure_ascii=False), encoding="utf-8")
     print(f"Libros por video: {len(con_libros)} de {len(videos)} videos")
 
     if not PREVIEW:
