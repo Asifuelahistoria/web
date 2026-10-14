@@ -138,6 +138,37 @@ def main():
         shutil.rmtree(DIST)
     shutil.copytree(ROOT / "static", DIST / "static")
 
+    # Libros recomendados por video según el tema de su título (content/libro-temas-videos.yaml)
+    temas_path = ROOT / "content" / "libro-temas-videos.yaml"
+    temas = load_yaml(temas_path) if temas_path.exists() else []
+    tag, tag_es = cfg.get("amazon_tag") or "", cfg.get("amazon_tag_es") or ""
+
+    def libro_links(lb):
+        q = f"{lb['titulo']} {lb['autor']}".replace(" ", "+")
+        return dict(lb, url=f"https://www.amazon.com/s?k={q}" + (f"&tag={tag}" if tag else ""),
+                    url_es=f"https://www.amazon.es/s?k={q}" + (f"&tag={tag_es}" if tag_es else ""))
+
+    def tiene(texto, palabra):
+        return f" {normalizar(str(palabra))} " in texto
+
+    for v in videos:
+        t = " " + re.sub(r"\s+", " ", normalizar(v["titulo"])) + " "
+        elegidos, vistos, temas_v = [], set(), []
+        for tm in temas:
+            if tm.get("general"):
+                continue
+            if any(tiene(t, w) for w in tm["palabras"]):
+                temas_v.append(tm["tema"])
+                for lb in tm["libros"]:
+                    if lb["titulo"] not in vistos:
+                        vistos.add(lb["titulo"]); elegidos.append(lb)
+        if not elegidos:
+            for tm in temas:
+                if tm.get("general") and any(tiene(t, w) for w in tm["palabras"]):
+                    temas_v.append(tm["tema"]); elegidos = list(tm["libros"])
+        v["libros"] = [libro_links(lb) for lb in elegidos[:4]]
+        v["temas"] = temas_v
+
     paginas = []
 
     def render(tpl, out, **ctx):
@@ -185,6 +216,14 @@ def main():
     render("legal.html", "privacidad/index.html", tipo="privacidad", **comun)
     render("legal.html", "aviso-de-afiliados/index.html", tipo="afiliados", **comun)
     render("404.html", "404.html", **comun)
+    for v in videos:
+        if v.get("libros"):
+            render("libros-video.html", f"v/{v['id']}/index.html", v=v, **comun)
+    con_libros = [v for v in videos if v.get("libros")]
+    (DIST / "libros-por-video.txt").write_text(
+        "\n".join(f"{v['id']}\t{base_url}/v/{v['id']}/\t{v['titulo']}" for v in con_libros) + "\n",
+        encoding="utf-8")
+    print(f"Libros por video: {len(con_libros)} de {len(videos)} videos")
 
     if not PREVIEW:
         hoy = dt.date.today().isoformat()

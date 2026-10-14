@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% set titulo = "Libros para profundizar: " ~ v.titulo %}
+{% set descripcion = "Libros recomendados por Así Fue la Historia para saber más sobre: " ~ v.titulo %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:32px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><a href="{{ url('videos') }}">Videos</a><span>/</span><span>Libros del video</span></nav>
+    <span class="etiqueta oro">Libros para profundizar{% if v.temas %} · {{ v.temas|join(' · ') }}{% endif %}</span>
+    <h1 style="font-size:clamp(2.2rem,5.5vw,4.2rem);max-width:22ch">{{ v.titulo }}</h1>
+  </div>
+</section>
+<div class="envoltura" style="max-width:980px">
+  {% if not preview %}
+  <iframe class="video" src="https://www.youtube-nocookie.com/embed/{{ v.id }}" title="{{ v.titulo }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  {% else %}
+  <div class="video-pendiente"><a class="boton" href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">Ver en YouTube</a></div>
+  {% endif %}
+</div>
+<section class="seccion" aria-labelledby="lv-titulo">
+  <div class="envoltura">
+    <div class="seccion-cabeza"><div><span class="etiqueta oro">Biblioteca</span><h2 id="lv-titulo">Si te gustó este video, lee esto</h2></div></div>
+    <div style="display:grid;gap:12px">
+      {% for b in v.libros %}
+      <article class="libro-rec">
+        <div style="min-width:0">
+          <span class="etiqueta">{{ b.autor }}</span>
+          <h3>{{ b.titulo }}</h3>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <a class="boton fantasma" href="{{ b.url }}" target="_blank" rel="sponsored noopener">Amazon (América)</a>
+          <a class="boton fantasma" href="{{ b.url_es }}" target="_blank" rel="sponsored noopener">Amazon España</a>
+        </div>
+      </article>
+      {% endfor %}
+      <article class="libro-rec" style="border:1px solid var(--oro)">
+        <div style="min-width:0">
+          <span class="etiqueta oro">Nuestro libro · {{ cfg.precio_libro }}</span>
+          <h3>Así murieron los dictadores</h3>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <a class="boton" href="{{ url('libros') }}">Ver el libro</a>
+        </div>
+      </article>
+    </div>
+    <p style="font-size:.9rem;color:var(--ceniza);margin-top:20px">Como Afiliado de Amazon, el canal obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables. Para ti el precio es el mismo. <a href="{{ url('aviso-de-afiliados') }}">Más información</a>.</p>
+  </div>
+</section>
+{% endblock %}

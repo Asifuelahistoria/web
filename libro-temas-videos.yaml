@@ -1,0 +1,144 @@
+# Libros recomendados por tema para cada video del canal.
+# Cada video recibe los libros de los temas cuyas palabras aparecen en su título
+# (sin tildes ni mayúsculas), en este orden, hasta 4 libros. Página: /v/<id>/
+# Para añadir un tema nuevo: copia un bloque y cambia palabras y libros.
+- tema: Hermanas Mirabal
+  palabras: [mirabal, minerva, "maria teresa"]
+  libros:
+    - {titulo: "En el tiempo de las mariposas", autor: "Julia Álvarez"}
+    - {titulo: "Vivas en su jardín", autor: "Dedé Mirabal"}
+- tema: Trujillo y República Dominicana
+  palabras: [trujillo, ramfis, rhadames, balaguer, dominicana, dominicano, caamano, palmeros, "orlando martinez", galindez, "ciudad trujillo", "1965", moca]
+  libros:
+    - {titulo: "La fiesta del Chivo", autor: "Mario Vargas Llosa"}
+    - {titulo: "Trujillo: la trágica aventura del poder personal", autor: "Robert D. Crassweller"}
+    - {titulo: "La era de Trujillo", autor: "Jesús de Galíndez"}
+- tema: Haití y los Duvalier
+  palabras: [duvalier, "papa doc", haiti, haitianos]
+  libros:
+    - {titulo: "Los comediantes", autor: "Graham Greene"}
+    - {titulo: "El reino de este mundo", autor: "Alejo Carpentier"}
+- tema: Familia Castro
+  palabras: [juanita castro, mariela castro, "hijo de fidel", "hermana de fidel"]
+  libros:
+    - {titulo: "Fidel y Raúl, mis hermanos: la historia secreta", autor: "Juanita Castro"}
+- tema: Camilo Cienfuegos y Huber Matos
+  palabras: [camilo, "huber matos"]
+  libros:
+    - {titulo: "Cómo llegó la noche", autor: "Huber Matos"}
+- tema: Che Guevara
+  palabras: [che guevara, "el che", "del che", "al che", sankara]
+  libros:
+    - {titulo: "Che Guevara: una vida revolucionaria", autor: "Jon Lee Anderson"}
+- tema: Mafia en Cuba
+  palabras: [mafia, luciano, capone, "cosa nostra"]
+  libros:
+    - {titulo: "Nocturno de La Habana", autor: "T. J. English"}
+    - {titulo: "Cosa Nostra: historia de la mafia siciliana", autor: "John Dickie"}
+- tema: Cuba y Fidel Castro
+  palabras: [fidel, castro, cuba, cubana, cubano, cubanos, batista, cabana, mariel, balseros, paya, padilla, ochoa, cochinos, misiles, "la coubre", escambray, mangosta, "humboldt 7", "peter pan", "11j", malecon, canimar, "13 de marzo", "vuelo 455", "cubana 455", "frank pais", "william morgan", "tres patines", "celia cruz", elian, guantanamo, moncada, granma, "tarara", "santa clara"]
+  libros:
+    - {titulo: "Antes que anochezca", autor: "Reinaldo Arenas"}
+    - {titulo: "Contra toda esperanza", autor: "Armando Valladares"}
+    - {titulo: "Castro's Secrets", autor: "Brian Latell"}
+- tema: Crisis de los misiles
+  palabras: [misiles, "tercera guerra"]
+  libros:
+    - {titulo: "Trece días", autor: "Robert F. Kennedy"}
+- tema: Chávez, Maduro y Venezuela
+  palabras: [chavez, chavismo, maduro, venezuela, venezolanos, cabello, "delcy", "cilia flores", caldera, bolivariana, "carteles de los soles", "cartel de los soles", "reten de catia", hutchison]
+  libros:
+    - {titulo: "Hugo Chávez sin uniforme", autor: "Cristina Marcano y Alberto Barrera Tyszka"}
+    - {titulo: "Comandante: la Venezuela de Hugo Chávez", autor: "Rory Carroll"}
+- tema: Pinochet y Chile
+  palabras: [pinochet, chile, allende, lonquen, "caravana de la muerte", "chicago boys", neruda]
+  libros:
+    - {titulo: "Los zarpazos del puma", autor: "Patricia Verdugo"}
+    - {titulo: "La historia oculta del régimen militar", autor: "Ascanio Cavallo"}
+- tema: Dictadura argentina
+  palabras: [argentina, argentino, argentinos, videla, "guerra sucia", lapices, montoneros, malvinas, "isabel peron", alfonsin, frondizi]
+  libros:
+    - {titulo: "Nunca más", autor: "CONADEP"}
+    - {titulo: "La noche de los lápices", autor: "María Seoane y Héctor Ruiz Núñez"}
+    - {titulo: "El vuelo", autor: "Horacio Verbitsky"}
+- tema: Eva Perón
+  palabras: [evita]
+  libros:
+    - {titulo: "Santa Evita", autor: "Tomás Eloy Martínez"}
+- tema: Stroessner y Paraguay
+  palabras: [stroessner, paraguay, "35 anos en el poder", bodega]
+  libros:
+    - {titulo: "El último supremo: la crónica de Alfredo Stroessner", autor: "Bernardo Neri Farina"}
+    - {titulo: "Los años del Cóndor", autor: "John Dinges"}
+- tema: Panamá, Noriega y Torrijos
+  palabras: [noriega, torrijos, panama, roldos]
+  libros:
+    - {titulo: "Nuestro hombre en Panamá", autor: "John Dinges"}
+    - {titulo: "Confesiones de un gánster económico", autor: "John Perkins"}
+- tema: Perú, Fujimori y Sendero
+  palabras: [fujimori, montesinos, peru, sendero, lucanamarca, belaunde]
+  libros:
+    - {titulo: "La cuarta espada", autor: "Santiago Roncagliolo"}
+    - {titulo: "El pez en el agua", autor: "Mario Vargas Llosa"}
+- tema: México
+  palabras: [tlatelolco, ayotzinapa, mexico, "porfirio", "pri", buendia, "revolucion de mexico", "revolucion mexicana", amlo, juarez, zambada, chapo]
+  libros:
+    - {titulo: "La noche de Tlatelolco", autor: "Elena Poniatowska"}
+    - {titulo: "La verdadera noche de Iguala", autor: "Anabel Hernández"}
+    - {titulo: "Místico de la autoridad: Porfirio Díaz", autor: "Enrique Krauze"}
+- tema: Narcotráfico
+  palabras: [griselda, lehder, zambada, chapo, cartel, "carteles", escobar, dea]
+  libros:
+    - {titulo: "Los señores del narco", autor: "Anabel Hernández"}
+    - {titulo: "Matar a Pablo Escobar", autor: "Mark Bowden"}
+- tema: Nicaragua
+  palabras: [nicaragua, somoza, murillo, ortega, sandinista]
+  libros:
+    - {titulo: "Adiós muchachos", autor: "Sergio Ramírez"}
+- tema: Colombia
+  palabras: [colombia, gaitan, garzon, turbay, petro, pozzetto]
+  libros:
+    - {titulo: "Noticia de un secuestro", autor: "Gabriel García Márquez"}
+- tema: CIA en América Latina
+  palabras: [cia, guatemala, "condor", "castillo armas", "estados unidos invadio", "invasion estadounidense"]
+  libros:
+    - {titulo: "Legado de cenizas: la historia de la CIA", autor: "Tim Weiner"}
+    - {titulo: "Fruta amarga: la CIA en Guatemala", autor: "Stephen Schlesinger y Stephen Kinzer"}
+- tema: España
+  palabras: [franco, eta, "carrero blanco", espana, "bebes robados"]
+  libros:
+    - {titulo: "Franco: caudillo de España", autor: "Paul Preston"}
+- tema: Irán
+  palabras: [iran, jamenei]
+  libros:
+    - {titulo: "Persépolis", autor: "Marjane Satrapi"}
+    - {titulo: "Leer Lolita en Teherán", autor: "Azar Nafisi"}
+- tema: Rusia y la Unión Soviética
+  palabras: [trotsky, zares, bolcheviques, stalin, sovietica, "ejercito rojo", kgb]
+  libros:
+    - {titulo: "Los Románov", autor: "Simon Sebag Montefiore"}
+    - {titulo: "La corte del zar rojo", autor: "Simon Sebag Montefiore"}
+- tema: Nazismo y Segunda Guerra Mundial
+  palabras: [hitler, nazi, gestapo, barbie, "ana frank", "segunda guerra", oppenheimer]
+  libros:
+    - {titulo: "El diario de Ana Frank", autor: "Ana Frank"}
+    - {titulo: "Auge y caída del Tercer Reich", autor: "William L. Shirer"}
+- tema: África
+  palabras: [lumumba, sankara, ruanda, gadafi, mugabe]
+  libros:
+    - {titulo: "El fantasma del rey Leopoldo", autor: "Adam Hochschild"}
+- tema: Simón Bolívar
+  palabras: [bolivar]
+  libros:
+    - {titulo: "El general en su laberinto", autor: "Gabriel García Márquez"}
+- tema: Ecuador y Bolivia
+  palabras: [correa, ecuador, bolivia, "evo morales", banzer]
+  libros:
+    - {titulo: "Las venas abiertas de América Latina", autor: "Eduardo Galeano"}
+# Tema general: se usa solo si ningún otro coincide.
+- tema: Dictadores
+  general: true
+  palabras: [dictador, dictadores, tirano, tiranos, regimen, dictadura, "el poder", guerrilleros, "asesinatos politicos", "lado oculto del poder"]
+  libros:
+    - {titulo: "Dictadores: el culto a la personalidad en el siglo XX", autor: "Frank Dikötter"}
+    - {titulo: "Las venas abiertas de América Latina", autor: "Eduardo Galeano"}
