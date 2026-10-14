@@ -60,7 +60,7 @@
     {% if libros %}
     <div class="caja">
       <span class="etiqueta oro">Para leer más</span>
-      <ul>{% for b in libros %}<li><a href="{{ b.url }}" target="_blank" rel="{% if b.afiliado %}sponsored {% endif %}noopener">{{ b.titulo }}</a><small>{{ b.autor }} · {{ b.tipo }}</small></li>{% endfor %}</ul>
+      <ul>{% for b in libros %}<li><a href="{{ b.url }}" target="_blank" rel="{% if b.afiliado %}sponsored {% endif %}noopener">{{ b.titulo }}</a><small>{{ b.autor }} · {{ b.tipo }} · <a href="{{ b.url_es }}" target="_blank" rel="{% if b.afiliado_es %}sponsored {% endif %}noopener">Amazon España</a></small></li>{% endfor %}</ul>
       {% if libros|selectattr('afiliado')|list %}<p style="font-size:.8rem">Enlaces de afiliado: si compras, el canal recibe una pequeña comisión.</p>{% endif %}
     </div>
     {% endif %}

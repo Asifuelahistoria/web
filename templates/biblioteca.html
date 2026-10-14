@@ -19,7 +19,10 @@
           <h3>{{ b.titulo }}</h3>
           <p>{{ b.tema }}</p>
         </div>
-        <a class="boton fantasma" href="{{ b.url }}" target="_blank" rel="{% if b.afiliado %}sponsored {% endif %}noopener">Ver en Amazon</a>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <a class="boton fantasma" href="{{ b.url }}" target="_blank" rel="{% if b.afiliado %}sponsored {% endif %}noopener">Amazon (América)</a>
+        <a class="boton fantasma" href="{{ b.url_es }}" target="_blank" rel="{% if b.afiliado_es %}sponsored {% endif %}noopener">Amazon España</a>
+        </div>
       </article>
       {% endfor %}
     </div>
