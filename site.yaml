@@ -17,3 +17,12 @@ payhip_libro_dictadores: "https://payhip.com/b/FWmJM"
 precio_libro: "US$1.99"
 # Kit (boletín semanal): dirección del formulario de suscripción.
 kit_form_action: "https://app.kit.com/forms/10046121/subscriptions"
+# Apoyo mensual: membresías del canal de YouTube (botón "Unirse").
+apoyo:
+  url: "https://www.youtube.com/channel/UCdgUQ1Uqae5AkLpMtOZuXQg/join"
+  niveles:
+    - {nombre: "Testigo del Pasado", precio: "US$2.09", lema: "La forma más sencilla de sostener el canal."}
+    - {nombre: "Guardián de Historias", precio: "US$4.19", lema: "Para quien quiere estar más cerca del canal.", destacado: true}
+    - {nombre: "Historiador", precio: "US$6.99", lema: "Más beneficios y más contenido exclusivo."}
+    - {nombre: "Investigador", precio: "US$14.99", lema: "El nivel más alto: todo lo que ofrecemos a los miembros."}
+  beneficios: ["Insignias de lealtad junto a tu nombre en comentarios y chats", "Respuesta prioritaria a tus comentarios", "Acceso anticipado a los videos nuevos", "Encuestas y publicaciones exclusivas para miembros", "Videos y Shorts solo para miembros (niveles superiores)", "Menciones a los miembros"]

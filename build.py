@@ -219,6 +219,7 @@ def main():
     render("legal.html", "aviso-de-afiliados/index.html", tipo="afiliados", **comun)
     render("404.html", "404.html", **comun)
     render("gracias.html", "gracias/index.html", **comun)
+    render("apoya.html", "apoya/index.html", **comun)
     for v in videos:
         if v.get("libros"):
             render("libros-video.html", f"v/{v['id']}/index.html", v=v, **comun)

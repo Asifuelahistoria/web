@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="{{ cfg.idioma }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{% set titulo_completo = (titulo ~ " | " ~ cfg.nombre) if titulo else (cfg.nombre ~ " — Historia política de América Latina") %}
+<title>{{ titulo_completo }}</title>
+<meta name="description" content="{{ descripcion or cfg.descripcion }}">
+{% if base_url %}<link rel="canonical" href="{{ canon }}">{% endif %}
+<meta property="og:site_name" content="{{ cfg.nombre }}">
+<meta property="og:title" content="{{ titulo or cfg.nombre }}">
+<meta property="og:description" content="{{ descripcion or cfg.descripcion }}">
+<meta property="og:type" content="{{ og_tipo or 'website' }}">
+<meta property="og:locale" content="es_LA">
+{% if base_url %}<meta property="og:url" content="{{ canon }}">
+<meta property="og:image" content="{{ og_imagen or (base_url ~ '/static/img/og.jpg') }}">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#100d0a">
+<link rel="icon" href="{{ url('static/img/icon-32.png') }}" sizes="32x32">
+<link rel="apple-touch-icon" href="{{ url('static/img/icon-180.png') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="{{ url('static/css/site.css') }}">
+{% block jsonld %}{% endblock %}
+</head>
+<body>
+{% if preview %}<div class="vista-previa">Vista previa · los videos se mostrarán incrustados en la web publicada</div>{% endif %}
+<a class="etiqueta" href="#contenido" style="position:absolute;left:-9999px">Saltar al contenido</a>
+<header class="cabecera" id="cabecera">
+  <div class="envoltura">
+    <a class="logo" href="{{ url('') }}" aria-label="{{ cfg.nombre }}, inicio"><img src="{{ url('static/img/logo.png') }}" alt="#AsiFue La Historia" width="118" height="38"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" id="menu-toggle">Menú</button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      {% set nav = [('videos','Videos'),('series/asi-murieron-los-dictadores','Así murieron'),('dictadores','Expedientes'),('galeria','Fotos'),('libros','Libros'),('biblioteca','Biblioteca'),('comunidad','Comunidad')] %}
+      {% for ruta_nav, nombre_nav in nav %}<a href="{{ url(ruta_nav) }}"{% if ruta.startswith(ruta_nav ~ '/') %} aria-current="page"{% endif %}>{{ nombre_nav }}</a>{% endfor %}
+      {% if cfg.apoyo and cfg.apoyo.url %}<a class="nav-apoya" href="{{ url('apoya') }}"{% if ruta.startswith('apoya/') %} aria-current="page"{% endif %}>Apoya</a>{% endif %}
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+{% block contenido %}{% endblock %}
+</main>
+{% block franja %}
+{% if cfg.kit_form_action %}{% import "macros.html" as mb %}
+<section class="banda-boletin" aria-label="Boletín semanal">
+  <div class="envoltura">{{ mb.boletin(cfg) }}</div>
+</section>{% endif %}
+<section class="franja" aria-labelledby="franja-titulo">
+  <div class="envoltura">
+    <div>
+      <h2 id="franja-titulo">Únete al canal de WhatsApp</h2>
+      <p>Avisos de cada documental nuevo, fotos de archivo y adelantos de los libros. Gratis y sin spam.</p>
+    </div>
+    <a class="boton" href="{{ cfg.whatsapp }}" target="_blank" rel="noopener">{% include "icono-whatsapp.svg" %} Unirme en WhatsApp</a>
+  </div>
+</section>
+{% endblock %}
+<footer class="pie-sitio">
+  <div class="envoltura">
+    <div>
+      <img src="{{ url('static/img/logo.png') }}" alt="#AsiFue La Historia" width="118" height="38" style="height:38px;width:auto;margin-bottom:14px">
+      <p style="margin:0;max-width:34ch">{{ cfg.lema }}</p>
+    </div>
+    <div>
+      <h4>Explorar</h4>
+      <ul>
+        <li><a href="{{ url('videos') }}">Todos los videos</a></li>
+        <li><a href="{{ url('series/asi-murieron-los-dictadores') }}">Serie: Así murieron los dictadores</a></li>
+        <li><a href="{{ url('dictadores') }}">Expedientes de dictadores</a></li>
+        <li><a href="{{ url('galeria') }}">Fotos históricas</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Leer</h4>
+      <ul>
+        <li><a href="{{ url('libros') }}">Nuestros libros</a></li>
+        <li><a href="{{ url('biblioteca') }}">Biblioteca recomendada</a></li>
+        <li><a href="{{ url('sobre') }}">Sobre el canal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Seguir</h4>
+      <ul>
+        <li><a href="{{ cfg.youtube_canal }}" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="{{ cfg.whatsapp }}" target="_blank" rel="noopener">Canal de WhatsApp</a></li>
+        <li><a href="{{ url('comunidad') }}">Comunidad</a></li>
+      </ul>
+    </div>
+    <p class="legal">© {{ cfg.anio }} {{ cfg.nombre }}. Los textos de esta web resumen nuestros documentales y se apoyan en fuentes históricas públicas. · <a href="{{ url('privacidad') }}">Privacidad</a> · <a href="{{ url('aviso-de-afiliados') }}">Aviso de afiliados</a></p>
+  </div>
+</footer>
+<script>
+(function(){var b=document.getElementById('menu-toggle'),c=document.getElementById('cabecera');if(!b)return;b.addEventListener('click',function(){var a=c.classList.toggle('abierta');b.setAttribute('aria-expanded',a?'true':'false');});})();
+</script>
+</body>
+</html>
