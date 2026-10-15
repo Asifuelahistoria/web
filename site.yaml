@@ -20,6 +20,7 @@ kit_form_action: "https://app.kit.com/forms/10046121/subscriptions"
 # Apoyo mensual: membresías del canal de YouTube (botón "Unirse").
 apoyo:
   url: "https://www.youtube.com/channel/UCdgUQ1Uqae5AkLpMtOZuXQg/join"
+  patreon: "https://www.patreon.com/AsiFueLaHistoria856"
   niveles:
     - {nombre: "Testigo del Pasado", precio: "US$2.09", lema: "La forma más sencilla de sostener el canal."}
     - {nombre: "Guardián de Historias", precio: "US$4.19", lema: "Para quien quiere estar más cerca del canal.", destacado: true}
