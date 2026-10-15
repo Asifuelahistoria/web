@@ -16,6 +16,9 @@ amazon_tag_es: "asifuelahisto-21"
 payhip_libro_dictadores: "https://payhip.com/b/FWmJM"
 precio_libro: "US$1.99"
 # Kit (boletín semanal): dirección del formulario de suscripción.
+# Google AdSense (cuenta del canal) y contador de visitas GoatCounter
+adsense_client: "ca-pub-5303446953911619"
+goatcounter: "asifuelahistoria"
 kit_form_action: "https://app.kit.com/forms/10046121/subscriptions"
 # Apoyo mensual: membresías del canal de YouTube (botón "Unirse").
 apoyo:

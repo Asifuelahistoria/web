@@ -245,6 +245,9 @@ def main():
         if cfg.get("dominio"):
             (DIST / "CNAME").write_text(cfg["dominio"] + "\n", encoding="utf-8")
         (DIST / ".nojekyll").write_text("", encoding="utf-8")
+        if cfg.get("adsense_client"):
+            pub = cfg["adsense_client"].replace("ca-", "")
+            (DIST / "ads.txt").write_text(f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
 
     print(f"OK: {len(paginas)} páginas en {DIST}")
 
