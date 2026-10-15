@@ -171,6 +171,29 @@ def main():
         v["libros"] = [libro_links(lb) for lb in elegidos[:4]]
         v["temas"] = temas_v
 
+    # Blog: artículos en Markdown con cabecera YAML (content/articulos/*.md o articulo-*.md en la raíz)
+    articulos = []
+    for p in sorted((ROOT / "content" / "articulos").glob("*.md")) + sorted(ROOT.glob("articulo-*.md")):
+        raw = p.read_text(encoding="utf-8")
+        _, cab, cuerpo = raw.split("---", 2)
+        a = yaml.safe_load(cab)
+        if a.get("borrador") and not PREVIEW:
+            continue
+        a["html"] = md(cuerpo)
+        a["respuesta_html"] = md(a.get("respuesta", ""))
+        a["fecha_larga"] = fecha_larga(str(a["fecha"]))
+        a["minutos"] = max(1, round(len(cuerpo.split()) / 220))
+        t = " " + " ".join(normalizar(w) for w in a.get("palabras", [])) + " " + normalizar(a["titulo"]) + " "
+        libs, vistos = [], set()
+        for tm in temas:
+            if not tm.get("general") and any(tiene(t, w) for w in tm["palabras"]):
+                for lb in tm["libros"]:
+                    if lb["titulo"] not in vistos:
+                        vistos.add(lb["titulo"]); libs.append(lb)
+        a["libros"] = [libro_links(lb) for lb in libs[:4]]
+        articulos.append(a)
+    articulos.sort(key=lambda a: str(a["fecha"]), reverse=True)
+
     paginas = []
 
     def render(tpl, out, **ctx):
@@ -220,6 +243,11 @@ def main():
     render("404.html", "404.html", **comun)
     render("gracias.html", "gracias/index.html", **comun)
     render("apoya.html", "apoya/index.html", **comun)
+    if articulos:
+        render("blog.html", "blog/index.html", articulos=articulos, **comun)
+        for a in articulos:
+            otros = [o for o in articulos if o is not a][:5]
+            render("articulo.html", f"blog/{a['slug']}/index.html", a=a, otros=otros, **comun)
     for v in videos:
         if v.get("libros"):
             render("libros-video.html", f"v/{v['id']}/index.html", v=v, **comun)

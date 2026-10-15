@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% set titulo = "Blog" %}
+{% set descripcion = "Artículos de Así Fue la Historia: las historias de nuestros documentales contadas por escrito, con fechas, fuentes y libros para profundizar." %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:28px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><span>Blog</span></nav>
+    <span class="etiqueta oro">Blog</span>
+    <h1>Historias para <span>leer</span></h1>
+    <p class="bajada">Los casos de nuestros documentales, contados por escrito: qué pasó, qué se sabe, qué no y dónde profundizar.</p>
+  </div>
+</section>
+<section class="seccion">
+  <div class="envoltura">
+    <div class="lista-blog">
+      {% for a in articulos %}
+      <a class="tarjeta-blog" href="{{ url('blog/' ~ a.slug) }}">
+        {% if a.video %}<img src="https://i.ytimg.com/vi/{{ a.video }}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">{% endif %}
+        <div>
+          <span class="etiqueta oro">{{ a.categoria }} · {{ a.minutos }} min</span>
+          <h2>{{ a.titulo }}</h2>
+          <p>{{ a.descripcion }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
