@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% set titulo = "Apoya Así Fue la Historia" %}
-{% set descripcion = "Con un aporte mensual desde US$3 mantienes vivos documentales independientes y gratuitos sobre la historia de América Latina." %}
+{% set descripcion = "Con un aporte mensual desde US$2.09 mantienes vivos documentales independientes y gratuitos sobre la historia de América Latina." %}
 {% block contenido %}
 <section class="portada" style="padding-bottom:40px">
   <div class="envoltura" style="max-width:900px">
@@ -29,6 +29,15 @@
       <ul>{% for b in cfg.apoyo.beneficios %}<li>{{ b }}</li>{% endfor %}</ul>
       <p>Cada nivel suma beneficios al anterior. Al pulsar «Unirme» se abre la membresía oficial en YouTube: pagas con tu cuenta de Google, en tu moneda local (el precio puede variar según el país) y cancelas cuando quieras.</p>
     </div>
+    {% if cfg.apoyo.patreon %}
+    <div class="beneficios-miembro" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+      <div style="min-width:0;max-width:56ch">
+        <h3>¿Prefieres Patreon?</h3>
+        <p style="margin:0">También puedes apoyarnos y acceder a material exclusivo desde nuestra página de Patreon, con tarjeta o PayPal.</p>
+      </div>
+      <a class="boton fantasma" href="{{ cfg.apoyo.patreon }}" target="_blank" rel="noopener">Apoyar en Patreon</a>
+    </div>
+    {% endif %}
   </div>
 </section>
 <section class="seccion" aria-labelledby="porque">
