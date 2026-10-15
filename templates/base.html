@@ -34,6 +34,7 @@
     <nav class="menu" id="menu" aria-label="Principal">
       {% set nav = [('videos','Videos'),('series/asi-murieron-los-dictadores','Así murieron'),('dictadores','Expedientes'),('galeria','Fotos'),('libros','Libros'),('biblioteca','Biblioteca'),('comunidad','Comunidad')] %}
       {% for ruta_nav, nombre_nav in nav %}<a href="{{ url(ruta_nav) }}"{% if ruta.startswith(ruta_nav ~ '/') %} aria-current="page"{% endif %}>{{ nombre_nav }}</a>{% endfor %}
+      {% if cfg.apoyo and cfg.apoyo.url %}<a class="nav-apoya" href="{{ url('apoya') }}"{% if ruta.startswith('apoya/') %} aria-current="page"{% endif %}>Apoya</a>{% endif %}
     </nav>
   </div>
 </header>

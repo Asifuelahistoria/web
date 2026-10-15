@@ -231,3 +231,32 @@ h3 { font-size: 1.75rem; line-height: 1; }
 .boletin small { color: var(--ceniza); font-size: .85rem; }
 .boletin.compacto { grid-template-columns: minmax(0, 1fr); padding: 24px; border: 1px solid var(--oro); border-radius: 4px; background: var(--noche); }
 .oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Apoya */
+.planes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: stretch; }
+@media (max-width: 860px) { .planes { grid-template-columns: minmax(0, 1fr); max-width: 460px; margin-inline: auto; } }
+.plan { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 30px 26px; background: var(--carbon); border: 1px solid var(--linea); border-radius: 4px; }
+.plan.destacado { border-color: var(--oro); background: var(--carbon-2); }
+.plan .sello { position: absolute; top: -12px; left: 26px; }
+.plan h3 { font-size: 2rem; margin: 0; }
+.plan .precio { font-family: var(--display); font-size: 3.4rem; line-height: 1; margin: 0; color: var(--oro); }
+.plan .precio small { font-family: var(--mono, monospace); font-size: .9rem; color: var(--ceniza); }
+.plan .lema { margin: 0; color: var(--ceniza); }
+.plan ul { margin: 4px 0 8px; padding-left: 1.1em; display: grid; gap: 6px; flex: 1; }
+.plan .boton { text-align: center; justify-content: center; }
+.plan .anual { color: var(--ceniza); text-align: center; }
+.razones { display: grid; gap: 12px; padding-left: 1.1em; font-size: 1.1rem; }
+.nav-apoya { color: var(--noche) !important; background: var(--oro); padding: 6px 12px !important; border-radius: 3px; }
+.planes.cuatro { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1000px) { .planes.cuatro { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .planes.cuatro { grid-template-columns: minmax(0, 1fr); } }
+.planes.cuatro .lema { flex: 1; }
+.beneficios-miembro { margin-top: 32px; padding: 28px; border: 1px solid var(--linea); border-radius: 4px; background: var(--carbon); }
+.beneficios-miembro h3 { margin: 0 0 12px; font-size: 1.8rem; }
+.beneficios-miembro ul { columns: 2; column-gap: 40px; padding-left: 1.1em; margin: 0 0 14px; }
+@media (max-width: 700px) { .beneficios-miembro ul { columns: 1; } }
+.beneficios-miembro li { margin-bottom: 6px; break-inside: avoid; }
+.beneficios-miembro p { margin: 0; color: var(--ceniza); font-size: .95rem; }
+.planes.cuatro .precio { font-size: clamp(2.2rem, 2.8vw, 2.8rem); white-space: nowrap; }
+.planes.cuatro h3 { font-size: 1.7rem; }
+@media (min-width: 1001px) { .planes.cuatro h3 { min-height: 2.2em; } }
