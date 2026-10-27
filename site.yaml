@@ -39,7 +39,7 @@ redes:
   - {id: spotify, nombre: "Podcast en Spotify", texto: "Escucha los documentales donde quieras", color: "#1DB954", url: "https://open.spotify.com/show/5lSnoKA50MYgEFVVHTCDqA"}
   - {id: tiktok, nombre: "TikTok", texto: "La historia en un minuto", color: "#000000", url: "https://www.tiktok.com/@asifuelahistoriar"}
   - {id: instagram, nombre: "Instagram", texto: "Fotos de archivo y adelantos", color: "#D62976", url: "https://www.instagram.com/asifuelahistoria/"}
-  - {id: facebook, nombre: "Facebook", texto: "Comenta y comparte con tu familia", color: "#1877F2", url: "https://www.facebook.com/profile.php?id=61550581982108"}
+  - {id: facebook, nombre: "Facebook", texto: "Comenta y comparte con tu familia", color: "#1877F2", url: "https://www.facebook.com/asifuelahistoriaoficial"}
   - {id: x, nombre: "X (Twitter)", texto: "Efemérides y datos del día", color: "#000000", url: "https://x.com/AsiFueHistoria"}
   - {id: whatsapp, nombre: "Canal de WhatsApp", texto: "Aviso de cada documental nuevo", color: "#25D366", url: "https://whatsapp.com/channel/0029Vb6QNaZKGGGRTJmgoo00"}
   - {id: whatsapp-grupo, icono: whatsapp, nombre: "Grupo de WhatsApp", texto: "Conversa con la comunidad", color: "#128C7E", url: ""}
