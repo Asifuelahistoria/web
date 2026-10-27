@@ -243,6 +243,7 @@ def main():
     render("404.html", "404.html", **comun)
     render("gracias.html", "gracias/index.html", **comun)
     render("apoya.html", "apoya/index.html", **comun)
+    render("enlaces.html", "enlaces/index.html", articulos=articulos, **comun)
     if articulos:
         render("blog.html", "blog/index.html", articulos=articulos, **comun)
         for a in articulos:

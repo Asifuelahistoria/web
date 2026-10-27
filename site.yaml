@@ -30,3 +30,16 @@ apoyo:
     - {nombre: "Historiador", precio: "US$6.99", lema: "Más beneficios y más contenido exclusivo."}
     - {nombre: "Investigador", precio: "US$14.99", lema: "El nivel más alto: todo lo que ofrecemos a los miembros."}
   beneficios: ["Insignias de lealtad junto a tu nombre en comentarios y chats", "Respuesta prioritaria a tus comentarios", "Acceso anticipado a los videos nuevos", "Encuestas y publicaciones exclusivas para miembros", "Videos y Shorts solo para miembros (niveles superiores)", "Menciones a los miembros"]
+
+# Página /enlaces/ (tipo Linktree). Las redes sin url no se muestran. Orden = orden en la página.
+suscriptores: "94.700"
+avatar: "https://yt3.googleusercontent.com/c8Bgl2eo_tkszSUi346WmV2p-P3PDSt1sGmhi3Gm3E-1kKhVuYrLkgNWJ5YoE9do9bZcHZCMnA=s240-c-k-c0x00ffffff-no-rj"
+redes:
+  - {id: youtube, nombre: "YouTube", texto: "Documentales completos cada semana", color: "#FF0000", url: "https://www.youtube.com/@Asifuelahistoria?sub_confirmation=1"}
+  - {id: spotify, nombre: "Podcast en Spotify", texto: "Escucha los documentales donde quieras", color: "#1DB954", url: "https://open.spotify.com/show/5lSnoKA50MYgEFVVHTCDqA"}
+  - {id: tiktok, nombre: "TikTok", texto: "La historia en un minuto", color: "#000000", url: "https://www.tiktok.com/@asifuelahistoriar"}
+  - {id: instagram, nombre: "Instagram", texto: "Fotos de archivo y adelantos", color: "#D62976", url: "https://www.instagram.com/asifuelahistoria/"}
+  - {id: facebook, nombre: "Facebook", texto: "Comenta y comparte con tu familia", color: "#1877F2", url: "https://www.facebook.com/profile.php?id=61550581982108"}
+  - {id: x, nombre: "X (Twitter)", texto: "Efemérides y datos del día", color: "#000000", url: "https://x.com/AsiFueHistoria"}
+  - {id: whatsapp, nombre: "Canal de WhatsApp", texto: "Aviso de cada documental nuevo", color: "#25D366", url: "https://whatsapp.com/channel/0029Vb6QNaZKGGGRTJmgoo00"}
+  - {id: whatsapp-grupo, icono: whatsapp, nombre: "Grupo de WhatsApp", texto: "Conversa con la comunidad", color: "#128C7E", url: ""}
