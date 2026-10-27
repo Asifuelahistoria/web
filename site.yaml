@@ -33,7 +33,7 @@ apoyo:
 
 # Página /enlaces/ (tipo Linktree). Las redes sin url no se muestran. Orden = orden en la página.
 suscriptores: "94.700"
-avatar: "https://yt3.googleusercontent.com/c8Bgl2eo_tkszSUi346WmV2p-P3PDSt1sGmhi3Gm3E-1kKhVuYrLkgNWJ5YoE9do9bZcHZCMnA=s240-c-k-c0x00ffffff-no-rj"
+avatar: "/static/img/avatar.png"
 redes:
   - {id: youtube, nombre: "YouTube", texto: "Documentales completos cada semana", color: "#FF0000", url: "https://www.youtube.com/@Asifuelahistoria?sub_confirmation=1"}
   - {id: spotify, nombre: "Podcast en Spotify", texto: "Escucha los documentales donde quieras", color: "#1DB954", url: "https://open.spotify.com/show/5lSnoKA50MYgEFVVHTCDqA"}
