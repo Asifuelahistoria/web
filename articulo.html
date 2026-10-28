@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+{% set titulo = a.titulo %}
+{% set descripcion = a.descripcion %}
+{% set og_tipo = "article" %}
+{% set og_imagen = "https://i.ytimg.com/vi/" ~ a.video ~ "/hqdefault.jpg" if a.video else none %}
+{% block jsonld %}
+<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"Article","headline":a.titulo,"description":a.descripcion,"inLanguage":"es","datePublished":a.fecha|string,"dateModified":(a.actualizado or a.fecha)|string,"image":og_imagen,"author":{"@type":"Person","name":"Pedro Luis Burgos"},"publisher":{"@type":"Organization","name":cfg.nombre},"mainEntityOfPage":canon} | tojson }}</script>
+{% endblock %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:28px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><a href="{{ url('blog') }}">Blog</a><span>/</span><span>{{ a.categoria }}</span></nav>
+    <span class="etiqueta oro">{{ a.categoria }} · {{ a.fecha_larga }} · {{ a.minutos }} min de lectura</span>
+    <h1 style="font-size:clamp(2.2rem,5.5vw,4rem);max-width:24ch">{{ a.titulo }}</h1>
+    <p class="art-firma">Por Pedro Luis Burgos · Así Fue la Historia</p>
+  </div>
+</section>
+<div class="envoltura articulo">
+  <article class="prosa">
+    <div class="respuesta-corta"><span class="etiqueta oro">En pocas palabras</span>{{ a.respuesta_html | safe }}</div>
+    {% if a.datos %}<dl class="ficha-datos">{% for k, v in a.datos %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}</dl>{% endif %}
+    {{ a.html | safe }}
+    {{ m.cta_libro(cfg, url) }}
+    {% if a.video %}
+    <h2>Míralo en video</h2>
+    {% if not preview %}<iframe class="video" src="https://www.youtube-nocookie.com/embed/{{ a.video }}" title="{{ a.titulo }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    {% else %}<div class="video-pendiente"><a class="boton" href="https://www.youtube.com/watch?v={{ a.video }}" target="_blank" rel="noopener">Ver en YouTube</a></div>{% endif %}
+    {% endif %}
+    {% if a.fuentes %}
+    <h2>Fuentes</h2>
+    <ul class="fuentes">{% for t, u in a.fuentes %}<li>{% if u %}<a href="{{ u }}" target="_blank" rel="noopener">{{ t }}</a>{% else %}{{ t }}{% endif %}</li>{% endfor %}</ul>
+    {% endif %}
+  </article>
+  <aside class="lateral">
+    {% if a.libros %}
+    <div class="caja">
+      <span class="etiqueta oro">Para leer más</span>
+      <ul>{% for b in a.libros %}<li><a href="{{ b.url }}" target="_blank" rel="sponsored noopener">{{ b.titulo }}</a><small>{{ b.autor }} · <a href="{{ b.url_es }}" target="_blank" rel="sponsored noopener">Amazon España</a></small></li>{% endfor %}</ul>
+      <p style="font-size:.8rem">Enlaces de afiliado: si compras, el canal recibe una pequeña comisión.</p>
+    </div>
+    {% endif %}
+    {% if otros %}
+    <div class="caja">
+      <span class="etiqueta oro">Más del blog</span>
+      <ul>{% for o in otros %}<li><a href="{{ url('blog/' ~ o.slug) }}">{{ o.titulo }}</a><small>{{ o.categoria }}</small></li>{% endfor %}</ul>
+    </div>
+    {% endif %}
+    <div class="caja">
+      <h3>El libro</h3>
+      <p>Así murieron los dictadores: todos los expedientes en un libro digital barato.</p>
+      <a class="boton" href="{{ cfg.payhip_libro_dictadores or url('libros') }}"{% if cfg.payhip_libro_dictadores %} target="_blank" rel="noopener"{% endif %}>Comprar por {{ cfg.precio_libro }}</a>
+    </div>
+  </aside>
+</div>
+{% endblock %}

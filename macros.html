@@ -1,0 +1,57 @@
+{% macro ficha(d, url) -%}
+<a class="ficha" href="{{ url('dictadores/' ~ d.slug) }}">
+  <div class="cabeza"><span class="etiqueta">{{ d.pais }}</span><span class="etiqueta oro">{{ d.anio_muerte }}</span></div>
+  <div style="display:grid;gap:10px;align-content:start">
+    <h3>{{ d.nombre }}</h3>
+    <p>{{ d.resumen }}</p>
+  </div>
+  <div class="pie"><span>{{ d.poder }}</span><span class="sello">{{ d.sello }}</span></div>
+</a>
+{%- endmacro %}
+
+{% macro miniatura(e, url, cfg) -%}
+<a class="miniatura" href="{{ url('videos/' ~ e.slug) }}" aria-label="Ver {{ e.titulo }}">
+  {% if e.youtube_id %}<img src="https://i.ytimg.com/vi/{{ e.youtube_id }}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">{% endif %}
+  <span class="play" aria-hidden="true"></span>
+  <span class="num" aria-hidden="true">{{ '%02d' % e.numero }}</span>
+</a>
+{%- endmacro %}
+
+{% macro reproductor(e, cfg, preview) -%}
+{% if e.youtube_id and not preview %}
+<iframe class="video" src="https://www.youtube-nocookie.com/embed/{{ e.youtube_id }}" title="{{ e.titulo }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% else %}
+<div class="video-pendiente">
+  <p>{% if e.youtube_id %}El video se reproduce aquí en la web publicada.{% else %}Mira este documental completo en nuestro canal de YouTube.{% endif %}</p>
+  <a class="boton" href="{% if e.youtube_id %}https://www.youtube.com/watch?v={{ e.youtube_id }}{% else %}{{ cfg.youtube_canal }}/search?query={{ e.titulo | urlencode }}{% endif %}" target="_blank" rel="noopener">Ver en YouTube</a>
+</div>
+{% endif %}
+{%- endmacro %}
+
+
+{% macro boletin(cfg, compacto=false) -%}
+<form class="boletin{% if compacto %} compacto{% endif %}" action="{{ cfg.kit_form_action }}" method="post">
+  <div class="boletin-texto">
+    <span class="etiqueta oro">Boletín semanal · gratis</span>
+    <h2>Recibe gratis el primer capítulo del libro</h2>
+    <p>Suscríbete al boletín de Así Fue la Historia: cada semana, los documentales nuevos y los libros para entender cada historia. De regalo, el capítulo de Trujillo, Somoza y Gadafi en PDF.</p>
+  </div>
+  <div class="boletin-campos">
+    <label class="oculto" for="boletin-correo{{ '-c' if compacto }}">Tu correo electrónico</label>
+    <input id="boletin-correo{{ '-c' if compacto }}" type="email" name="email_address" placeholder="Tu correo electrónico" required autocomplete="email">
+    <button class="boton" type="submit">Quiero el capítulo gratis</button>
+    <small>Sin spam. Te das de baja con un clic. <a href="/privacidad/">Privacidad</a>.</small>
+  </div>
+</form>
+{%- endmacro %}
+
+{% macro cta_libro(cfg, url) -%}
+{% if cfg.payhip_libro_dictadores %}
+<aside class="cta-libro" aria-label="Nuestro libro">
+  <span class="etiqueta oro">Nuestro libro · {{ cfg.precio_libro }}</span>
+  <h3>Así murieron los dictadores</h3>
+  <p>Todos los expedientes de la serie, ampliados con contexto, fechas y fuentes. PDF y ePub, descarga inmediata, a precio de café.</p>
+  <div class="acciones"><a class="boton" href="{{ cfg.payhip_libro_dictadores }}" target="_blank" rel="noopener">Comprar por {{ cfg.precio_libro }}</a><a class="boton fantasma" href="{{ url('libros') }}">Ver el índice</a></div>
+</aside>
+{% endif %}
+{%- endmacro %}
