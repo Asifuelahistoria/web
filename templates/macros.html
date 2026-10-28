@@ -44,3 +44,14 @@
   </div>
 </form>
 {%- endmacro %}
+
+{% macro cta_libro(cfg, url) -%}
+{% if cfg.payhip_libro_dictadores %}
+<aside class="cta-libro" aria-label="Nuestro libro">
+  <span class="etiqueta oro">Nuestro libro · {{ cfg.precio_libro }}</span>
+  <h3>Así murieron los dictadores</h3>
+  <p>Todos los expedientes de la serie, ampliados con contexto, fechas y fuentes. PDF y ePub, descarga inmediata, a precio de café.</p>
+  <div class="acciones"><a class="boton" href="{{ cfg.payhip_libro_dictadores }}" target="_blank" rel="noopener">Comprar por {{ cfg.precio_libro }}</a><a class="boton fantasma" href="{{ url('libros') }}">Ver el índice</a></div>
+</aside>
+{% endif %}
+{%- endmacro %}

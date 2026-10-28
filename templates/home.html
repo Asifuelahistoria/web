@@ -72,7 +72,7 @@
       <h2 id="libro-titulo">La serie completa, para leer</h2>
       <p class="bajada">Los guiones de la serie, ampliados con contexto, fechas y fuentes, en un libro digital a precio de café.</p>
       <div class="acciones">
-        <a class="boton" href="{{ url('libros') }}">{% if cfg.payhip_libro_dictadores %}Comprar el libro{% else %}Ver el libro{% endif %}</a>
+        {% if cfg.payhip_libro_dictadores %}<a class="boton" href="{{ cfg.payhip_libro_dictadores }}" target="_blank" rel="noopener">Comprar por {{ cfg.precio_libro }}</a><a class="boton fantasma" href="{{ url('libros') }}">Ver el índice</a>{% else %}<a class="boton" href="{{ url('libros') }}">Ver el libro</a>{% endif %}
       </div>
     </div>
   </div>

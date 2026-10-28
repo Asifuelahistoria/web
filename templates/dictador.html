@@ -32,6 +32,7 @@
 
 <div class="envoltura articulo">
   <div class="prosa">{{ d.html | safe }}
+    {{ m.cta_libro(cfg, url) }}
     {% for e in d.eps[:1] %}
     <h2>Míralo en video</h2>
     {{ m.reproductor(e, cfg, preview) }}
@@ -67,7 +68,7 @@
     <div class="caja">
       <h3>El libro de la serie</h3>
       <p>Todos los expedientes, ampliados, en un libro digital barato.</p>
-      <a class="boton fantasma" href="{{ url('libros') }}">Ver el libro</a>
+      <a class="boton" href="{{ cfg.payhip_libro_dictadores or url('libros') }}"{% if cfg.payhip_libro_dictadores %} target="_blank" rel="noopener"{% endif %}>Comprar por {{ cfg.precio_libro }}</a>
     </div>
   </aside>
 </div>

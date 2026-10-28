@@ -39,7 +39,7 @@
           <h3>Así murieron los dictadores</h3>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:8px">
-          <a class="boton" href="{{ url('libros') }}">Ver el libro</a>
+          <a class="boton" href="{{ cfg.payhip_libro_dictadores or url('libros') }}"{% if cfg.payhip_libro_dictadores %} target="_blank" rel="noopener"{% endif %}>Comprar por {{ cfg.precio_libro }}</a>
         </div>
       </article>
     </div>

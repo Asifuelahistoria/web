@@ -21,6 +21,7 @@
     <div class="respuesta-corta"><span class="etiqueta oro">En pocas palabras</span>{{ a.respuesta_html | safe }}</div>
     {% if a.datos %}<dl class="ficha-datos">{% for k, v in a.datos %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}</dl>{% endif %}
     {{ a.html | safe }}
+    {{ m.cta_libro(cfg, url) }}
     {% if a.video %}
     <h2>Míralo en video</h2>
     {% if not preview %}<iframe class="video" src="https://www.youtube-nocookie.com/embed/{{ a.video }}" title="{{ a.titulo }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -48,7 +49,7 @@
     <div class="caja">
       <h3>El libro</h3>
       <p>Así murieron los dictadores: todos los expedientes en un libro digital barato.</p>
-      <a class="boton fantasma" href="{{ url('libros') }}">Ver el libro</a>
+      <a class="boton" href="{{ cfg.payhip_libro_dictadores or url('libros') }}"{% if cfg.payhip_libro_dictadores %} target="_blank" rel="noopener"{% endif %}>Comprar por {{ cfg.precio_libro }}</a>
     </div>
   </aside>
 </div>
