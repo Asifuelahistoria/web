@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% import "efe-macros.html" as fm %}
+{% set titulo = "Efemérides: ¿qué pasó hoy en la historia de América Latina?" %}
+{% set descripcion = "Tal día como hoy: golpes, revoluciones, dictaduras y hechos clave de la historia política de América Latina, día por día, con fuentes y documentales." %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:28px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><span>Efemérides</span></nav>
+    <span class="etiqueta oro">Hoy en la historia</span>
+    <h1>Tal día <span>como hoy</span></h1>
+    <p class="bajada">Lo que pasó en esta fecha en la historia política de América Latina, con fuentes y, cuando lo tenemos, el documental del canal.</p>
+  </div>
+</section>
+<section class="seccion" aria-labelledby="hoy-t">
+  <div class="envoltura">
+    <div class="seccion-cabeza"><div><span class="etiqueta oro" id="hoy-fecha">Hoy</span><h2 id="hoy-t">Efemérides de hoy</h2></div></div>
+    <div class="efe-lista" id="hoy-lista"><p class="bajada" id="hoy-vacio">Elige un día en el calendario.</p></div>
+  </div>
+</section>
+{% for m in efe_meses %}
+<section class="seccion" aria-labelledby="mes-{{ m.mes }}">
+  <div class="envoltura">
+    <div class="seccion-cabeza"><div><span class="etiqueta oro">Calendario</span><h2 id="mes-{{ m.mes }}" style="text-transform:capitalize">{{ m.nombre }}</h2></div></div>
+    <div class="efe-cal">{% for x in m.dias %}<a href="{{ url('efemerides/' ~ x.slug) }}" data-k="{{ x.mes }}-{{ x.dia }}" title="Efemérides del {{ x.nombre }}">{{ x.dia }}</a>{% endfor %}</div>
+  </div>
+</section>
+{% endfor %}
+<script>
+(function(){
+  var MESES=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+  var d=new Date(),k=(d.getMonth()+1)+"-"+d.getDate();
+  document.getElementById("hoy-fecha").textContent="Hoy, "+d.getDate()+" de "+MESES[d.getMonth()];
+  var a=document.querySelector('.efe-cal a[data-k="'+k+'"]');if(a)a.classList.add("hoy");
+  fetch("{{ url('efemerides.json') }}").then(function(r){return r.json()}).then(function(j){
+    var l=j[k];if(!l)return;var box=document.getElementById("hoy-lista");box.innerHTML="";
+    l.forEach(function(e){
+      var el=document.createElement("article");el.className="efe"+(e.destacada?" destacada":"");
+      var fig=document.createElement("figure");
+      if(e.imagen||e.video){var im=document.createElement("img");im.loading="lazy";im.alt=e.titulo;im.src=e.imagen||("https://i.ytimg.com/vi/"+e.video+"/hqdefault.jpg");fig.appendChild(im)}
+      else{var f=document.createElement("div");f.className="efe-anio";f.textContent=e.anio;fig.appendChild(f)}
+      var tx=document.createElement("div");
+      var et=document.createElement("span");et.className="etiqueta oro";et.textContent=e.anio+" · "+e.pais;
+      var h=document.createElement("h3");h.textContent=e.titulo;var p=document.createElement("p");p.textContent=e.texto;
+      tx.append(et,h,p);
+      var ac=document.createElement("div");ac.className="acciones";
+      if(e.video){var b=document.createElement("a");b.className="boton";b.href="https://www.youtube.com/watch?v="+e.video;b.target="_blank";b.rel="noopener";b.textContent="Ver el documental";ac.appendChild(b)}
+      var m=document.createElement("a");m.className="boton fantasma";m.href="{{ url('efemerides') }}"+e.slug+"/";m.textContent="Más del "+e.slug.replace("-"," de ");ac.appendChild(m);
+      tx.appendChild(ac);el.append(fig,tx);box.appendChild(el)});
+  }).catch(function(){});
+})();
+</script>
+{% endblock %}

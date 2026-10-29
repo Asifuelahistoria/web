@@ -194,6 +194,24 @@ def main():
         articulos.append(a)
     articulos.sort(key=lambda a: str(a["fecha"]), reverse=True)
 
+    # Efemérides: efemerides-MM.yaml (raíz o content/), 2-3 por día
+    efemerides = {}
+    for p in sorted((ROOT / "content").glob("efemerides-*.yaml")) + sorted(ROOT.glob("efemerides-*.yaml")):
+        dat = load_yaml(p) or {}
+        mes = int(dat["mes"])
+        for e in dat.get("entradas", []):
+            e["mes"] = mes
+            e["mes_nombre"] = MESES[mes - 1]
+            e["slug_dia"] = f"{int(e['dia'])}-{MESES[mes - 1]}"
+            efemerides.setdefault((mes, int(e["dia"])), []).append(e)
+    for k, lst in efemerides.items():
+        lst.sort(key=lambda e: (not e.get("destacada"), e["anio"]))
+    efe_dias = [{"mes": m, "dia": d, "slug": f"{d}-{MESES[m-1]}", "nombre": f"{d} de {MESES[m-1]}",
+                 "lista": efemerides[(m, d)]} for (m, d) in sorted(efemerides)]
+    efe_meses = []
+    for m in sorted({m for (m, _) in efemerides}):
+        efe_meses.append({"mes": m, "nombre": MESES[m - 1], "dias": [x for x in efe_dias if x["mes"] == m]})
+
     paginas = []
 
     def render(tpl, out, **ctx):
@@ -249,6 +267,20 @@ def main():
         for a in articulos:
             otros = [o for o in articulos if o is not a][:5]
             render("articulo.html", f"blog/{a['slug']}/index.html", a=a, otros=otros, **comun)
+    if efe_dias:
+        render("efemerides.html", "efemerides/index.html", efe_meses=efe_meses, **comun)
+        for i, x in enumerate(efe_dias):
+            render("efemeride-dia.html", f"efemerides/{x['slug']}/index.html", x=x,
+                   ant=efe_dias[i - 1] if i > 0 else None,
+                   sig=efe_dias[i + 1] if i + 1 < len(efe_dias) else None, **comun)
+        (DIST / "efemerides.json").write_text(json.dumps(
+            {f"{x['mes']}-{x['dia']}": [{"anio": e["anio"], "titulo": e["titulo"], "pais": e.get("pais", ""),
+                                          "texto": e.get("texto", ""), "imagen": e.get("imagen", ""),
+                                          "video": e.get("video", ""), "articulo": e.get("articulo", ""),
+                                          "destacada": bool(e.get("destacada")), "slug": x["slug"]}
+                                         for e in x["lista"]] for x in efe_dias}, ensure_ascii=False),
+            encoding="utf-8")
+        print(f"Efemérides: {sum(len(x['lista']) for x in efe_dias)} en {len(efe_dias)} días")
     for v in videos:
         if v.get("libros"):
             render("libros-video.html", f"v/{v['id']}/index.html", v=v, **comun)

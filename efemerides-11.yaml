@@ -1,0 +1,898 @@
+mes: 11
+entradas:
+- dia: 1
+  anio: 1979
+  titulo: Golpe de Natusch Busch y masacre de Todos Santos en Bolivia
+  pais: Bolivia
+  texto: El coronel Alberto Natusch Busch derrocó al presidente interino Walter Guevara Arze. La resistencia popular y la huelga general fueron reprimidas con tanques y disparos en La Paz, con decenas de muertos y desaparecidos. El régimen duró apenas 16 días.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/All_Saints%27_Massacre
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/b/bc/Alberto_Natusch_Busch2.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Alberto_Natusch_Busch2.png
+  credito: Boliviano1952 · CC BY-SA 4.0 · Wikimedia Commons
+- dia: 1
+  anio: 1950
+  titulo: Nacionalistas puertorriqueños atacan la residencia de Truman
+  pais: Puerto Rico, Estados Unidos
+  texto: Oscar Collazo y Griselio Torresola, del Partido Nacionalista de Puerto Rico, intentaron entrar armados en la Blair House de Washington, donde vivía el presidente Harry S. Truman. En el tiroteo murieron Torresola y un policía; Collazo fue capturado y condenado.
+  fuente:
+  - HISTORY
+  - https://history.com/this-day-in-history/November-1/an-assassination-attempt-threatens-president-harry-s-truman
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/0/0b/TRUMAN_58-766-06_%28cropped%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:TRUMAN_58-766-06_%28cropped%29.jpg
+  credito: National Archives (EE. UU.) · Dominio público · Wikimedia Commons
+- dia: 2
+  anio: 1963
+  titulo: Asesinan a Ngô Đình Diệm tras un golpe en Vietnam del Sur
+  pais: Vietnam del Sur, Estados Unidos
+  texto: Un día después del golpe militar que contó con el visto bueno de Washington, el presidente Ngô Đình Diệm y su hermano Ngô Đình Nhu fueron detenidos y ejecutados por los militares. Su muerte profundizó la implicación de Estados Unidos en la guerra de Vietnam, un episodio clave de la Guerra Fría.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Arrest_and_assassination_of_Ngo_Dinh_Diem
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/President_NGO-DINH-DIEM_of_the_Republic_of_Viet-Nam.jpg/960px-President_NGO-DINH-DIEM_of_the_Republic_of_Viet-Nam.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:President_NGO-DINH-DIEM_of_the_Republic_of_Viet-Nam.jpg
+  credito: Embajada de Vietnam del Sur · Dominio público · Wikimedia Commons
+- dia: 2
+  anio: 1917
+  titulo: Gran Bretaña emite la Declaración Balfour
+  pais: Reino Unido, Palestina
+  texto: En una carta dirigida a Lord Rothschild, el canciller británico Arthur Balfour expresó el apoyo de su gobierno al establecimiento de un hogar nacional para el pueblo judío en Palestina. El documento sigue siendo uno de los antecedentes más debatidos del conflicto árabe-israelí.
+  fuente:
+  - Avalon Project (Yale)
+  - https://avalon.law.yale.edu/20th_Century/balfour.asp
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Balfour_declaration_unmarked.jpg/960px-Balfour_declaration_unmarked.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Balfour_declaration_unmarked.jpg
+  credito: Gobierno del Reino Unido · Dominio público · Wikimedia Commons
+- dia: 3
+  anio: 1903
+  titulo: Panamá se separa de Colombia
+  pais: Panamá, Colombia
+  texto: Líderes panameños proclamaron la separación del istmo de Colombia, con el respaldo de buques de guerra estadounidenses que impidieron el desembarco de tropas colombianas. Días después, Estados Unidos firmó con el nuevo país el tratado que le dio el control de la zona del futuro canal.
+  fuente:
+  - TVN Panamá
+  - https://www.tvn-2.com/nacionales/3-de-noviembre-de-1903-separacion-panama-de-colombia-nacimiento-nacion-legado-historico_1_2163497.html
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/5/5c/Acta_de_independencia_de_Panam%C3%A1_1903.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Acta_de_independencia_de_Panam%C3%A1_1903.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 3
+  anio: 1970
+  titulo: Salvador Allende asume la presidencia de Chile
+  pais: Chile
+  texto: Tras ser ratificado por el Congreso, el socialista Salvador Allende juró como presidente al frente de la Unidad Popular. Fue el primer marxista en llegar al poder por elecciones en América Latina; su gobierno terminó con el golpe militar del 11 de septiembre de 1973.
+  fuente:
+  - El Ciudadano
+  - https://www.elciudadano.com/?p=913022
+  video: Pu6ONu6ViiM
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/0/0d/Salvador_Allende_Gossens-.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Salvador_Allende_Gossens-.jpg
+  credito: Biblioteca del Congreso Nacional de Chile · CC BY 3.0 CL · Wikimedia Commons
+- dia: 4
+  anio: 1964
+  titulo: Golpe de René Barrientos contra Paz Estenssoro
+  pais: Bolivia
+  texto: El vicepresidente y general René Barrientos encabezó junto al general Alfredo Ovando el golpe que derrocó a Víctor Paz Estenssoro y puso fin a doce años de gobiernos del MNR. Se abrió así un largo ciclo de regímenes militares en Bolivia.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/1964_Bolivian_coup_d%27%C3%A9tat
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/1/14/Ren%C3%A9_Barrientos_1.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Ren%C3%A9_Barrientos_1.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 4
+  anio: 1969
+  titulo: Muere Carlos Marighella en una emboscada en São Paulo
+  pais: Brasil
+  texto: El fundador de la guerrilla urbana Acción Libertadora Nacional y autor del Minimanual del guerrillero urbano murió abatido por agentes de la dictadura brasileña en una emboscada dirigida por el comisario Sérgio Fleury.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Carlos_Marighella
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/2/2b/Marighella_foto3_deputado_46-47_apeerj_%28cropped%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Marighella_foto3_deputado_46-47_apeerj_%28cropped%29.jpg
+  credito: Arquivo Público do Estado do Rio de Janeiro · Dominio público · Wikimedia Commons
+- dia: 5
+  anio: 1811
+  titulo: Primer Grito de Independencia en San Salvador
+  pais: El Salvador
+  texto: Un grupo de criollos encabezado por el sacerdote José Matías Delgado y los hermanos Aguilar se levantó contra las autoridades coloniales en San Salvador. El movimiento fue sofocado, pero se recuerda como el primer intento independentista de Centroamérica.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/1811_Independence_Movement
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Painting_of_Jose_Matias_Delgado.jpg/960px-Painting_of_Jose_Matias_Delgado.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Painting_of_Jose_Matias_Delgado.jpg
+  credito: Rafael Beltranena · Dominio público · Wikimedia Commons
+- dia: 5
+  anio: 2006
+  titulo: Daniel Ortega gana las elecciones y regresa al poder
+  pais: Nicaragua
+  texto: Dieciséis años después de perder ante Violeta Chamorro, el líder sandinista Daniel Ortega ganó la presidencia con alrededor del 38 % de los votos, gracias a una reforma que permitía vencer en primera vuelta con ese porcentaje. Desde entonces no ha dejado el cargo.
+  fuente:
+  - Wikipedia
+  - https://EN.wikipedia.com/wiki/2006_Nicaraguan_general_election
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/a/a5/Daniel_Ortega_on_July_20%2C_2024_%282%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Daniel_Ortega_on_July_20%2C_2024_%282%29.jpg
+  credito: State Duma of the Russian Federation · CC BY 4.0 · Wikimedia Commons
+- dia: 6
+  anio: 1985
+  titulo: El M-19 toma el Palacio de Justicia en Bogotá
+  pais: Colombia
+  texto: Un comando del M-19 asaltó la sede de la Corte Suprema y tomó rehenes. La retoma del Ejército, que duró hasta el día siguiente, dejó cerca de un centenar de muertos, entre ellos once magistrados, además de desaparecidos cuyo destino sigue investigándose.
+  fuente:
+  - Corte Suprema de Justicia de Colombia
+  - https://cortesuprema.gov.co/holocausto-corte-suprema-de-justicia/
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 6
+  anio: 1844
+  titulo: Se proclama la primera Constitución dominicana
+  pais: República Dominicana
+  texto: En San Cristóbal se promulgó la primera Constitución de la República Dominicana, meses después de la independencia de Haití. Su artículo 210, impuesto por Pedro Santana, le otorgó poderes casi ilimitados y marcó el inicio del caudillismo en el país.
+  fuente:
+  - El Día
+  - https://eldia.com.do/efemerides-del-6-de-noviembre/
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 7
+  anio: 1917
+  titulo: Triunfa la Revolución de Octubre en Rusia
+  pais: Rusia
+  texto: Los bolcheviques de Lenin y Trotski tomaron el Palacio de Invierno en Petrogrado y derrocaron al Gobierno Provisional (el 25 de octubre según el calendario juliano). Nació así el primer Estado comunista, cuya influencia marcaría a la izquierda latinoamericana durante todo el siglo XX.
+  fuente:
+  - El Orden Mundial
+  - https://elordenmundial.com/hoy-en-la-historia/7-noviembre/7-de-noviembre-de-1917-comienza-la-revolucion-de-octubre-en-rusia/
+  video: 6iHKUn7J2Y4
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/1917petrogradsoviet_assembly.jpg/960px-1917petrogradsoviet_assembly.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:1917petrogradsoviet_assembly.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 7
+  anio: 2021
+  titulo: Nicaragua vota con los principales opositores presos
+  pais: Nicaragua
+  texto: Daniel Ortega obtuvo su cuarto mandato consecutivo, con Rosario Murillo como vicepresidenta, en unas elecciones en las que siete aspirantes opositores estaban detenidos y varios partidos habían sido inhabilitados. Estados Unidos, la Unión Europea y la OEA no reconocieron los comicios.
+  fuente:
+  - Los Andes
+  - https://www.losandes.com.ar/mundo/con-opositores-encarcelados-y-partidos-prohibidos-nicaragua-comenzo-los-comicios-para-elegir-presidente
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 8
+  anio: 1976
+  titulo: Muere Carlos Fonseca, fundador del FSLN
+  pais: Nicaragua
+  texto: Carlos Fonseca Amador, cofundador del Frente Sandinista de Liberación Nacional, murió en combate con la Guardia Nacional de Somoza en las montañas de Zinica. No vio el triunfo sandinista de 1979, pero se convirtió en el principal símbolo del movimiento.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Carlos_Fonseca
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/4/4f/Carlos_Fonseca_Amador_%281970%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Carlos_Fonseca_Amador_%281970%29.jpg
+  credito: C records · CC BY-SA 4.0 · Wikimedia Commons
+- dia: 8
+  anio: 1960
+  titulo: John F. Kennedy gana la presidencia de Estados Unidos
+  pais: Estados Unidos
+  texto: 'Kennedy derrotó por estrecho margen a Richard Nixon. Su breve mandato estuvo marcado por América Latina: la invasión de Bahía de Cochinos, la Alianza para el Progreso y la Crisis de los Misiles en Cuba.'
+  fuente:
+  - Britannica
+  - https://britannica.com/event/United-States-presidential-election-of-1960
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/960px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:John_F._Kennedy%2C_White_House_color_photo_portrait.jpg
+  credito: Cecil W. Stoughton · Dominio público · Wikimedia Commons
+- dia: 9
+  anio: 1989
+  titulo: Cae el Muro de Berlín
+  pais: Alemania
+  texto: Tras el anuncio confuso de que se flexibilizaban los viajes, miles de berlineses orientales cruzaron los pasos fronterizos y comenzaron a derribar el muro. El hecho anticipó el fin de la Guerra Fría y de la ayuda soviética a Cuba, que entró poco después en el Período Especial.
+  fuente:
+  - El Orden Mundial
+  - https://elordenmundial.com/hoy-en-la-historia/9-noviembre/9-de-noviembre-de-1989-caida-del-muro-de-berlin/
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/1/1c/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg
+  credito: Autor desconocido · CC BY-SA 3.0 · Wikimedia Commons
+- dia: 9
+  anio: 1938
+  titulo: La Noche de los Cristales Rotos en Alemania
+  pais: Alemania, Austria
+  texto: Durante la noche del 9 al 10 de noviembre, grupos nazis atacaron sinagogas, comercios y viviendas judías en Alemania y Austria. Cerca de 30.000 judíos fueron enviados a campos de concentración; fue un paso decisivo hacia el Holocausto.
+  fuente:
+  - National Geographic
+  - https://www.nationalgeographicla.com/historia/2024/01/que-fue-la-noche-de-los-cristales-rotos
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/1/17/Bundesarchiv_Bild_146-1970-041-46%2C_M%C3%BCnchen%2C_zerst%C3%B6rte_Ohel-Jakob-Synagoge.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1970-041-46%2C_M%C3%BCnchen%2C_zerst%C3%B6rte_Ohel-Jakob-Synagoge.jpg
+  credito: Bundesarchiv · CC BY-SA 3.0 de · Wikimedia Commons
+- dia: 10
+  anio: 2019
+  titulo: Evo Morales renuncia a la presidencia de Bolivia
+  pais: Bolivia
+  texto: Tras semanas de protestas por denuncias de fraude en las elecciones de octubre, un informe de la OEA sobre irregularidades y la sugerencia pública del jefe de las Fuerzas Armadas, Evo Morales dimitió tras casi 14 años en el poder. Él y sus partidarios lo calificaron de golpe de Estado; sus opositores lo negaron.
+  fuente:
+  - Emol
+  - https://www.emol.com/noticias/Internacional/2019/11/10/966759/Evo-Morales-Renuncia-Presidencia-Bolivia.html
+  video: NRf8QAyFPu8
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Evo_Morales_Ayma_%28cropped_3%29.jpg/960px-Evo_Morales_Ayma_%28cropped_3%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Evo_Morales_Ayma_%28cropped_3%29.jpg
+  credito: EneasMx · CC BY-SA 4.0 · Wikimedia Commons
+- dia: 10
+  anio: 1937
+  titulo: Getúlio Vargas instaura el Estado Novo en Brasil
+  pais: Brasil
+  texto: Con el pretexto de un supuesto complot comunista, el llamado Plan Cohen, que luego se probó falso, Vargas cerró el Congreso e impuso una nueva Constitución autoritaria. El Estado Novo gobernó por decreto hasta 1945.
+  fuente:
+  - Wikipedia
+  - https://Wikipedia.com/wiki/1937_Brazilian_coup_d%27%C3%A9tat
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 11
+  anio: 1989
+  titulo: El FMLN lanza la «ofensiva hasta el tope» sobre San Salvador
+  pais: El Salvador
+  texto: La guerrilla del FMLN inició su mayor ofensiva de la guerra civil, con ataques en San Salvador y otras ciudades que se extendieron hasta inicios de diciembre. Ningún bando logró imponerse y el resultado empujó a ambas partes hacia las negociaciones que culminaron en los Acuerdos de Chapultepec de 1992.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Final_offensive_of_1989
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 11
+  anio: 1975
+  titulo: Angola se independiza con miles de soldados cubanos en camino
+  pais: Angola, Cuba
+  texto: Agostinho Neto, líder del MPLA, proclamó la República Popular de Angola tras la salida de Portugal. Días antes, Fidel Castro había ordenado la Operación Carlota, el envío masivo de tropas cubanas para sostener al MPLA frente a sus rivales y a Sudáfrica, una intervención que duraría más de una década.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Cuban_intervention_in_Angola
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/President_MPLA%2C_heer_Neto_door_Den_Uyl_ontvangen_premier_Den_Uyl_en_A_Neto_%28r%29%2C_Bestanddeelnr_927-8518_%28cropped%29.jpg/960px-President_MPLA%2C_heer_Neto_door_Den_Uyl_ontvangen_premier_Den_Uyl_en_A_Neto_%28r%29%2C_Bestanddeelnr_927-8518_%28cropped%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:President_MPLA%2C_heer_Neto_door_Den_Uyl_ontvangen_premier_Den_Uyl_en_A_Neto_%28r%29%2C_Bestanddeelnr_927-8518_%28cropped%29.jpg
+  credito: Rob Mieremet / Anefo · CC0 · Wikimedia Commons
+- dia: 12
+  anio: 1927
+  titulo: Trotski es expulsado del Partido Comunista soviético
+  pais: Unión Soviética
+  texto: En plena lucha por el poder tras la muerte de Lenin, León Trotski fue expulsado del partido, lo que consolidó el control de Stalin. Después vendrían el destierro y el exilio, que terminaría en México, donde fue asesinado en 1940 por un agente soviético.
+  fuente:
+  - The Caravan
+  - https://caravanmagazine.in/editors-pick/leon-trotsky-expelled-cpsu
+  video: 6iHKUn7J2Y4
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Le%C3%B3n_trotski_1924_color.jpg/960px-Le%C3%B3n_trotski_1924_color.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Le%C3%B3n_trotski_1924_color.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 12
+  anio: 2019
+  titulo: Jeanine Áñez asume la presidencia interina de Bolivia
+  pais: Bolivia
+  texto: Dos días después de la renuncia de Evo Morales, la senadora Jeanine Áñez asumió la presidencia en una sesión sin quórum del MAS. El Tribunal Constitucional avaló la sucesión, mientras el MAS la calificó de golpe. En 2022 fue condenada a diez años de prisión, sentencia anulada por el Tribunal Supremo en 2025.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Jeanine_%C3%81%C3%B1ez
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/President_Jeanine_%C3%81%C3%B1ez.jpg/960px-President_Jeanine_%C3%81%C3%B1ez.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:President_Jeanine_%C3%81%C3%B1ez.jpg
+  credito: Luis Echarte · CC BY-SA 4.0 · Wikimedia Commons
+- dia: 13
+  anio: 1950
+  titulo: Asesinan a Carlos Delgado Chalbaud, presidente de la junta militar
+  pais: Venezuela
+  texto: El teniente coronel que presidía la junta militar desde el derrocamiento de Rómulo Gallegos fue secuestrado y muerto en Caracas por un grupo encabezado por Rafael Simón Urbina. Su muerte despejó el camino a Marcos Pérez Jiménez, y quién estuvo detrás del crimen sigue siendo objeto de debate.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Carlos_Delgado_Chalbaud
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Carlos_Delgado_Chalbaud1.jpg/960px-Carlos_Delgado_Chalbaud1.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Carlos_Delgado_Chalbaud1.jpg
+  credito: Router1 (Wikipedia) · CC BY-SA 3.0 · Wikimedia Commons
+- dia: 13
+  anio: 1985
+  titulo: La erupción del Nevado del Ruiz sepulta Armero
+  pais: Colombia
+  texto: Los flujos de lodo provocados por la erupción del volcán arrasaron la población de Armero, en Tolima, y causaron más de 20.000 muertos. Las advertencias previas no se tradujeron en una evacuación, y la tragedia sigue siendo un símbolo de negligencia estatal en Colombia.
+  fuente:
+  - El Heraldo
+  - https://www.elheraldo.co/colombia/2018/11/13/armero-en-imagenes-33-anos-de-la-tragedia-565626/
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/6/64/Armero_aftermath_USGS.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Armero_aftermath_USGS.jpg
+  credito: Jeffrey Marso, USGS · Dominio público · Wikimedia Commons
+- dia: 13
+  anio: 1960
+  titulo: Alzamiento militar en Guatemala, germen de la guerrilla
+  pais: Guatemala
+  texto: Un grupo de jóvenes oficiales se sublevó contra el presidente Miguel Ydígoras Fuentes y tomó la base de Zacapa. La revuelta fue sofocada en tres días, pero varios de sus líderes, como Turcios Lima y Yon Sosa, fundaron el MR-13, uno de los primeros movimientos del largo conflicto armado guatemalteco.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Revolutionary_Movement_13th_November
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/9/95/Foto_oficial_de_Presidente_Miguel_Yd%C3%ADgoras_Fuentes_%28cropped_2%29.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Foto_oficial_de_Presidente_Miguel_Yd%C3%ADgoras_Fuentes_%28cropped_2%29.png
+  credito: Gobierno de Guatemala · Dominio público · Wikimedia Commons
+- dia: 14
+  anio: 1817
+  titulo: Fusilan a Policarpa Salavarrieta en Santa Fe de Bogotá
+  pais: Colombia
+  texto: La costurera que espiaba para los patriotas fue ejecutada por las autoridades realistas durante la reconquista española. Convertida en heroína de la independencia, en 1967 el Congreso colombiano declaró esta fecha Día de la Mujer Colombiana en su memoria.
+  fuente:
+  - Wikipedia
+  - https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/November_14
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/d/d5/Policarpa_Salabarrieta.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Policarpa_Salabarrieta.jpg
+  credito: José María Espinosa Prieto · Dominio público · Wikimedia Commons
+- dia: 14
+  anio: 1973
+  titulo: Estudiantes de la Politécnica de Atenas se alzan contra la junta
+  pais: Grecia
+  texto: Estudiantes ocuparon la Escuela Politécnica de Atenas en protesta contra la dictadura de los coroneles. Tres días después, el ejército entró con tanques y la represión dejó víctimas mortales; el episodio aceleró la descomposición del régimen, que cayó en 1974.
+  fuente:
+  - Wikipedia
+  - https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/November_14
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 15
+  anio: 1889
+  titulo: Un golpe militar proclama la República en Brasil
+  pais: Brasil
+  texto: El mariscal Deodoro da Fonseca encabezó el movimiento militar que depuso al emperador Pedro II y puso fin a la monarquía brasileña. La familia imperial partió al exilio y Deodoro se convirtió en el primer presidente de la república.
+  fuente:
+  - Wikipedia
+  - https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/November_15
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Deodoro_da_Fonseca_%281889%29.jpg/960px-Deodoro_da_Fonseca_%281889%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Deodoro_da_Fonseca_%281889%29.jpg
+  credito: Governo do Brasil · Dominio público · Wikimedia Commons
+- dia: 15
+  anio: 1922
+  titulo: Masacre de obreros durante la huelga general de Guayaquil
+  pais: Ecuador
+  texto: Fuerzas del Gobierno dispararon contra los trabajadores que participaban en una huelga general en Guayaquil. Las cifras de muertos varían según las fuentes, aunque se suelen citar al menos 300. Es considerada una de las peores matanzas de trabajadores en la historia del país.
+  fuente:
+  - Wikipedia
+  - https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/November_15
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 16
+  anio: 1989
+  titulo: Masacre de los jesuitas en la UCA
+  pais: El Salvador
+  texto: Soldados del batallón Atlacatl asesinaron en la Universidad Centroamericana a seis sacerdotes jesuitas, entre ellos el rector Ignacio Ellacuría, junto con la empleada Elba Ramos y su hija Celina, de 16 años. El crimen aumentó la presión internacional para negociar el fin de la guerra.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/1989_murders_of_Jesuits_in_El_Salvador
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/7/7c/Ignacio_Ellacur%C3%ADa.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Ignacio_Ellacur%C3%ADa.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 16
+  anio: 1532
+  titulo: Pizarro captura a Atahualpa en Cajamarca
+  pais: Perú
+  texto: En la plaza de Cajamarca, las tropas de Francisco Pizarro atacaron por sorpresa al séquito del inca Atahualpa y lo tomaron prisionero. El hecho, acompañado de una gran matanza, marcó el inicio del derrumbe del Imperio inca.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Battle_of_Cajamarca
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/La_Captura_de_Atahualpa_-_Juan_Lepiani_1920s.png/960px-La_Captura_de_Atahualpa_-_Juan_Lepiani_1920s.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:La_Captura_de_Atahualpa_-_Juan_Lepiani_1920s.png
+  credito: Juan Lepiani · Dominio público · Wikimedia Commons
+- dia: 17
+  anio: 1972
+  titulo: Perón regresa a la Argentina tras 17 años de exilio
+  pais: Argentina
+  texto: Juan Domingo Perón aterrizó en Ezeiza en un vuelo chárter procedente de Roma, después de casi dos décadas de exilio y proscripción. El peronismo recuerda la fecha como Día de la Militancia; al año siguiente Perón volvería a ser elegido presidente.
+  fuente:
+  - Los Andes
+  - https://www.losandes.com.ar/opinion/dia-de-la-militancia
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/0/07/Juan_Per%C3%B3n_%28cropped%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Juan_Per%C3%B3n_%28cropped%29.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 17
+  anio: 1983
+  titulo: Se funda el Ejército Zapatista de Liberación Nacional
+  pais: México
+  texto: Un pequeño grupo de militantes estableció en la selva Lacandona, en Chiapas, el núcleo del EZLN. La organización permaneció en la clandestinidad hasta su levantamiento armado del 1 de enero de 1994.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/November_17
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 17
+  anio: 1989
+  titulo: Comienza la Revolución de Terciopelo en Checoslovaquia
+  pais: Checoslovaquia
+  texto: La represión policial de una marcha estudiantil en Praga desató protestas masivas contra el régimen comunista. En pocas semanas el partido cedió el poder sin violencia, en el marco del derrumbe del bloque soviético.
+  fuente:
+  - Wikipedia
+  - https://es.wikipedia.org/wiki/Revolución_de_Terciopelo
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Havla_1989.jpg/960px-Havla_1989.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Havla_1989.jpg
+  credito: MD · CC BY-SA 3.0 · Wikimedia Commons
+- dia: 18
+  anio: 1961
+  titulo: 'Matanza de la Hacienda María: ejecutan a los ajusticiadores de Trujillo'
+  pais: República Dominicana
+  texto: Seis hombres vinculados al complot que mató a Rafael Leónidas Trujillo fueron sacados de la cárcel de La Victoria y ejecutados en la Hacienda María, en Nigua. La acción se atribuye a Ramfis Trujillo, que salió del país poco después; los cuerpos nunca aparecieron.
+  fuente:
+  - El Caribe
+  - https://www.elcaribe.com.do/gente/cultura/matanza-en-la-hacienda-maria-los-ultimos-6-ajusticiadores-de-trujillo-cuyos-cuerpos-jamas-aparecieron/
+  video: TFw4XOt0w3U
+  articulo: ''
+  destacada: true
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 18
+  anio: 1978
+  titulo: Más de 900 muertos en Jonestown, Guyana
+  pais: Guyana, Estados Unidos
+  texto: Seguidores de la secta Templo del Pueblo, dirigida por Jim Jones, murieron en su asentamiento de la selva guyanesa en un suicidio y asesinato masivo con cianuro. Ese mismo día, miembros de la secta mataron al congresista estadounidense Leo Ryan en la pista de Port Kaituma.
+  fuente:
+  - Wikipedia
+  - https://es.wikipedia.org/wiki/Templo_del_Pueblo
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 19
+  anio: 2000
+  titulo: Fujimori renuncia por fax desde Tokio
+  pais: Perú
+  texto: Tras el escándalo de los vladivideos y en plena crisis de su gobierno, Alberto Fujimori, que había viajado a una cumbre en Brunéi, envió desde Japón su renuncia a la presidencia por fax. El Congreso la rechazó y el 21 de noviembre lo declaró vacado por incapacidad moral.
+  fuente:
+  - El Comercio
+  - https://elcomercio.pe/politica/renuncia-larga-distancia-fujimori-dimitio-17-anos-cronica-noticia-475169-noticia/
+  video: mv5i2ulFjA4
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/4/4c/Visit_of_Alberto_Fujimori%2C_President_of_Peru%2C_to_the_CEC_%28cropped%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Visit_of_Alberto_Fujimori%2C_President_of_Peru%2C_to_the_CEC_%28cropped%29.jpg
+  credito: Christian Lambiotte / European Communities · CC BY 4.0 · Wikimedia Commons
+- dia: 19
+  anio: 1961
+  titulo: La rebelión de los pilotos expulsa a los Trujillo del poder
+  pais: República Dominicana
+  texto: Oficiales de la base aérea de Santiago, con el general Pedro Rodríguez Echavarría al frente, se alzaron para impedir que los hermanos del dictador retomaran el control. En pocos días la familia Trujillo abandonó el país, lo que cerró definitivamente la era trujillista.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Rebellion_of_the_Pilots
+  video: ''
+  articulo: como-murieron-los-hijos-de-los-dictadores-latinoamericanos
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 20
+  anio: 1910
+  titulo: Estalla la Revolución mexicana
+  pais: México
+  texto: Francisco I. Madero había fijado esta fecha en el Plan de San Luis para levantarse en armas contra Porfirio Díaz, en el poder desde hacía más de tres décadas. El movimiento derrocó a Díaz en 1911 y abrió una década de guerra civil que transformó el país.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Revolution_Day_(Mexico)
+  video: -IGHVTU28h8
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_revoluci%C3%B3n_mexicana.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Collage_revoluci%C3%B3n_mexicana.jpg
+  credito: Casasola y otros · CC BY-SA 3.0 · Wikimedia Commons
+- dia: 20
+  anio: 1975
+  titulo: Muere Francisco Franco tras 36 años de dictadura
+  pais: España
+  texto: El dictador murió en Madrid a los 82 años, después de gobernar España desde el final de la Guerra Civil. Su muerte abrió la Transición hacia la democracia, y el destino de sus restos, trasladados fuera del Valle de los Caídos en 2019, siguió generando polémica.
+  fuente:
+  - Deshwale
+  - https://deshwale.com/what-happened-on-20-november
+  video: o2GI8Xxnxzs
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/c/cf/RETRATO_DEL_GRAL._FRANCISCO_FRANCO_BAHAMONDE_%28adjusted_levels%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:RETRATO_DEL_GRAL._FRANCISCO_FRANCO_BAHAMONDE_%28adjusted_levels%29.jpg
+  credito: Autor desconocido · CC0 · Wikimedia Commons
+- dia: 21
+  anio: 2000
+  titulo: El Congreso de Perú destituye a Alberto Fujimori
+  pais: Perú
+  texto: Tras enviar su renuncia por fax desde Japón, Alberto Fujimori fue declarado en vacancia por 'permanente incapacidad moral' por el Congreso peruano, que rechazó aceptar la dimisión. Así terminó un gobierno de diez años marcado por el autogolpe de 1992 y los escándalos de corrupción revelados por los 'vladivideos'.
+  fuente:
+  - Congreso de la República del Perú – Resolución Legislativa
+  - https://www.congreso.gob.pe/Docs/participacion/museo/congreso/files/mensajes/1981-2000/files/resolucionlegislativa-incapacidadmoral-2000-af.pdf
+  video: mv5i2ulFjA4
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/4/4c/Visit_of_Alberto_Fujimori%2C_President_of_Peru%2C_to_the_CEC_%28cropped%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Visit_of_Alberto_Fujimori%2C_President_of_Peru%2C_to_the_CEC_%28cropped%29.jpg
+  credito: Christian Lambiotte / European Communities · CC BY 4.0 · Wikimedia Commons
+- dia: 21
+  anio: 1902
+  titulo: Termina la Guerra de los Mil Días en Colombia
+  pais: Colombia
+  texto: Con el Tratado de Wisconsin, firmado a bordo de un buque estadounidense, liberales y conservadores pusieron fin a la Guerra de los Mil Días. El conflicto civil dejó decenas de miles de muertos y debilitó al Estado colombiano poco antes de la separación de Panamá en 1903.
+  fuente:
+  - Wikipedia – 21 de noviembre
+  - https://es.wikipedia.org/wiki/21_de_noviembre
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 22
+  anio: 1963
+  titulo: Asesinan a John F. Kennedy en Dallas
+  pais: Estados Unidos
+  texto: 'El presidente estadounidense fue asesinado a tiros mientras recorría Dallas en caravana. Su gobierno había marcado la relación con América Latina: Bahía de Cochinos, la Crisis de los Misiles y la Alianza para el Progreso. La Comisión Warren señaló a Lee Harvey Oswald como autor único; desde entonces circulan numerosas teorías de conspiración.'
+  fuente:
+  - Wikipedia – Asesinato de John F. Kennedy
+  - https://es.wikipedia.org/wiki/Asesinato_de_John_F._Kennedy
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/JFK_limousine.png/960px-JFK_limousine.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:JFK_limousine.png
+  credito: Walt Cisco, Dallas Morning News · Dominio público · Wikimedia Commons
+- dia: 22
+  anio: 1910
+  titulo: Estalla la Revuelta de la Chibata en Brasil
+  pais: Brasil
+  texto: Marineros de la Armada brasileña, en su mayoría negros y mulatos, tomaron varios acorazados en la bahía de Río de Janeiro para exigir el fin de los castigos con látigo. El líder, João Cândido, obtuvo una amnistía, pero muchos sublevados fueron luego detenidos, expulsados o murieron en prisión.
+  fuente:
+  - Senado Federal de Brasil – Arquivo S
+  - https://www12.senado.leg.br/noticias/especiais/arquivo-s/em-1910-marujos-denunciaram-chibata-na-marinha-e-racismo-no-brasil-pos-abolicao
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 23
+  anio: 1914
+  titulo: Las tropas de EE. UU. abandonan Veracruz
+  pais: México
+  texto: Siete meses después de desembarcar en el puerto en plena Revolución Mexicana, las últimas fuerzas de ocupación estadounidenses se retiraron de Veracruz. La intervención, ordenada por Woodrow Wilson contra el gobierno de Victoriano Huerta, dejó cientos de muertos mexicanos y un fuerte sentimiento antiestadounidense.
+  fuente:
+  - Wikipedia – 23 de noviembre
+  - https://es.wikipedia.org/wiki/23_de_noviembre
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Lot-10907-1_%2827288019645%29.jpg/960px-Lot-10907-1_%2827288019645%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Lot-10907-1_%2827288019645%29.jpg
+  credito: National Museum of the U.S. Navy · Dominio público · Wikimedia Commons
+- dia: 23
+  anio: 1825
+  titulo: Cae San Juan de Ulúa, último bastión español en México
+  pais: México
+  texto: La guarnición española de la fortaleza de San Juan de Ulúa, frente a Veracruz, se rindió ante el bloqueo naval dirigido por Pedro Sainz de Baranda. Fue el último reducto militar de España en territorio mexicano, cuatro años después de la consumación de la independencia.
+  fuente:
+  - Wikipedia – 23 de noviembre
+  - https://es.wikipedia.org/wiki/23_de_noviembre
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/9/94/Pedro_Sainz_de_Baranda.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Pedro_Sainz_de_Baranda.jpg
+  credito: Anónimo · Dominio público · Wikimedia Commons
+- dia: 24
+  anio: 1948
+  titulo: Golpe militar derroca a Rómulo Gallegos en Venezuela
+  pais: Venezuela
+  texto: Una junta militar encabezada por Carlos Delgado Chalbaud, con Marcos Pérez Jiménez y Luis Felipe Llovera Páez, depuso al novelista Rómulo Gallegos, primer presidente venezolano elegido por voto universal, directo y secreto. Comenzaba una década de dictadura que terminaría en enero de 1958.
+  fuente:
+  - La Patilla – Recordando el golpe del 24 de noviembre de 1948
+  - https://lapatilla.com/2019/11/24/recordando-el-golpe-del-24-de-noviembre-de-1948/
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/f/fd/R%C3%B3mulo_Gallegos_1940s.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:R%C3%B3mulo_Gallegos_1940s.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 24
+  anio: 1963
+  titulo: Jack Ruby mata a Lee Harvey Oswald
+  pais: Estados Unidos
+  texto: Dos días después del asesinato de Kennedy, Lee Harvey Oswald recibió un disparo de Jack Ruby mientras era trasladado en los sótanos de la policía de Dallas, ante las cámaras de televisión. Su muerte impidió un juicio y alimentó durante décadas las sospechas sobre el magnicidio.
+  fuente:
+  - Wikipedia – 24 de noviembre
+  - https://es.wikipedia.org/wiki/24_de_noviembre
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/b/b9/Lee_Harvey_Oswald_arrest_card_1963-crop.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Lee_Harvey_Oswald_arrest_card_1963-crop.jpg
+  credito: Policía de Dallas · Dominio público · Wikimedia Commons
+- dia: 25
+  anio: 1960
+  titulo: Asesinato de las hermanas Mirabal
+  pais: República Dominicana
+  texto: Patria, Minerva y María Teresa Mirabal, opositoras a la dictadura de Rafael Leónidas Trujillo, fueron asesinadas junto al chofer Rufino de la Cruz por agentes del régimen tras visitar a sus esposos presos. El crimen conmocionó al país y en 1999 la ONU fijó esta fecha como Día Internacional de la Eliminación de la Violencia contra la Mujer.
+  fuente:
+  - Diario Libre – Sesenta años del asesinato de las hermanas Mirabal
+  - https://www.diariolibre.com/actualidad/sesenta-anos-del-asesinato-a-las-hermanas-mirabal-LA22880209
+  video: YlsDPD8PfoI
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/7/7b/Hermanas_Mirabal.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Hermanas_Mirabal.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 25
+  anio: 2016
+  titulo: Muere Fidel Castro a los 90 años
+  pais: Cuba
+  texto: Raúl Castro anunció por televisión la muerte de su hermano, quien gobernó Cuba desde 1959 hasta delegar el poder por enfermedad en 2006. Sus restos fueron cremados y trasladados en caravana hasta Santiago de Cuba. Su figura sigue dividiendo opiniones entre la defensa de la revolución y la denuncia de la represión.
+  fuente:
+  - T13 – La coincidencia entre la muerte de Fidel Castro y el aniversario del Granma
+  - https://www.t13.cl/noticia/mundo/la-coincidencia-muerte-fidel-castro-aniversario-partida-del-barco-granma-cuba
+  video: fvgF_dZTbw0
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/4/4a/Fidel_Castro_1950s.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Fidel_Castro_1950s.jpg
+  credito: Autor desconocido (Mondadori) · Dominio público · Wikimedia Commons
+- dia: 25
+  anio: 1956
+  titulo: El yate Granma zarpa de Tuxpan rumbo a Cuba
+  pais: México, Cuba
+  texto: Fidel Castro y 81 expedicionarios del Movimiento 26 de Julio, entre ellos Raúl Castro, Ernesto Guevara y Camilo Cienfuegos, partieron de madrugada desde Tuxpan, Veracruz, en un yate sobrecargado. Desembarcaron en el oriente cubano el 2 de diciembre para iniciar la guerra de guerrillas contra Fulgencio Batista.
+  fuente:
+  - EcuRed – Yate Granma
+  - https://www.ecured.cu/Granma_(yate)
+  video: 1Ui7IB0elOk
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/20101118_granma-yatch.jpg/960px-20101118_granma-yatch.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:20101118_granma-yatch.jpg
+  credito: Catskingloves · CC BY-SA 3.0 · Wikimedia Commons
+- dia: 26
+  anio: 2006
+  titulo: Rafael Correa gana la presidencia de Ecuador
+  pais: Ecuador
+  texto: En la segunda vuelta electoral, el economista Rafael Correa derrotó al empresario Álvaro Noboa y llegó al poder con la promesa de una 'Revolución Ciudadana'. Gobernó hasta 2017; años después fue condenado en Ecuador por un caso de corrupción y se radicó en Bélgica.
+  fuente:
+  - Wikipedia – 26 de noviembre
+  - https://es.wikipedia.org/wiki/26_de_noviembre
+  video: Gtbiko8KHIY
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Rafael_Correa_2017.jpg/960px-Rafael_Correa_2017.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Rafael_Correa_2017.jpg
+  credito: Agencia de Noticias ANDES · CC BY-SA 2.0 · Wikimedia Commons
+- dia: 26
+  anio: 1961
+  titulo: Asesinan al alfabetizador Manuel Ascunce en Cuba
+  pais: Cuba
+  texto: Durante la Campaña de Alfabetización, el brigadista de 16 años Manuel Ascunce Domenech y el campesino Pedro Lantigua fueron asesinados en la zona de Trinidad por un grupo armado opositor al gobierno revolucionario. La versión oficial cubana vincula estos ataques a la CIA.
+  fuente:
+  - Wikipedia – 26 de noviembre
+  - https://es.wikipedia.org/wiki/26_de_noviembre
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 27
+  anio: 1992
+  titulo: Segundo intento de golpe contra Carlos Andrés Pérez
+  pais: Venezuela
+  texto: Nueve meses después del 4F, militares afines a Hugo Chávez —entonces preso— se alzaron de nuevo, tomaron un canal de televisión y bombardearon Caracas desde el aire. La rebelión fracasó, dejó más de un centenar de muertos y ese día ocurrió la masacre en la cárcel del Retén de Catia.
+  fuente:
+  - La Patilla – Se cumplen 26 años del intento fallido de golpe
+  - https://lapatilla.com/2018/11/27/se-cumplen-26-anos-del-intento-fallido-de-golpe-de-estado-a-carlos-andres-perez-fotos/
+  video: tDgBz8EwiU0
+  articulo: como-era-venezuela-antes-de-chavez
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Carlos_Andr%C3%A9s_P%C3%A9rez_-_World_Economic_Forum_Annual_Meeting_1989.jpg/960px-Carlos_Andr%C3%A9s_P%C3%A9rez_-_World_Economic_Forum_Annual_Meeting_1989.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Carlos_Andr%C3%A9s_P%C3%A9rez_-_World_Economic_Forum_Annual_Meeting_1989.jpg
+  credito: World Economic Forum · CC BY-SA 2.0 · Wikimedia Commons
+- dia: 27
+  anio: 1871
+  titulo: Fusilamiento de los ocho estudiantes de medicina
+  pais: Cuba
+  texto: Las autoridades coloniales españolas fusilaron en La Habana a ocho estudiantes de medicina acusados, sin pruebas, de profanar la tumba de un periodista español. El juicio, bajo presión de los voluntarios integristas, se convirtió en símbolo de la injusticia colonial en plena Guerra de los Diez Años.
+  fuente:
+  - EcuRed – Fusilamiento de los ocho estudiantes de Medicina
+  - https://www.ecured.cu/Ocho_estudiantes_de_medicina
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 28
+  anio: 1911
+  titulo: Emiliano Zapata proclama el Plan de Ayala
+  pais: México
+  texto: Desconociendo al presidente Francisco I. Madero, Emiliano Zapata y los revolucionarios del sur proclamaron en Morelos el Plan de Ayala, que exigía la restitución de tierras a los pueblos campesinos. Con el lema 'Tierra y Libertad', el documento se convirtió en la bandera del agrarismo mexicano.
+  fuente:
+  - Wikipedia – 28 de noviembre
+  - https://es.wikipedia.org/wiki/28_de_noviembre
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Plan_de_Ayala_%281911%29%2C_manuscrito_de_Emiliano_Zapata.tif/lossy-page1-960px-Plan_de_Ayala_%281911%29%2C_manuscrito_de_Emiliano_Zapata.tif.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Plan_de_Ayala_%281911%29%2C_manuscrito_de_Emiliano_Zapata.tif
+  credito: Emiliano Zapata · CC BY-SA 4.0 · Wikimedia Commons
+- dia: 28
+  anio: 1821
+  titulo: Panamá se independiza de España
+  pais: Panamá
+  texto: Un cabildo abierto en la ciudad de Panamá proclamó la independencia del istmo respecto de España y su incorporación voluntaria a la Gran Colombia de Simón Bolívar. Panamá permanecería unida a Colombia hasta su separación en 1903.
+  fuente:
+  - La Estrella de Panamá – Miércoles 28 de noviembre de 1821
+  - https://www.laestrella.com.pa/opinion/columnistas/miercoles-28-noviembre-1821-GILE459609
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Acta_independecia_de_Panam%C3%A1_1821.jpg/960px-Acta_independecia_de_Panam%C3%A1_1821.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Acta_independecia_de_Panam%C3%A1_1821.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 29
+  anio: 2009
+  titulo: José Mujica gana la presidencia de Uruguay
+  pais: Uruguay
+  texto: El exguerrillero tupamaro, que pasó cerca de 13 años preso durante la dictadura, ganó la segunda vuelta como candidato del Frente Amplio frente a Luis Alberto Lacalle. Gobernó entre 2010 y 2015 y su estilo austero le dio proyección internacional.
+  fuente:
+  - Wikipedia – 29 de noviembre
+  - https://es.wikipedia.org/wiki/29_de_noviembre
+  video: q9zL7yxgEgg
+  articulo: quien-fue-realmente-pepe-mujica
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mujica.jpg/960px-Mujica.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Mujica.jpg
+  credito: Senado Federal (Brasil) · CC BY 2.0 · Wikimedia Commons
+- dia: 29
+  anio: 1916
+  titulo: EE. UU. proclama el gobierno militar en República Dominicana
+  pais: República Dominicana
+  texto: El capitán Harry S. Knapp proclamó formalmente la ocupación militar de la República Dominicana, meses después del desembarco de los marines. El gobierno militar estadounidense duró hasta 1924 y creó la Guardia Nacional en la que haría carrera Rafael Leónidas Trujillo.
+  fuente:
+  - American Journal of International Law – Proclamation of the Military Occupation of Santo Domingo
+  - https://core-cms.cambridgecore.org/core/journals/american-journal-of-international-law/article/american-journal-of-international-law-proclamation-of-the-military-occupation-of-santo-domingo-by-the-united-states-november-29-1916/8D0B0D6367B6A6F129494196B7F25A01
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 29
+  anio: 1984
+  titulo: Argentina y Chile firman la paz por el Beagle
+  pais: Argentina, Chile
+  texto: Con mediación del Vaticano, ambos países firmaron el Tratado de Paz y Amistad que cerró el conflicto por las islas del canal Beagle. En 1978 las dictaduras de Videla y Pinochet habían estado al borde de la guerra por esa disputa.
+  fuente:
+  - Wikipedia – 29 de noviembre
+  - https://es.wikipedia.org/wiki/29_de_noviembre
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Tratado_Argentina_Chile_1984.jpg/960px-Tratado_Argentina_Chile_1984.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Tratado_Argentina_Chile_1984.jpg
+  credito: Biblioteca del Congreso Nacional de Chile · CC BY 3.0 CL · Wikimedia Commons
+- dia: 30
+  anio: 1956
+  titulo: Frank País encabeza el alzamiento de Santiago de Cuba
+  pais: Cuba
+  texto: Para apoyar el desembarco del Granma, previsto para ese día, jóvenes del Movimiento 26 de Julio dirigidos por Frank País atacaron cuarteles de la policía en Santiago de Cuba vistiendo uniformes verde olivo. La acción fracasó por el retraso del yate, pero mostró la fuerza de la lucha clandestina en las ciudades.
+  fuente:
+  - EcuRed – Alzamiento del 30 de noviembre
+  - https://www.ecured.cu/Alzamiento_del_30_de_noviembre
+  video: rDiDddK3IXM
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/4/4f/Frank-Pais.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Frank-Pais.png
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 30
+  anio: 1980
+  titulo: Uruguay rechaza en las urnas la Constitución militar
+  pais: Uruguay
+  texto: En un plebiscito convocado por la dictadura cívico-militar, el 57,8 % de los votantes rechazó el proyecto constitucional que buscaba legitimar el régimen. La derrota abrió el camino a una transición negociada que culminó con las elecciones de 1984.
+  fuente:
+  - Wikipedia – 30 de noviembre
+  - https://es.wikipedia.org/wiki/30_de_noviembre
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''

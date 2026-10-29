@@ -1,0 +1,20 @@
+{% macro item(e, url, h='h2') -%}
+<article class="efe{% if e.destacada %} destacada{% endif %}">
+  <figure>
+    {% if e.imagen %}<img src="{{ e.imagen }}" alt="{{ e.titulo }}" loading="lazy" width="640" height="480">
+    <figcaption>{% if e.imagen_pagina %}<a href="{{ e.imagen_pagina }}" target="_blank" rel="noopener">{{ e.credito }}</a>{% else %}{{ e.credito }}{% endif %}</figcaption>
+    {% elif e.video %}<img src="https://i.ytimg.com/vi/{{ e.video }}/hqdefault.jpg" alt="{{ e.titulo }}" loading="lazy" width="480" height="360">
+    {% else %}<div class="efe-anio" aria-hidden="true"><div>{{ e.anio }}<small>{{ e.pais }}</small></div></div>{% endif %}
+  </figure>
+  <div style="min-width:0">
+    <span class="etiqueta oro">{{ e.dia }} de {{ e.mes_nombre }} de {{ e.anio }} · {{ e.pais }}</span>
+    <{{ h }}>{{ e.titulo }}</{{ h }}>
+    <p>{{ e.texto }}</p>
+    {% if e.video or e.articulo %}<div class="acciones">
+      {% if e.video %}<a class="boton" href="https://www.youtube.com/watch?v={{ e.video }}" target="_blank" rel="noopener">Ver el documental</a>{% endif %}
+      {% if e.articulo %}<a class="boton fantasma" href="{{ url('blog/' ~ e.articulo) }}">Leer el artículo</a>{% endif %}
+    </div>{% endif %}
+    {% if e.fuente %}<p class="efe-fuente" style="margin-top:10px">Fuente: <a href="{{ e.fuente[1] }}" target="_blank" rel="noopener">{{ e.fuente[0] }}</a></p>{% endif %}
+  </div>
+</article>
+{%- endmacro %}

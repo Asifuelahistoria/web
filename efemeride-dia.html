@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% import "efe-macros.html" as fm %}
+{% set titulo = "¿Qué pasó un " ~ x.nombre ~ "? Efemérides de América Latina" %}
+{% set descripcion = "Efemérides del " ~ x.nombre ~ ": " ~ (x.lista | map(attribute='titulo') | join('; ')) ~ "." %}
+{% block jsonld %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":{{ ("Efemérides del " ~ x.nombre) | tojson }},"inLanguage":"es","itemListElement":[{% for e in x.lista %}{"@type":"ListItem","position":{{ loop.index }},"name":{{ (e.anio | string ~ ": " ~ e.titulo) | tojson }}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
+{% endblock %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:28px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><a href="{{ url('efemerides') }}">Efemérides</a><span>/</span><span>{{ x.nombre }}</span></nav>
+    <span class="etiqueta oro">Tal día como hoy</span>
+    <h1 style="font-size:clamp(2.4rem,6vw,4.6rem);max-width:20ch">¿Qué pasó un <span>{{ x.nombre }}</span>?</h1>
+    <p class="bajada">Hechos de la historia política de América Latina ocurridos un {{ x.nombre }}, con fuentes y documentales del canal.</p>
+  </div>
+</section>
+<section class="seccion">
+  <div class="envoltura">
+    <div class="efe-lista">{% for e in x.lista %}{{ fm.item(e, url, 'h2') }}{% endfor %}</div>
+    <nav class="efe-nav" aria-label="Otros días">
+      {% if ant %}<a class="boton fantasma" href="{{ url('efemerides/' ~ ant.slug) }}">← {{ ant.nombre }}</a>{% else %}<span></span>{% endif %}
+      <a class="boton fantasma" href="{{ url('efemerides') }}">Calendario</a>
+      {% if sig %}<a class="boton fantasma" href="{{ url('efemerides/' ~ sig.slug) }}">{{ sig.nombre }} →</a>{% endif %}
+    </nav>
+  </div>
+</section>
+{% endblock %}
