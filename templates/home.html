@@ -60,6 +60,33 @@
   </div>
 </section>
 
+<section class="seccion" aria-labelledby="hoy-titulo" id="hoy-historia" hidden>
+  <div class="envoltura">
+    <div class="seccion-cabeza">
+      <div>
+        <span class="etiqueta oro" id="hoy-fecha">Hoy en la historia</span>
+        <h2 id="hoy-titulo">Tal día como hoy</h2>
+      </div>
+      <a class="boton fantasma" href="{{ url('efemerides') }}">Ver todas las efemérides</a>
+    </div>
+    <a class="tarjeta-blog" id="hoy-tarjeta" href="{{ url('efemerides') }}">
+      <img id="hoy-img" alt="" loading="lazy" width="480" height="360" hidden>
+      <div><span class="etiqueta oro" id="hoy-meta"></span><h2 id="hoy-h"></h2><p id="hoy-p"></p></div>
+    </a>
+  </div>
+</section>
+<script>
+(function(){var M=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+var d=new Date(),k=(d.getMonth()+1)+"-"+d.getDate();
+fetch("{{ url('efemerides.json') }}").then(function(r){return r.json()}).then(function(j){var l=j[k];if(!l||!l.length)return;
+var e=l.filter(function(x){return x.destacada})[0]||l[0];
+document.getElementById("hoy-fecha").textContent="Hoy, "+d.getDate()+" de "+M[d.getMonth()];
+document.getElementById("hoy-meta").textContent=e.anio+" · "+e.pais;document.getElementById("hoy-h").textContent=e.titulo;document.getElementById("hoy-p").textContent=e.texto;
+document.getElementById("hoy-tarjeta").href="{{ url('efemerides') }}"+e.slug+"/";
+var src=e.imagen||(e.video?"https://i.ytimg.com/vi/"+e.video+"/hqdefault.jpg":"");if(src){var im=document.getElementById("hoy-img");im.src=src;im.alt=e.titulo;im.hidden=false}
+document.getElementById("hoy-historia").hidden=false}).catch(function(){})})();
+</script>
+
 <section class="seccion" aria-labelledby="libro-titulo">
   <div class="envoltura libro">
     <div class="tapa" aria-hidden="true">
