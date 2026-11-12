@@ -1,0 +1,24 @@
+<style>
+.compartir{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}
+.compartir .lbl{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ceniza);margin-right:2px}
+.compartir a,.compartir button{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:.75rem;line-height:1;padding:8px 11px;border:1px solid var(--linea);border-radius:999px;background:transparent;color:var(--papel);text-decoration:none;cursor:pointer}
+.compartir a:hover,.compartir button:hover{border-color:var(--oro);color:var(--oro)}
+.compartir svg{width:14px;height:14px;fill:currentColor;flex:none}
+.compartir .nativo{display:none;background:var(--oro);color:#100d0a;border-color:var(--oro)}
+.compartir.con-nativo .nativo{display:inline-flex}
+</style>
+<script>
+(function(){
+  var nat=!!navigator.share;
+  function marcar(r){if(nat)(r||document).querySelectorAll(".compartir").forEach(function(c){c.classList.add("con-nativo")})}
+  window.efeCompartirMarcar=marcar;
+  document.addEventListener("DOMContentLoaded",function(){marcar()});
+  document.addEventListener("click",function(ev){
+    var b=ev.target.closest(".compartir button");if(!b)return;
+    var c=b.closest(".compartir"),u=c.dataset.url,t=c.dataset.texto;
+    if(b.classList.contains("nativo")){navigator.share({title:t,text:t,url:u}).catch(function(){});return}
+    var ok=function(){var o=b.lastChild.textContent;b.lastChild.textContent=" ¡Copiado!";setTimeout(function(){b.lastChild.textContent=o},1800)};
+    if(navigator.clipboard)navigator.clipboard.writeText(u).then(ok).catch(function(){prompt("Copia el enlace:",u)});else prompt("Copia el enlace:",u);
+  });
+})();
+</script>
