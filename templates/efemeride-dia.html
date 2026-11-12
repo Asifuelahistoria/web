@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% import "efe-macros.html" as fm %}
 {% set titulo = "¿Qué pasó un " ~ x.nombre ~ "? Efemérides de América Latina" %}
+{% set og_imagen = (x.lista | selectattr("imagen") | map(attribute="imagen") | list | first) if (x.lista | selectattr("imagen") | list) else "" %}
 {% set descripcion = "Efemérides del " ~ x.nombre ~ ": " ~ (x.lista | map(attribute='titulo') | join('; ')) ~ "." %}
 {% block jsonld %}
+{% include "efe-compartir.html" %}
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":{{ ("Efemérides del " ~ x.nombre) | tojson }},"inLanguage":"es","itemListElement":[{% for e in x.lista %}{"@type":"ListItem","position":{{ loop.index }},"name":{{ (e.anio | string ~ ": " ~ e.titulo) | tojson }}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
 {% endblock %}
 {% block contenido %}
@@ -16,7 +18,7 @@
 </section>
 <section class="seccion">
   <div class="envoltura">
-    <div class="efe-lista">{% for e in x.lista %}{{ fm.item(e, url, 'h2') }}{% endfor %}</div>
+    <div class="efe-lista">{% for e in x.lista %}{{ fm.item(e, url, 'h2', base_url) }}{% endfor %}</div>
     <nav class="efe-nav" aria-label="Otros días">
       {% if ant %}<a class="boton fantasma" href="{{ url('efemerides/' ~ ant.slug) }}">← {{ ant.nombre }}</a>{% else %}<span></span>{% endif %}
       <a class="boton fantasma" href="{{ url('efemerides') }}">Calendario</a>
