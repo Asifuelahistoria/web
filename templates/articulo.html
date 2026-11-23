@@ -3,7 +3,7 @@
 {% set titulo = a.titulo %}
 {% set descripcion = a.descripcion %}
 {% set og_tipo = "article" %}
-{% set og_imagen = "https://i.ytimg.com/vi/" ~ a.video ~ "/hqdefault.jpg" if a.video else none %}
+{% set og_imagen = a.imagen if a.imagen else ("https://i.ytimg.com/vi/" ~ a.video ~ "/hqdefault.jpg" if a.video else none) %}
 {% block jsonld %}
 <script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"Article","headline":a.titulo,"description":a.descripcion,"inLanguage":"es","datePublished":a.fecha|string,"dateModified":(a.actualizado or a.fecha)|string,"image":og_imagen,"author":{"@type":"Person","name":"Pedro Luis Burgos"},"publisher":{"@type":"Organization","name":cfg.nombre},"mainEntityOfPage":canon} | tojson }}</script>
 {% endblock %}
@@ -14,6 +14,7 @@
     <span class="etiqueta oro">{{ a.categoria }} · {{ a.fecha_larga }} · {{ a.minutos }} min de lectura</span>
     <h1 style="font-size:clamp(2.2rem,5.5vw,4rem);max-width:24ch">{{ a.titulo }}</h1>
     <p class="art-firma">Por Pedro Luis Burgos · Así Fue la Historia</p>
+    {% if a.imagen %}<figure class="art-foto"><img src="{{ a.imagen }}" alt="{{ a.imagen_alt or a.titulo }}" width="960" height="540" fetchpriority="high"><figcaption>{{ a.imagen_alt }}{% if a.credito %} · {% if a.imagen_pagina %}<a href="{{ a.imagen_pagina }}" target="_blank" rel="noopener">{{ a.credito }}</a>{% else %}{{ a.credito }}{% endif %}{% endif %}</figcaption></figure>{% endif %}
   </div>
 </section>
 <div class="envoltura articulo">
