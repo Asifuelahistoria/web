@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "17 10 * * *"   # cada día: trae los videos nuevos de YouTube
+    - cron: "17 */4 * * *"   # cada día: trae los videos nuevos de YouTube
   workflow_dispatch:
 
 permissions:
