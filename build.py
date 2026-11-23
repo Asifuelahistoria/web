@@ -73,18 +73,28 @@ def md(text):
 # resto de la web se publica igual.
 UA = {"User-Agent": "AsiFueLaHistoria-web/1.0 (https://www.asifuelahistoria.com)"}
 NOTICIAS_BUSQUEDAS = [
-    ("Arqueología", '(arqueólogos OR "hallazgo arqueológico" OR excavación OR yacimiento) when:4d'),
-    ("Archivos y desclasificados", '(desclasificados OR "archivo histórico" OR historiadores OR historiador) when:4d'),
-    ("Dictaduras y memoria", '(dictadura OR desaparecidos OR "golpe de Estado") (historia OR aniversario OR memoria OR años) when:4d'),
-    ("Aniversarios", '("años de la" OR aniversario) (revolución OR asesinato OR guerra OR independencia OR masacre OR batalla) when:4d'),
+    ("Arqueología", '(arqueólogos OR "hallazgo arqueológico" OR excavación arqueológica OR yacimiento arqueológico) when:4d',
+     r"arque[oó]l|excavaci|tumba|ruinas|romano|romana|maya|inca|azteca|prehisp|milenari|años de antigüedad|necr[oó]polis|momia|f[oó]sil|antig[uü]"),
+    ("Archivos y desclasificados", '(desclasificados OR "archivo histórico" OR historiadores OR historiador) when:4d',
+     r"desclasific|archivo|historiador|documentos|hist[oó]ric"),
+    ("Dictaduras y memoria", '(dictadura OR desaparecidos OR "golpe de Estado") (historia OR aniversario OR memoria OR años) when:4d',
+     r"dictadura|dictador|desaparecid|golpe de estado|represi|memoria hist|lesa humanidad|exilio"),
+    ("Aniversarios", '("años de la" OR aniversario) (revolución OR asesinato OR guerra OR independencia OR masacre OR batalla) when:4d',
+     r"aniversario|se cumplen|a[nñ]os de la|a[nñ]os del"),
 ]
-NOTICIAS_EXCLUIR = re.compile(r"\b(fintech|bitcoin|cripto|fútbol|futbol|liga|gol|goles|celular|iphone|oferta|descuento|horóscopo|receta|células|nba|tenis|película|serie de netflix|reality|famosa|famoso)\b", re.I)
+NOTICIAS_EXCLUIR = re.compile(r"\b(gnl|gas|petr[oó]leo|toneladas|shakira|fintech|bitcoin|cripto|fútbol|futbol|liga|gol|goles|celular|iphone|oferta|descuento|horóscopo|receta|células|nba|tenis|película|serie de netflix|reality|famosa|famoso)\b", re.I)
 HIST_RE = re.compile(r"guerra|batalla|golpe|revoluci|masacre|asesinat|atentado|dictadura|dictador|imperio|siglo|hist[oó]ric|conflicto|invasi[oó]n|tratado|independencia|rebeli[oó]n|r[eé]gimen|reino|dinast|insurrecci|levantamiento|genocidio|matanza|magnicidio|naufragio|expedici[oó]n|conquista|virreinato|colonia", re.I)
 EVENTOS_WD = {"Q198", "Q178561", "Q45382", "Q10931", "Q3882219", "Q3199915", "Q13418847", "Q124734", "Q131569",
               "Q48349", "Q3024240", "Q1261499", "Q645883", "Q2223653", "Q350604", "Q180684", "Q1006311", "Q217327"}
 GENERICAS = set("""guerra batalla imperio revolucion historia presidente rey reina emperador emperatriz general guerra
 golpe estado mundial primera segunda civil gran nacional republica muerte asesinato caso elecciones partido america
-latina dictador dictadura sobre desde hasta entre contra para como donde cuando quien""".split())
+latina dictador dictadura sobre desde hasta entre contra para como donde cuando quien
+mexico mexicana mexicano espana argentina chile peru colombia venezuela cuba bolivia ecuador uruguay paraguay brasil
+nicaragua honduras guatemala panama salvador dominicana haiti francia italia alemania austria inglaterra rusia china
+estados unidos europa africa asia""".split())
+NO_HIST_RE = re.compile(r"futbolista|\bactor|actriz|cantante|m[uú]sic|tenista|boxeador|deportista|beisbolista|baloncestista|"
+                        r"luchador|modelo|presentador|rapero|youtuber|influencer|piloto de|ciclista|atleta|nadador|"
+                        r"entrenador|jugador|humorista|comediante|bailar|\bdj\b|productor de cine|director de cine|personaje de ficci", re.I)
 
 
 def _get(url, timeout=20):
@@ -100,7 +110,8 @@ def _txt(s):
 
 def traer_noticias(hoy_utc):
     vistos, salida = set(), []
-    for categoria, q in NOTICIAS_BUSQUEDAS:
+    for categoria, q, filtro in NOTICIAS_BUSQUEDAS:
+        filtro_re = re.compile(filtro, re.I)
         url = ("https://news.google.com/rss/search?q=" + urllib.parse.quote(q) +
                "&hl=es-419&gl=US&ceid=US:es-419")
         try:
@@ -117,7 +128,7 @@ def traer_noticias(hoy_utc):
             if fuente and tit.endswith(" - " + fuente):
                 tit = tit[: -len(fuente) - 3].strip()
             clave = normalizar(tit)[:70]
-            if not tit or not link or clave in vistos or NOTICIAS_EXCLUIR.search(tit):
+            if not tit or not link or clave in vistos or NOTICIAS_EXCLUIR.search(tit) or not filtro_re.search(tit):
                 continue
             try:
                 f = dt.datetime.strptime(fecha[:25], "%a, %d %b %Y %H:%M:%S").replace(tzinfo=dt.timezone.utc)
@@ -181,8 +192,8 @@ def traer_tendencias(hoy_utc, dias=7):
         p31 = {x["mainsnak"].get("datavalue", {}).get("value", {}).get("id") for x in c.get("P31", [])}
         if "Q5" in p31:
             muerte = _anio(c, "P570")
-            if not muerte or muerte > hoy_utc.year - 1:
-                continue  # solo personajes fallecidos hace más de un año
+            if not muerte or muerte > hoy_utc.year - 1 or NO_HIST_RE.search(a["descripcion"] or ""):
+                continue  # solo personajes históricos fallecidos hace más de un año (no deportistas ni artistas)
             nac = _anio(c, "P569")
             a["tipo"] = "Personaje"
             a["anios"] = f"{nac}–{muerte}" if nac else f"m. {muerte}"
@@ -440,17 +451,15 @@ def main():
               + [("blog/" + a["slug"], a["titulo"], " ".join(a.get("palabras", [])) + " " + a["titulo"]) for a in articulos])
     indice = [(u, t, " " + normalizar(txt) + " ") for u, t, txt in indice]
     for x in tendencias:
-        claves = [w for w in normalizar(re.sub(r"\(.*?\)", "", x["titulo"])).split() if len(w) >= 5 and w not in GENERICAS]
-        rel = []
-        for u, t, txt in indice:
-            if claves and any(f" {w} " in txt for w in claves[-2:]):
-                rel.append({"url": u, "titulo": t})
-        vrel = [v for v in videos if claves and any(f" {w} " in " " + normalizar(v["titulo"]) + " " for w in claves[-2:])]
+        palabras = normalizar(re.sub(r"\(.*?\)", "", x["titulo"])).split()
+        clave = palabras[-1] if palabras and len(palabras[-1]) >= 5 and palabras[-1] not in GENERICAS else ""
+        rel = [{"url": u, "titulo": t} for u, t, txt in indice if clave and f" {clave} " in txt]
+        vrel = [v for v in videos if clave and f" {clave} " in " " + normalizar(v["titulo"]) + " "]
         x["relacionados"] = rel[:2]
         x["video_rel"] = vrel[0] if vrel else None
     print(f"Noticias: {len(noticias)} · Tendencias: {len(tendencias)}")
     render("noticias.html", "noticias/index.html", noticias=noticias, tendencias=tendencias[:6],
-           actualizado=actualizado, categorias=[c for c, _ in NOTICIAS_BUSQUEDAS], **comun)
+           actualizado=actualizado, categorias=[c[0] for c in NOTICIAS_BUSQUEDAS], **comun)
     render("tendencias.html", "tendencias/index.html", tendencias=tendencias, actualizado=actualizado, **comun)
 
     for v in videos:
