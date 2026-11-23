@@ -13,6 +13,8 @@ import re
 import shutil
 import sys
 import unicodedata
+import urllib.parse
+import urllib.request
 from pathlib import Path
 
 import markdown
@@ -63,6 +65,141 @@ def md(text):
     return markdown.markdown(text or "", extensions=["extra", "smarty"],
                              extension_configs={"smarty": {"substitutions": {
                                  "left-double-quote": "“", "right-double-quote": "”"}}})
+
+
+# ---------------------------------------------------------------------------
+# Noticias y tendencias de historia (se actualizan en cada build; el workflow
+# corre cada pocas horas). Si una fuente falla, la sección queda vacía y el
+# resto de la web se publica igual.
+UA = {"User-Agent": "AsiFueLaHistoria-web/1.0 (https://www.asifuelahistoria.com)"}
+NOTICIAS_BUSQUEDAS = [
+    ("Arqueología", '(arqueólogos OR "hallazgo arqueológico" OR excavación OR yacimiento) when:4d'),
+    ("Archivos y desclasificados", '(desclasificados OR "archivo histórico" OR historiadores OR historiador) when:4d'),
+    ("Dictaduras y memoria", '(dictadura OR desaparecidos OR "golpe de Estado") (historia OR aniversario OR memoria OR años) when:4d'),
+    ("Aniversarios", '("años de la" OR aniversario) (revolución OR asesinato OR guerra OR independencia OR masacre OR batalla) when:4d'),
+]
+NOTICIAS_EXCLUIR = re.compile(r"\b(fintech|bitcoin|cripto|fútbol|futbol|liga|gol|goles|celular|iphone|oferta|descuento|horóscopo|receta|células|nba|tenis|película|serie de netflix|reality|famosa|famoso)\b", re.I)
+HIST_RE = re.compile(r"guerra|batalla|golpe|revoluci|masacre|asesinat|atentado|dictadura|dictador|imperio|siglo|hist[oó]ric|conflicto|invasi[oó]n|tratado|independencia|rebeli[oó]n|r[eé]gimen|reino|dinast|insurrecci|levantamiento|genocidio|matanza|magnicidio|naufragio|expedici[oó]n|conquista|virreinato|colonia", re.I)
+EVENTOS_WD = {"Q198", "Q178561", "Q45382", "Q10931", "Q3882219", "Q3199915", "Q13418847", "Q124734", "Q131569",
+              "Q48349", "Q3024240", "Q1261499", "Q645883", "Q2223653", "Q350604", "Q180684", "Q1006311", "Q217327"}
+GENERICAS = set("""guerra batalla imperio revolucion historia presidente rey reina emperador emperatriz general guerra
+golpe estado mundial primera segunda civil gran nacional republica muerte asesinato caso elecciones partido america
+latina dictador dictadura sobre desde hasta entre contra para como donde cuando quien""".split())
+
+
+def _get(url, timeout=20):
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", "replace")
+
+
+def _txt(s):
+    import html as _h
+    return _h.unescape(re.sub(r"<[^>]+>", "", s or "")).strip()
+
+
+def traer_noticias(hoy_utc):
+    vistos, salida = set(), []
+    for categoria, q in NOTICIAS_BUSQUEDAS:
+        url = ("https://news.google.com/rss/search?q=" + urllib.parse.quote(q) +
+               "&hl=es-419&gl=US&ceid=US:es-419")
+        try:
+            xml = _get(url)
+        except Exception as e:  # noqa: BLE001
+            print("Noticias: falla", categoria, e)
+            continue
+        n = 0
+        for it in xml.split("<item>")[1:]:
+            tit = _txt((re.search(r"<title>(.*?)</title>", it, re.S) or [None, ""])[1])
+            link = _txt((re.search(r"<link>(.*?)</link>", it, re.S) or [None, ""])[1])
+            fuente = _txt((re.search(r"<source[^>]*>(.*?)</source>", it, re.S) or [None, ""])[1])
+            fecha = _txt((re.search(r"<pubDate>(.*?)</pubDate>", it, re.S) or [None, ""])[1])
+            if fuente and tit.endswith(" - " + fuente):
+                tit = tit[: -len(fuente) - 3].strip()
+            clave = normalizar(tit)[:70]
+            if not tit or not link or clave in vistos or NOTICIAS_EXCLUIR.search(tit):
+                continue
+            try:
+                f = dt.datetime.strptime(fecha[:25], "%a, %d %b %Y %H:%M:%S").replace(tzinfo=dt.timezone.utc)
+            except ValueError:
+                continue
+            if (hoy_utc - f).days > 4:
+                continue
+            vistos.add(clave)
+            salida.append({"titulo": tit, "url": link, "fuente": fuente, "categoria": categoria,
+                           "fecha": f.isoformat()})
+            n += 1
+            if n >= 12:
+                break
+    salida.sort(key=lambda x: x["fecha"], reverse=True)
+    return salida
+
+
+def _anio(claims, prop):
+    try:
+        return int(claims[prop][0]["mainsnak"]["datavalue"]["value"]["time"][1:5])
+    except (KeyError, IndexError, TypeError, ValueError):
+        return None
+
+
+def traer_tendencias(hoy_utc, dias=7):
+    arts = {}
+    for i in range(1, dias + 1):
+        d = (hoy_utc - dt.timedelta(days=i)).date()
+        try:
+            data = json.loads(_get(f"https://es.wikipedia.org/api/rest_v1/feed/featured/{d:%Y/%m/%d}"))
+        except Exception as e:  # noqa: BLE001
+            print("Tendencias: falla", d, e)
+            continue
+        for a in (data.get("mostread") or {}).get("articles", []):
+            q = a.get("wikibase_item")
+            if not q:
+                continue
+            x = arts.setdefault(q, {"qid": q, "titulo": a.get("normalizedtitle") or a.get("title", ""),
+                                    "descripcion": a.get("description", ""), "extracto": a.get("extract", ""),
+                                    "url": ((a.get("content_urls") or {}).get("desktop") or {}).get("page", ""),
+                                    "visitas": 0, "dias": 0})
+            x["visitas"] += int(a.get("views", 0))
+            x["dias"] += 1
+    if not arts:
+        return []
+    claims = {}
+    ids = list(arts)
+    for i in range(0, len(ids), 50):
+        try:
+            r = json.loads(_get("https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=claims&ids="
+                                + "|".join(ids[i:i + 50])))
+            for q, e in r.get("entities", {}).items():
+                claims[q] = e.get("claims", {})
+        except Exception as e:  # noqa: BLE001
+            print("Tendencias: falla Wikidata", e)
+    salida = []
+    for q, a in arts.items():
+        c = claims.get(q)
+        if c is None:
+            continue
+        p31 = {x["mainsnak"].get("datavalue", {}).get("value", {}).get("id") for x in c.get("P31", [])}
+        if "Q5" in p31:
+            muerte = _anio(c, "P570")
+            if not muerte or muerte > hoy_utc.year - 1:
+                continue  # solo personajes fallecidos hace más de un año
+            nac = _anio(c, "P569")
+            a["tipo"] = "Personaje"
+            a["anios"] = f"{nac}–{muerte}" if nac else f"m. {muerte}"
+        else:
+            anio = _anio(c, "P585") or _anio(c, "P580") or _anio(c, "P571")
+            if not anio or anio > hoy_utc.year - 5:
+                continue
+            if not (p31 & EVENTOS_WD or HIST_RE.search(a["descripcion"] or "")):
+                continue
+            a["tipo"] = "Hecho histórico"
+            fin = _anio(c, "P582")
+            a["anios"] = f"{anio}–{fin}" if fin and fin != anio else str(anio)
+        if a["extracto"] and len(a["extracto"]) > 320:
+            a["extracto"] = a["extracto"][:320].rsplit(" ", 1)[0] + "…"
+        salida.append(a)
+    salida.sort(key=lambda a: a["visitas"], reverse=True)
+    return salida[:24]
 
 
 def main():
@@ -192,6 +329,14 @@ def main():
                         vistos.add(lb["titulo"]); libs.append(lb)
         a["libros"] = [libro_links(lb) for lb in libs[:4]]
         articulos.append(a)
+    # Fotos de portada (imagenes-blog.yaml en la raíz o content/); lo que diga el propio artículo manda.
+    imgs = {}
+    for ip in (ROOT / "content" / "imagenes-blog.yaml", ROOT / "imagenes-blog.yaml"):
+        if ip.exists():
+            imgs.update(load_yaml(ip) or {})
+    for a in articulos:
+        for k, v in (imgs.get(a["slug"]) or {}).items():
+            a.setdefault(k, v)
     articulos.sort(key=lambda a: str(a["fecha"]), reverse=True)
 
     # Efemérides: efemerides-MM.yaml (raíz o content/), 2-3 por día
@@ -281,6 +426,33 @@ def main():
                                          for e in x["lista"]] for x in efe_dias}, ensure_ascii=False),
             encoding="utf-8")
         print(f"Efemérides: {sum(len(x['lista']) for x in efe_dias)} en {len(efe_dias)} días")
+    # Noticias y tendencias de historia (fuentes externas; se omiten en --preview sin red)
+    ahora = dt.datetime.now(dt.timezone.utc)
+    rd = ahora - dt.timedelta(hours=4)
+    actualizado = f"{rd.day} de {MESES[rd.month - 1]} de {rd.year}, {rd:%H:%M} (hora de RD)"
+    noticias = traer_noticias(ahora) if "--sin-red" not in sys.argv else []
+    tendencias = traer_tendencias(ahora) if "--sin-red" not in sys.argv else []
+    for n in noticias:
+        f = dt.datetime.fromisoformat(n["fecha"]) - dt.timedelta(hours=4)
+        n["fecha_txt"] = f"{f.day} de {MESES[f.month - 1]}"
+    # Enlazar cada tendencia con nuestro contenido (artículos, expedientes, videos) por nombre propio
+    indice = ([("dictadores/" + d["slug"], "Expediente: " + d["nombre"], d["nombre"]) for d in dictadores]
+              + [("blog/" + a["slug"], a["titulo"], " ".join(a.get("palabras", [])) + " " + a["titulo"]) for a in articulos])
+    indice = [(u, t, " " + normalizar(txt) + " ") for u, t, txt in indice]
+    for x in tendencias:
+        claves = [w for w in normalizar(re.sub(r"\(.*?\)", "", x["titulo"])).split() if len(w) >= 5 and w not in GENERICAS]
+        rel = []
+        for u, t, txt in indice:
+            if claves and any(f" {w} " in txt for w in claves[-2:]):
+                rel.append({"url": u, "titulo": t})
+        vrel = [v for v in videos if claves and any(f" {w} " in " " + normalizar(v["titulo"]) + " " for w in claves[-2:])]
+        x["relacionados"] = rel[:2]
+        x["video_rel"] = vrel[0] if vrel else None
+    print(f"Noticias: {len(noticias)} · Tendencias: {len(tendencias)}")
+    render("noticias.html", "noticias/index.html", noticias=noticias, tendencias=tendencias[:6],
+           actualizado=actualizado, categorias=[c for c, _ in NOTICIAS_BUSQUEDAS], **comun)
+    render("tendencias.html", "tendencias/index.html", tendencias=tendencias, actualizado=actualizado, **comun)
+
     for v in videos:
         if v.get("libros"):
             render("libros-video.html", f"v/{v['id']}/index.html", v=v, **comun)

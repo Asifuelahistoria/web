@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% set titulo = "Noticias de historia hoy" %}
+{% set descripcion = "Las noticias de historia del día: hallazgos arqueológicos, documentos desclasificados, aniversarios y memoria de las dictaduras. Actualizado varias veces al día." %}
+{% block jsonld %}
+<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"CollectionPage","name":"Noticias de historia","description":descripcion,"inLanguage":"es","url":canon} | tojson }}</script>
+{% endblock %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:28px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><span>Noticias</span></nav>
+    <span class="etiqueta oro">Noticias de historia</span>
+    <h1>La historia <span>hoy</span></h1>
+    <p class="bajada">Hallazgos, archivos que salen a la luz, aniversarios y memoria: lo que se está publicando sobre historia en los medios de habla hispana.</p>
+    <p class="not-act">Actualizado el {{ actualizado }} · se renueva varias veces al día</p>
+  </div>
+</section>
+{% if tendencias %}
+<section class="seccion" style="padding-top:0">
+  <div class="envoltura">
+    <h2>Lo más buscado de historia esta semana</h2>
+    <div class="tend-grid">
+      {% for x in tendencias %}
+      <article class="tend">
+        <span class="not-meta">{{ x.tipo }} · {{ x.anios }}</span>
+        <h3><a href="{{ x.url }}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">{{ x.titulo }}</a></h3>
+        <p>{{ x.descripcion }}</p>
+        {% if x.relacionados or x.video_rel %}<div class="tend-rel">En Así Fue la Historia: {% for r in x.relacionados %}<a href="{{ url(r.url) }}">{{ r.titulo }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% if x.video_rel %}{% if x.relacionados %} · {% endif %}<a href="https://www.youtube.com/watch?v={{ x.video_rel.id }}" target="_blank" rel="noopener">▶ {{ x.video_rel.titulo }}</a>{% endif %}</div>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    <p style="margin-top:16px"><a class="boton" href="{{ url('tendencias') }}">Ver todas las tendencias</a></p>
+  </div>
+</section>
+{% endif %}
+<section class="seccion" style="padding-top:0">
+  <div class="envoltura">
+    {% if noticias %}
+    <nav class="not-cats" aria-label="Temas">{% for c in categorias %}{% if noticias | selectattr('categoria','equalto',c) | list %}<a href="#{{ c | lower | replace(' ','-') }}">{{ c }}</a>{% endif %}{% endfor %}<a href="{{ url('efemerides') }}">Hoy en la historia</a></nav>
+    {% for c in categorias %}{% set lista = noticias | selectattr('categoria','equalto',c) | list %}{% if lista %}
+    <h2 id="{{ c | lower | replace(' ','-') }}">{{ c }}</h2>
+    <ul class="not-lista">
+      {% for n in lista %}<li><a class="not-t" href="{{ n.url }}" target="_blank" rel="nofollow noopener">{{ n.titulo }}</a><span class="not-meta">{{ n.fuente }} · {{ n.fecha_txt }}</span></li>{% endfor %}
+    </ul>
+    {% endif %}{% endfor %}
+    <p class="not-meta" style="margin-top:24px">Titulares recopilados automáticamente de Google Noticias. Cada enlace lleva al medio original; Así Fue la Historia no es responsable de su contenido.</p>
+    {% else %}
+    <p>Las noticias se están actualizando. Vuelve en unas horas o mira <a href="{{ url('efemerides') }}">qué pasó un día como hoy</a>.</p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

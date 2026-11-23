@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% set titulo = "Tendencias de historia: lo más buscado esta semana" %}
+{% set descripcion = "Los personajes y hechos históricos que más está buscando la gente esta semana, según las lecturas de Wikipedia en español. Se actualiza a diario." %}
+{% block jsonld %}
+<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"ItemList","name":"Tendencias de historia","itemListElement":(tendencias | map(attribute='titulo') | list)} | tojson }}</script>
+{% endblock %}
+{% block contenido %}
+<section class="portada" style="padding-bottom:28px">
+  <div class="envoltura">
+    <nav class="migas" aria-label="Ruta"><a href="{{ url('') }}">Inicio</a><span>/</span><a href="{{ url('noticias') }}">Noticias</a><span>/</span><span>Tendencias</span></nav>
+    <span class="etiqueta oro">Tendencias de historia</span>
+    <h1>Lo más buscado de <span>historia</span></h1>
+    <p class="bajada">Los personajes y hechos históricos con más lecturas en Wikipedia en español durante los últimos siete días.</p>
+    <p class="not-act">Actualizado el {{ actualizado }}</p>
+  </div>
+</section>
+<section class="seccion" style="padding-top:0">
+  <div class="envoltura">
+    {% if tendencias %}
+    <div class="tend-grid">
+      {% for x in tendencias %}
+      <article class="tend">
+        <span class="not-meta"><span class="tend-num">#{{ loop.index }}</span> · {{ x.tipo }} · {{ x.anios }} · {{ "{:,}".format(x.visitas).replace(",", ".") }} lecturas</span>
+        <h2>{{ x.titulo }}</h2>
+        {% if x.descripcion %}<p><strong>{{ x.descripcion[:1] | upper }}{{ x.descripcion[1:] }}</strong></p>{% endif %}
+        {% if x.extracto %}<p>{{ x.extracto }}</p>{% endif %}
+        <p><a href="{{ x.url }}" target="_blank" rel="noopener">Leer en Wikipedia</a></p>
+        {% if x.relacionados or x.video_rel %}<div class="tend-rel">En Así Fue la Historia: {% for r in x.relacionados %}<a href="{{ url(r.url) }}">{{ r.titulo }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% if x.video_rel %}{% if x.relacionados %} · {% endif %}<a href="https://www.youtube.com/watch?v={{ x.video_rel.id }}" target="_blank" rel="noopener">▶ {{ x.video_rel.titulo }}</a>{% endif %}</div>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    <p class="not-meta" style="margin-top:24px">Datos: lecturas de Wikipedia en español (Wikimedia) y Wikidata. Resúmenes de Wikipedia bajo licencia CC BY-SA 4.0. Solo se incluyen personajes fallecidos y hechos con más de cinco años.</p>
+    {% else %}
+    <p>Las tendencias se están actualizando. Mientras tanto, mira las <a href="{{ url('noticias') }}">noticias de historia</a>.</p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

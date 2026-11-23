@@ -1,0 +1,127 @@
+# Foto de portada de cada artículo del blog (slug → foto de Wikimedia Commons).
+# Si un artículo no aparece aquí, se usa la miniatura de su video de YouTube.
+como-cayo-alfredo-stroessner-golpe-de-1989:
+  credito: Stefano Vigorelli · CC0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Palacio_de_los_Lopez%2C_Asunci%C3%B3n_PAR.jpg/960px-Palacio_de_los_Lopez%2C_Asunci%C3%B3n_PAR.jpg
+  imagen_alt: Palacio de los López, sede del Gobierno de Paraguay, en Asunción
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Palacio_de_los_Lopez%2C_Asunci%C3%B3n_PAR.jpg
+como-controlo-cuba-a-venezuela-experimento-de-fidel-castro:
+  credito: Guillermo Ramos Flamerich · CC BY-SA 4.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Palacio_de_Miraflores_%282015%29.jpg/960px-Palacio_de_Miraflores_%282015%29.jpg
+  imagen_alt: Palacio de Miraflores, sede de la Presidencia de Venezuela, en Caracas
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Palacio_de_Miraflores_%282015%29.jpg
+como-era-venezuela-antes-de-chavez:
+  credito: Veronidae · CC BY-SA 3.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/5/58/Avenida_Urdaneta_Caracas_1964.jpg
+  imagen_alt: Avenida Urdaneta de Caracas en 1964
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Avenida_Urdaneta_Caracas_1964.jpg
+como-murieron-los-dictadores-mas-temidos:
+  credito: Biblioteca del Congreso Nacional de Chile · CC BY 3.0 CL · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Golpe_de_Estado_1973.jpg/960px-Golpe_de_Estado_1973.jpg
+  imagen_alt: Bombardeo del Palacio de La Moneda, Santiago de Chile, 11 de septiembre de 1973
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Golpe_de_Estado_1973.jpg
+como-murieron-los-dictadores-que-desafiaron-a-estados-unidos:
+  credito: Ejército de EE. UU. · Dominio público · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Panama_clashes_1989.JPEG/960px-Panama_clashes_1989.JPEG
+  imagen_alt: Un edificio en llamas durante la invasión de Panamá, diciembre de 1989
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Panama_clashes_1989.JPEG
+como-murieron-los-hijos-de-los-dictadores-latinoamericanos:
+  credito: Kevin McManus · CC BY-SA 2.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/The_National_Palace_%28Palais_National%29_in_Port-au-Prince..jpg/960px-The_National_Palace_%28Palais_National%29_in_Port-au-Prince..jpg
+  imagen_alt: Palacio Nacional de Haití, en Puerto Príncipe (antes del terremoto de 2010)
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:The_National_Palace_%28Palais_National%29_in_Port-au-Prince..jpg
+como-murieron-los-lideres-guerrilleros-mas-temidos:
+  credito: Óðinn · CC BY-SA 2.5 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Sierra_Maestra_panorama1.jpg/960px-Sierra_Maestra_panorama1.jpg
+  imagen_alt: La Sierra Maestra, en el oriente de Cuba
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Sierra_Maestra_panorama1.jpg
+fidel-castro-abandono-al-che-guevara-1965-1967:
+  credito: Rubenvalluno · CC BY-SA 3.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Lavanderia_donde_se_expuso_el_che.jpg/960px-Lavanderia_donde_se_expuso_el_che.jpg
+  imagen_alt: Lavandería del hospital de Vallegrande (Bolivia), donde se exhibió el cuerpo del Che en 1967
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Lavanderia_donde_se_expuso_el_che.jpg
+historia-de-las-malvinas-de-1764-a-la-guerra-de-1982:
+  credito: Ben Tubby · CC BY 2.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Stanley-Harbour.jpg/960px-Stanley-Harbour.jpg
+  imagen_alt: Bahía de Puerto Argentino/Stanley, en las islas Malvinas
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Stanley-Harbour.jpg
+maduro-chapo-guzman-venezuela-cartel-de-los-soles:
+  credito: Beyond My Ken · CC BY-SA 4.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Federal_Courthouse_Brooklyn.jpg/960px-Federal_Courthouse_Brooklyn.jpg
+  imagen_alt: Tribunal federal de Brooklyn (Distrito Este de Nueva York), donde se juzgó al Chapo
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Federal_Courthouse_Brooklyn.jpg
+por-que-fidel-castro-fusilo-al-general-arnaldo-ochoa:
+  credito: Luis Alvaz · CC BY-SA 4.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Relieve_escult%C3%B3rico_del_Che_Guevara_en_el_edificio_del_Ministerio_del_Interior_01.jpg/960px-Relieve_escult%C3%B3rico_del_Che_Guevara_en_el_edificio_del_Ministerio_del_Interior_01.jpg
+  imagen_alt: Edificio del Ministerio del Interior de Cuba, en la Plaza de la Revolución de La Habana
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Relieve_escult%C3%B3rico_del_Che_Guevara_en_el_edificio_del_Ministerio_del_Interior_01.jpg
+por-que-fusilaron-a-los-jovenes-de-la-lancha-de-regla:
+  credito: Ivan2010 · CC BY-SA 4.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/6/63/Embarcadero_de_la_Lancha_de_Regla_2015.jpg
+  imagen_alt: Embarcadero de la lancha de Regla, en La Habana
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Embarcadero_de_la_Lancha_de_Regla_2015.jpg
+que-cancer-tenia-hugo-chavez-enfermedad-secreta:
+  credito: Wilfredor · CC0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Hospital_Cl%C3%ADnico_Militar_de_Caracas.jpg/960px-Hospital_Cl%C3%ADnico_Militar_de_Caracas.jpg
+  imagen_alt: Hospital Militar de Caracas
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Hospital_Cl%C3%ADnico_Militar_de_Caracas.jpg
+que-paso-con-camilo-cienfuegos:
+  credito: Aeroprints.com · CC BY-SA 3.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TG-GUA_Cessna_310_%287469196896%29.jpg/960px-TG-GUA_Cessna_310_%287469196896%29.jpg
+  imagen_alt: Una avioneta Cessna 310, el mismo modelo en el que desapareció Camilo Cienfuegos
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:TG-GUA_Cessna_310_%287469196896%29.jpg
+que-paso-con-el-mayo-zambada:
+  credito: MightyKC · Dominio público · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/8/86/Culiacan_Catedral.jpg
+  imagen_alt: Catedral de Culiacán, Sinaloa
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Culiacan_Catedral.jpg
+que-paso-con-elian-gonzalez:
+  credito: Presbyterian Mission (USA) · Dominio público · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/View_of_Cardenas.jpg/960px-View_of_Cardenas.jpg
+  imagen_alt: Cárdenas (Cuba), ciudad natal de Elián González, en una postal antigua
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:View_of_Cardenas.jpg
+quien-es-cilia-flores:
+  credito: LHommeDuMonde · CC BY-SA 3.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Palacio_Legislativo%2C_Caracas..jpg/960px-Palacio_Legislativo%2C_Caracas..jpg
+  imagen_alt: Palacio Federal Legislativo de Venezuela, en Caracas
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Palacio_Legislativo%2C_Caracas..jpg
+quien-es-claudia-diaz-guillen-la-enfermera-de-chavez:
+  credito: Miami92 · Dominio público · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Federal_Courthouse_in_Miami.jpg/960px-Federal_Courthouse_in_Miami.jpg
+  imagen_alt: Tribunal federal del Distrito Sur de Florida, en Miami
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Federal_Courthouse_in_Miami.jpg
+quien-es-rosario-murillo:
+  credito: Jairo Cajina · CC BY-SA 4.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Avenida_Bolivar_A_Chavez.jpg/960px-Avenida_Bolivar_A_Chavez.jpg
+  imagen_alt: Avenida Bolívar, en el centro de Managua
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Avenida_Bolivar_A_Chavez.jpg
+quien-fue-realmente-pepe-mujica:
+  credito: GameOfLight · CC BY-SA 3.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Palacio_Legislativo_Montevideo_1.jpg/960px-Palacio_Legislativo_Montevideo_1.jpg
+  imagen_alt: Palacio Legislativo de Uruguay, en Montevideo
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Palacio_Legislativo_Montevideo_1.jpg
+quien-mato-a-las-hermanas-mirabal:
+  credito: Mauricio Espejo Chura · CC BY-SA 4.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Jardin_casa_museo_Hermanas_Mirabal.jpg/960px-Jardin_casa_museo_Hermanas_Mirabal.jpg
+  imagen_alt: Jardín de la Casa Museo Hermanas Mirabal, en Salcedo (República Dominicana)
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Jardin_casa_museo_Hermanas_Mirabal.jpg
+quien-mato-a-trujillo-antonio-imbert-barrera:
+  credito: Jos1950 · CC BY-SA 3.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Monumento_livertad_dictatura_Plaquette.JPG/960px-Monumento_livertad_dictatura_Plaquette.JPG
+  imagen_alt: Monumento a las víctimas de la dictadura de Trujillo (1930-1961)
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Monumento_livertad_dictatura_Plaquette.JPG
+quien-volo-el-vuelo-455-de-cubana:
+  credito: Clint Groves · GFDL 1.2 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Cubana_Douglas_DC-8-43_CU-T1201.jpg/960px-Cubana_Douglas_DC-8-43_CU-T1201.jpg
+  imagen_alt: El Douglas DC-8 CU-T1201 de Cubana, el avión del vuelo 455
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Cubana_Douglas_DC-8-43_CU-T1201.jpg
+revolucionarios-traicionados-por-fidel-castro:
+  credito: Edgardo W. Olivera · CC BY 2.0 · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/El_Capitolio_Nacional%2C_La_Habana%2C_Cuba_%2833966566398%29.jpg/960px-El_Capitolio_Nacional%2C_La_Habana%2C_Cuba_%2833966566398%29.jpg
+  imagen_alt: Capitolio Nacional de La Habana
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:El_Capitolio_Nacional%2C_La_Habana%2C_Cuba_%2833966566398%29.jpg
+victimas-del-paredon-fusilamientos-en-cuba-1959:
+  credito: Carlos Jordi · Dominio público · Wikimedia Commons
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Habana_-_Fortaleza_la_Caba%C3%B1a.jpg/960px-Habana_-_Fortaleza_la_Caba%C3%B1a.jpg
+  imagen_alt: Fortaleza de La Cabaña, en La Habana, en una postal de principios del siglo XX
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Habana_-_Fortaleza_la_Caba%C3%B1a.jpg
