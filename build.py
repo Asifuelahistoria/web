@@ -78,7 +78,7 @@ NOTICIAS_BUSQUEDAS = [
     ("Archivos y desclasificados", '(desclasificados OR "archivo histórico" OR historiadores OR historiador) when:4d',
      r"desclasific|archivo|historiador|documentos|hist[oó]ric"),
     ("Dictaduras y memoria", '(dictadura OR desaparecidos OR "golpe de Estado") (historia OR aniversario OR memoria OR años) when:4d',
-     r"dictadura|dictador|desaparecid|golpe de estado|represi|memoria hist|lesa humanidad|exilio"),
+     r"dictadura|dictador|golpe de estado|represi|memoria hist|lesa humanidad|exilio"),
     ("Aniversarios", '("años de la" OR aniversario) (revolución OR asesinato OR guerra OR independencia OR masacre OR batalla) when:4d',
      r"aniversario|se cumplen|a[nñ]os de la|a[nñ]os del"),
 ]
