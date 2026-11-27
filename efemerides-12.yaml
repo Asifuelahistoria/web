@@ -1,0 +1,996 @@
+mes: 12
+entradas:
+- dia: 1
+  anio: 1948
+  titulo: Costa Rica abolió su ejército
+  pais: Costa Rica
+  texto: José Figueres Ferrer, al frente de la Junta Fundadora de la Segunda República, golpeó con un mazo un muro del Cuartel Bellavista para simbolizar la abolición del ejército. La medida quedó consagrada en la Constitución de 1949 y el antiguo cuartel es hoy el Museo Nacional.
+  fuente:
+  - CNN en Español
+  - https://cnnespanol.cnn.com/2023/12/01/costa-rica-75-anos-sin-ejercito-orix
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/c/c7/Jos%C3%A9_Figueres_Ferrer_1.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Figueres_Ferrer_1.png
+  credito: Fototeca IICCR · Atribución · Wikimedia Commons
+- dia: 1
+  anio: 2001
+  titulo: Argentina anuncia el «corralito»
+  pais: Argentina
+  texto: El ministro de Economía Domingo Cavallo, del gobierno de Fernando de la Rúa, anunció restricciones a la retirada de dinero en efectivo de los bancos para frenar la fuga de depósitos. La medida, conocida como «corralito», desató protestas que desembocaron en la crisis de diciembre de 2001.
+  fuente:
+  - La Nación
+  - https://www.lanacion.com.ar/economia/corralito-la-medida-por-90-dias-que-acelero-el-estallido-de-diciembre-de-2001-nid20122021/
+  video: PfxxPYxLmlg
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mensaje_de_De_la_R%C3%BAa_con_Cavallo.jpg/960px-Mensaje_de_De_la_R%C3%BAa_con_Cavallo.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Mensaje_de_De_la_R%C3%BAa_con_Cavallo.jpg
+  credito: Víctor Bugge · CC BY 2.0 · Wikimedia Commons
+- dia: 1
+  anio: 2018
+  titulo: Andrés Manuel López Obrador asume la presidencia de México
+  pais: México
+  texto: Tras ganar las elecciones de julio de 2018, Andrés Manuel López Obrador rindió protesta ante el Congreso de la Unión como presidente de México. En su discurso prometió combatir la corrupción y la impunidad, ejes de lo que llamó la «Cuarta Transformación».
+  fuente:
+  - Expansión Política
+  - https://politica.expansion.mx/presidencia/2018/12/01/minutoxminuto-la-era-amlo-dia-1
+  video: igZWWpzyFJo
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/01.10.2024_-_Cerim%C3%B4nia_de_transmiss%C3%A3o_do_Poder_Executivo_Federal_%2854036093388%29_%28cropped%29.jpg/960px-01.10.2024_-_Cerim%C3%B4nia_de_transmiss%C3%A3o_do_Poder_Executivo_Federal_%2854036093388%29_%28cropped%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:01.10.2024_-_Cerim%C3%B4nia_de_transmiss%C3%A3o_do_Poder_Executivo_Federal_%2854036093388%29_%28cropped%29.jpg
+  credito: Ricardo Stuckert / Presidencia de Brasil · CC BY-SA 2.0 · Wikimedia Commons
+- dia: 2
+  anio: 1956
+  titulo: Desembarco del Granma en Cuba
+  pais: Cuba
+  texto: Tras zarpar de Tuxpan (México), el yate Granma llegó con 82 expedicionarios encabezados por Fidel Castro a la zona de Los Cayuelos, cerca de Playa Las Coloradas, en el oriente cubano. El desembarco, accidentado y lejos del punto previsto, marcó el inicio de la guerrilla contra Fulgencio Batista.
+  fuente:
+  - Prensa Latina
+  - https://www.prensa-latina.cu/2024/12/02/desembarco-del-granma-la-travesia-que-cambio-la-historia-de-cuba/
+  video: 1Ui7IB0elOk
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/20101118_granma-yatch.jpg/960px-20101118_granma-yatch.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:20101118_granma-yatch.jpg
+  credito: Catskingloves · CC BY-SA 3.0 · Wikimedia Commons
+- dia: 2
+  anio: 1993
+  titulo: Muere Pablo Escobar en Medellín
+  pais: Colombia
+  texto: El jefe del cartel de Medellín, prófugo desde su fuga de la cárcel de La Catedral en 1992, murió abatido sobre un tejado del barrio Los Olivos durante una operación del Bloque de Búsqueda de la Policía colombiana. Había cumplido 44 años el día anterior.
+  fuente:
+  - El Orden Mundial
+  - https://elordenmundial.com/hoy-en-la-historia/2-diciembre/2-de-diciembre-de-1993-la-policia-colombiana-encuentra-y-mata-a-pablo-escobar/
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pablo_Escobar_Mug.jpg/960px-Pablo_Escobar_Mug.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Pablo_Escobar_Mug.jpg
+  credito: Policía Nacional de Colombia · Dominio público · Wikimedia Commons
+- dia: 2
+  anio: 1952
+  titulo: Pérez Jiménez se proclama presidente provisional de Venezuela
+  pais: Venezuela
+  texto: Tras las elecciones a la Asamblea Constituyente del 30 de noviembre, en las que la oposición de URD encabezaba el conteo, el gobierno suspendió la divulgación de resultados. El 2 de diciembre las Fuerzas Armadas designaron presidente provisional a Marcos Pérez Jiménez.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/1952_Venezuelan_Constituent_Assembly_election
+  video: eddNMTpPSQ8
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/5/52/Foto_Ex_Dictador_Marcos_Perez_Jimenez_%281957%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Foto_Ex_Dictador_Marcos_Perez_Jimenez_%281957%29.jpg
+  credito: Ministerio de Fomento de Venezuela · Dominio público · Wikimedia Commons
+- dia: 3
+  anio: 1990
+  titulo: Último levantamiento carapintada en Argentina
+  pais: Argentina
+  texto: Militares encabezados por el coronel Mohamed Alí Seineldín se sublevaron contra el gobierno de Carlos Menem y ocuparon el Regimiento de Patricios y el Edificio Libertador. Fueron sometidos ese mismo día por tropas leales, con más de una decena de muertos. Fue el último alzamiento militar contra la democracia argentina.
+  fuente:
+  - Diario de Cuyo
+  - https://diariodecuyo.com.ar/argentina/Se-cumplen-30-anos-del-ultimo-alzamiento-militar-contra-la-democracia-en-Argentina-20201203-0031.html
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/a/a3/Retrato_oficial_de_Mohamed_Al%C3%AD_Seineld%C3%ADn.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Retrato_oficial_de_Mohamed_Al%C3%AD_Seineld%C3%ADn.jpg
+  credito: TheStronista1954 · CC0 · Wikimedia Commons
+- dia: 3
+  anio: 2006
+  titulo: Hugo Chávez es reelegido presidente de Venezuela
+  pais: Venezuela
+  texto: Hugo Chávez ganó las elecciones presidenciales con cerca del 63 % de los votos frente al opositor Manuel Rosales, que reconoció la derrota. Fue su segunda reelección y abrió el periodo en el que impulsó el «socialismo del siglo XXI».
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/2006_Venezuelan_presidential_election
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Hugo_Ch%C3%A1vez_in_Bras%C3%ADlia_2011_%283x4_cropped%29_%282%29.jpg/960px-Hugo_Ch%C3%A1vez_in_Bras%C3%ADlia_2011_%283x4_cropped%29_%282%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Hugo_Ch%C3%A1vez_in_Bras%C3%ADlia_2011_%283x4_cropped%29_%282%29.jpg
+  credito: Roberto Stuckert Filho · CC BY-SA 2.0 · Wikimedia Commons
+- dia: 4
+  anio: 2016
+  titulo: Las cenizas de Fidel Castro son inhumadas en Santiago de Cuba
+  pais: Cuba
+  texto: Tras recorrer la isla en caravana durante cuatro días, las cenizas de Fidel Castro, fallecido el 25 de noviembre, fueron depositadas en una roca de granito en el cementerio de Santa Ifigenia, cerca de la tumba de José Martí. La ceremonia fue privada.
+  fuente:
+  - OnCuba News
+  - https://oncubanews.com/cuba/sociedad-cuba/historia/en-ceremonia-privada-inhuman-cenizas-de-fidel-castro-en-santa-ifigenia
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/4/4a/Fidel_Castro_1950s.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Fidel_Castro_1950s.jpg
+  credito: Autor desconocido (Mondadori) · Dominio público · Wikimedia Commons
+- dia: 4
+  anio: 2005
+  titulo: Elecciones parlamentarias en Venezuela sin la oposición
+  pais: Venezuela
+  texto: Los principales partidos opositores se retiraron días antes de los comicios alegando falta de garantías. Con una abstención cercana al 75 %, las fuerzas afines a Hugo Chávez obtuvieron la totalidad de los 167 escaños de la Asamblea Nacional.
+  fuente:
+  - Página/12
+  - https://www.pagina12.com.ar/diario/elmundo/4-60077-2005-12-05.html
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 5
+  anio: 1956
+  titulo: Emboscada de Alegría de Pío
+  pais: Cuba
+  texto: Tres días después del desembarco del Granma, el ejército de Batista sorprendió a los expedicionarios en Alegría de Pío. El grupo se dispersó y muchos murieron o fueron capturados; Ernesto Guevara resultó herido. Los sobrevivientes se reagruparon después en la Sierra Maestra.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Battle_of_Alegr%C3%ADa_de_P%C3%ADo
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Monument_Gramna_expedition_-_01.jpg/960px-Monument_Gramna_expedition_-_01.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Monument_Gramna_expedition_-_01.jpg
+  credito: Maesi64 · CC0 · Wikimedia Commons
+- dia: 5
+  anio: 2013
+  titulo: Muere Nelson Mandela
+  pais: Sudáfrica
+  texto: El líder de la lucha contra el apartheid murió en Johannesburgo a los 95 años. Tras pasar 27 años en prisión, fue el primer presidente negro de Sudáfrica entre 1994 y 1999 y recibió el Premio Nobel de la Paz en 1993.
+  fuente:
+  - El Orden Mundial
+  - https://elordenmundial.com/hoy-en-la-historia/5-diciembre/5-de-diciembre-de-2013-muere-nelson-mandela-simbolo-de-la-lucha-contra-el-apartheid-en-sudafrica/
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Nelson_Mandela_1994_%282%29.jpg/960px-Nelson_Mandela_1994_%282%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994_%282%29.jpg
+  credito: Kingkongphoto & www.celebrity-photos.com · CC BY-SA 2.0 · Wikimedia Commons
+- dia: 6
+  anio: 1928
+  titulo: Masacre de las bananeras en Ciénaga
+  pais: Colombia
+  texto: En la madrugada del 6 de diciembre, tropas al mando del general Carlos Cortés Vargas dispararon contra trabajadores en huelga contra la United Fruit Company reunidos en la plaza de Ciénaga. La cifra de muertos sigue en disputa; Gabriel García Márquez la evocó en «Cien años de soledad».
+  fuente:
+  - Britannica
+  - https://www.britannica.com/event/Banana-Massacre
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/8/88/Banana_massacre_photo.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Banana_massacre_photo.png
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 6
+  anio: 1998
+  titulo: Hugo Chávez gana su primera elección presidencial
+  pais: Venezuela
+  texto: El exteniente coronel que había liderado el intento de golpe de 1992 ganó la presidencia con cerca del 56 % de los votos frente a Henrique Salas Römer. Asumió el 2 de febrero de 1999 y puso fin al bipartidismo de AD y COPEI.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/1998_Venezuelan_presidential_election
+  video: tzJMFXbnC-w
+  articulo: como-era-venezuela-antes-de-chavez
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 6
+  anio: 2015
+  titulo: La oposición gana la Asamblea Nacional de Venezuela
+  pais: Venezuela
+  texto: La Mesa de la Unidad Democrática obtuvo 112 de los 167 escaños en las elecciones parlamentarias, una mayoría calificada de dos tercios. Fue la primera gran derrota electoral del chavismo en el legislativo desde 1999.
+  fuente:
+  - Diario Correo
+  - https://diariocorreo.pe/mundo/venezuela-oposicion-alcanzo-la-mayoria-calificada-de-112-diputados-638575/
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 7
+  anio: 2022
+  titulo: Pedro Castillo intenta disolver el Congreso y es destituido
+  pais: Perú
+  texto: El presidente Pedro Castillo anunció la disolución del Congreso y un gobierno de excepción. Horas después el Congreso aprobó su vacancia, fue detenido y la vicepresidenta Dina Boluarte juró como la primera presidenta del Perú.
+  fuente:
+  - CNN en Español
+  - https://krdo.com/telemundo/telemundo-sur-colorado/cnn-spanish/2022/12/08/seis-horas-de-caos-en-peru-de-la-disolucion-del-congreso-a-la-detencion-de-pedro-castillo-y-la-asuncion-de-la-primera-presidenta-del-pais/
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/c/cd/Pedro_Castillo_portrait.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Pedro_Castillo_portrait.png
+  credito: Ministerio de Defensa del Perú · CC BY 2.0 · Wikimedia Commons
+- dia: 7
+  anio: 1941
+  titulo: Japón ataca Pearl Harbor
+  pais: Estados Unidos, Japón
+  texto: La aviación japonesa atacó por sorpresa la base naval estadounidense de Pearl Harbor, en Hawái, causando unos 2.400 muertos. Al día siguiente Estados Unidos declaró la guerra a Japón y entró en la Segunda Guerra Mundial; varios países latinoamericanos se sumaron después a los Aliados.
+  fuente:
+  - USHMM
+  - https://encyclopedia.ushmm.org/content/en/article/pearl-harbor
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Attack_on_Pearl_Harbor_Japanese_planes_view.jpg/960px-Attack_on_Pearl_Harbor_Japanese_planes_view.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Attack_on_Pearl_Harbor_Japanese_planes_view.jpg
+  credito: Armada Imperial Japonesa · Dominio público · Wikimedia Commons
+- dia: 8
+  anio: 1991
+  titulo: Firma del Tratado de Belavezha
+  pais: Rusia, Ucrania, Bielorrusia
+  texto: Borís Yeltsin, Leonid Kravchuk y Stanislav Shushkévich firmaron en el bosque de Belovézhskaya un acuerdo que declaraba la extinción de la URSS y creaba la Comunidad de Estados Independientes. Mijaíl Gorbachov dimitió el 25 de diciembre; Cuba perdió a su principal aliado.
+  fuente:
+  - RFE/RL
+  - https://www.rferl.org/a/1830507.html
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/RIAN_archive_848095_Signing_the_Agreement_to_eliminate_the_USSR_and_establish_the_Commonwealth_of_Independent_States.jpg/960px-RIAN_archive_848095_Signing_the_Agreement_to_eliminate_the_USSR_and_establish_the_Commonwealth_of_Independent_States.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:RIAN_archive_848095_Signing_the_Agreement_to_eliminate_the_USSR_and_establish_the_Commonwealth_of_Independent_States.jpg
+  credito: U. Ivanov / RIA Novosti · CC BY-SA 3.0 · Wikimedia Commons
+- dia: 8
+  anio: 1993
+  titulo: Clinton firma la ley del TLCAN
+  pais: México, Estados Unidos, Canadá
+  texto: El presidente Bill Clinton promulgó la ley que ponía en marcha el Tratado de Libre Comercio de América del Norte, negociado con el México de Carlos Salinas de Gortari y con Canadá. Entró en vigor el 1 de enero de 1994, el mismo día del alzamiento zapatista en Chiapas.
+  fuente:
+  - HISTORY
+  - https://www.history.com/this-day-in-history/december-8/nafta-signed-into-law
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 9
+  anio: 1824
+  titulo: Batalla de Ayacucho
+  pais: Perú
+  texto: El ejército independentista de Antonio José de Sucre derrotó a las tropas del virrey José de la Serna, que fue capturado. Ese mismo día se firmó la Capitulación de Ayacucho, que puso fin al dominio español en Sudamérica continental.
+  fuente:
+  - Britannica
+  - https://www.britannica.com/event/Battle-of-Ayacucho
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Batalla_de_Ayacucho_by_Mart%C3%ADn_Tovar_y_Tovar_%281827_-_1902%29.jpg/960px-Batalla_de_Ayacucho_by_Mart%C3%ADn_Tovar_y_Tovar_%281827_-_1902%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Batalla_de_Ayacucho_by_Mart%C3%ADn_Tovar_y_Tovar_%281827_-_1902%29.jpg
+  credito: Martín Tovar y Tovar · Dominio público · Wikimedia Commons
+- dia: 9
+  anio: 1985
+  titulo: Sentencia del Juicio a las Juntas
+  pais: Argentina
+  texto: La Cámara Federal porteña condenó a reclusión perpetua a Jorge Rafael Videla y Emilio Massera por crímenes de la última dictadura; Roberto Viola, Armando Lambruschini y Orlando Agosti recibieron penas menores y cuatro acusados fueron absueltos.
+  fuente:
+  - Gobierno de Argentina
+  - https://www.argentina.gob.ar/node/310587
+  video: vWCAiWJEn-M
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Juicio_a_las_Juntas.jpg/960px-Juicio_a_las_Juntas.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Juicio_a_las_Juntas.jpg
+  credito: Télam · Dominio público · Wikimedia Commons
+- dia: 10
+  anio: 1983
+  titulo: Raúl Alfonsín asume y vuelve la democracia a Argentina
+  pais: Argentina
+  texto: Raúl Alfonsín, de la Unión Cívica Radical, juró como presidente tras ganar las elecciones del 30 de octubre, poniendo fin a la dictadura iniciada en 1976. Días después creó la CONADEP para investigar las desapariciones.
+  fuente:
+  - La Capital
+  - https://www.lacapital.com.ar/politica/a-40-anos-la-asuncion-alfonsin-y-el-inicio-la-recuperacion-democratica-n10106461.html
+  video: kBcxkE2NeBo
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/e/e4/Ra%C3%BAl_Alfons%C3%ADn_con_banda_presidencial.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Ra%C3%BAl_Alfons%C3%ADn_con_banda_presidencial.jpg
+  credito: Presidencia de la Nación Argentina · CC BY 2.5 AR · Wikimedia Commons
+- dia: 10
+  anio: 2006
+  titulo: Muere Augusto Pinochet
+  pais: Chile
+  texto: El exdictador murió a los 91 años en el Hospital Militar de Santiago, días después de sufrir un infarto. Enfrentaba varios procesos judiciales por violaciones de derechos humanos y corrupción, pero nunca fue condenado. No recibió funerales de Estado.
+  fuente:
+  - Memoria Chilena
+  - https://www.memoriachilena.gob.cl/602/w3-article-92410.html
+  video: XYnAQBpaUKg
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Augusto_Pinochet_foto_oficial_%283x4_cropped%29.jpg/960px-Augusto_Pinochet_foto_oficial_%283x4_cropped%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Augusto_Pinochet_foto_oficial_%283x4_cropped%29.jpg
+  credito: Ministerio de Relaciones Exteriores de Chile · CC BY 2.0 CL · Wikimedia Commons
+- dia: 10
+  anio: 1948
+  titulo: Se aprueba la Declaración Universal de los Derechos Humanos
+  pais: Mundial
+  texto: La Asamblea General de la ONU, reunida en París, aprobó la Declaración Universal de los Derechos Humanos. Desde entonces el 10 de diciembre se celebra el Día de los Derechos Humanos.
+  fuente:
+  - History of Information
+  - https://historyofinformation.com/detail.php?id=4296
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/The_universal_declaration_of_human_rights_10_December_1948.jpg/960px-The_universal_declaration_of_human_rights_10_December_1948.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:The_universal_declaration_of_human_rights_10_December_1948.jpg
+  credito: ONU · Dominio público · Wikimedia Commons
+- dia: 11
+  anio: 1981
+  titulo: Masacre de El Mozote en El Salvador
+  pais: El Salvador
+  texto: Soldados del batallón Atlacatl, unidad del Ejército salvadoreño entrenada por Estados Unidos, asesinaron a cientos de civiles en El Mozote y caseríos vecinos de Morazán durante una operación contra la guerrilla. Se estima que hubo cerca de un millar de víctimas, muchas de ellas niños. Es considerada la peor masacre de la guerra civil.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/El_Mozote_massacre
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/1/1b/Emmemorial800.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Emmemorial800.jpg
+  credito: Efrojas · Dominio público · Wikimedia Commons
+- dia: 11
+  anio: 2006
+  titulo: Calderón lanza el Operativo Conjunto Michoacán
+  pais: México
+  texto: Diez días después de asumir la presidencia, Felipe Calderón anunció el envío de miles de soldados y policías federales a Michoacán contra el crimen organizado. El operativo se considera el inicio de la llamada guerra contra el narcotráfico, que en los años siguientes dejó decenas de miles de muertos.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Operation_Michoac%C3%A1n
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 11
+  anio: 1964
+  titulo: El Che Guevara habla ante la Asamblea General de la ONU
+  pais: Cuba, Estados Unidos
+  texto: Como jefe de la delegación cubana, Ernesto Guevara pronunció en Nueva York un discurso contra el imperialismo y la política de Estados Unidos hacia América Latina, en el que defendió los fusilamientos de la revolución. Durante su intervención, exiliados cubanos intentaron atacar la sede de la ONU.
+  fuente:
+  - Marxists Internet Archive
+  - https://www.marxists.org/archive/guevara/1964/12/11.htm
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Che_Guevara_-_Guerrillero_Heroico_by_Alberto_Korda.jpg/960px-Che_Guevara_-_Guerrillero_Heroico_by_Alberto_Korda.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Che_Guevara_-_Guerrillero_Heroico_by_Alberto_Korda.jpg
+  credito: Alberto Korda · Dominio público · Wikimedia Commons
+- dia: 12
+  anio: 1946
+  titulo: La ONU condena al régimen de Franco
+  pais: España
+  texto: La Asamblea General de las Naciones Unidas aprobó la resolución 39, que excluía a la España de Franco de los organismos internacionales y recomendaba a los Estados miembros retirar a sus embajadores de Madrid. Argentina, bajo Perón, fue uno de los pocos países que no acató la recomendación.
+  fuente:
+  - Wikisource
+  - https://es.wikisource.org/wiki/Resoluci%C3%B3n_39_(I)_de_la_Asamblea_General_de_la_Organizaci%C3%B3n_de_las_Naciones_Unidas
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 12
+  anio: 2022
+  titulo: Disturbios en Brasilia tras la diplomación de Lula
+  pais: Brasil
+  texto: El Tribunal Superior Electoral entregó a Luiz Inácio Lula da Silva el diploma que lo acreditaba como presidente electo. Esa misma noche, simpatizantes de Jair Bolsonaro intentaron invadir la sede de la Policía Federal en Brasilia e incendiaron autobuses y coches, según informaron medios y autoridades brasileñas.
+  fuente:
+  - Al Jazeera
+  - https://aljazeera.com/news/2022/12/13/bolsonaro-supporters-attack-police-headquarters-in-brazil
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_%28estreita%29.jpg/960px-Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_%28estreita%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_%28estreita%29.jpg
+  credito: Palácio do Planalto · CC BY 2.0 · Wikimedia Commons
+- dia: 13
+  anio: 1968
+  titulo: La dictadura brasileña decreta el AI-5
+  pais: Brasil
+  texto: El gobierno del mariscal Artur da Costa e Silva promulgó el Acto Institucional n.º 5, que cerró el Congreso, suspendió el habeas corpus para delitos políticos y permitió censurar la prensa y destituir cargos electos. Marcó el inicio de la etapa más represiva del régimen militar.
+  fuente:
+  - Planalto (Gobierno de Brasil)
+  - https://www.planalto.gov.br/ccivil_03/ait/ait-05-68.htm
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Costa_e_Silva.jpg/960px-Costa_e_Silva.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Costa_e_Silva.jpg
+  credito: Gobierno de Brasil · Dominio público · Wikimedia Commons
+- dia: 13
+  anio: 1976
+  titulo: Masacre de Margarita Belén
+  pais: Argentina
+  texto: Presos políticos trasladados desde Resistencia fueron fusilados por fuerzas del Ejército y la policía cerca de Margarita Belén, en Chaco. La dictadura lo presentó como un intento de fuga; la justicia argentina condenó años después a varios militares por los asesinatos.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Margarita_Bel%C3%A9n_massacre
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MONUMENTO_DE_MARGARITA_BELEN._Cerca_de_Resistencia._-_panoramio.jpg/960px-MONUMENTO_DE_MARGARITA_BELEN._Cerca_de_Resistencia._-_panoramio.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:MONUMENTO_DE_MARGARITA_BELEN._Cerca_de_Resistencia._-_panoramio.jpg
+  credito: gomezminck · CC BY-SA 3.0 · Wikimedia Commons
+- dia: 14
+  anio: 1989
+  titulo: Patricio Aylwin gana la primera elección tras Pinochet
+  pais: Chile
+  texto: El democristiano Patricio Aylwin, candidato de la Concertación, ganó la elección presidencial con más del 55% de los votos frente a Hernán Büchi. Fueron los primeros comicios presidenciales libres desde 1970 y abrieron la transición tras 16 años de régimen militar.
+  fuente:
+  - Memoria Chilena
+  - https://www.memoriachilena.gob.cl/602/w3-article-92970.html
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Aylwin_Banda.jpg/960px-Aylwin_Banda.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Aylwin_Banda.jpg
+  credito: Biblioteca del Congreso Nacional de Chile · CC BY 3.0 CL · Wikimedia Commons
+- dia: 14
+  anio: 1995
+  titulo: Se firman en París los Acuerdos de Dayton
+  pais: Bosnia y Herzegovina, Francia
+  texto: Los presidentes de Bosnia, Croacia y Serbia firmaron en París el acuerdo de paz negociado semanas antes en Dayton, Estados Unidos. El tratado puso fin a la guerra de Bosnia, que había causado unos 100.000 muertos, y dividió el país en dos entidades.
+  fuente:
+  - Oficina del Alto Representante
+  - https://www.ohr.int/dayton-peace-agreement/
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/DaytonAgreement.jpg/960px-DaytonAgreement.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:DaytonAgreement.jpg
+  credito: Fuerza Aérea de EE. UU. / Brian Schlumbohm · Dominio público · Wikimedia Commons
+- dia: 15
+  anio: 1999
+  titulo: Venezuela aprueba en referéndum la Constitución de Chávez
+  pais: Venezuela
+  texto: Cerca del 72% de los votantes aprobó la nueva Constitución impulsada por Hugo Chávez y redactada por una Asamblea Constituyente. El texto rebautizó el país como República Bolivariana de Venezuela, amplió el mandato presidencial a seis años y permitió la reelección inmediata.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/December_1999_Venezuelan_constitutional_referendum
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/8/81/Constitution_of_Venezuela_1999.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Constitution_of_Venezuela_1999.png
+  credito: Gobierno de Venezuela · Dominio público · Wikimedia Commons
+- dia: 15
+  anio: 1999
+  titulo: Comienza la tragedia de Vargas
+  pais: Venezuela
+  texto: Tras días de lluvias torrenciales, deslaves y riadas arrasaron el litoral del estado Vargas, al norte de Caracas, el mismo día del referéndum constitucional. Las estimaciones de muertos varían de varios miles a decenas de miles. Es el peor desastre natural de la historia de Venezuela.
+  fuente:
+  - BBC Mundo (Prensa Libre)
+  - https://www.prensalibre.com/?p=4600951
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/f/f4/Monta%C3%B1asdeslave.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Monta%C3%B1asdeslave.jpg
+  credito: Autor desconocido · Uso libre · Wikimedia Commons
+- dia: 16
+  anio: 1990
+  titulo: Aristide gana las primeras elecciones libres de Haití
+  pais: Haití
+  texto: El sacerdote Jean-Bertrand Aristide ganó la presidencia con cerca del 67% de los votos en comicios supervisados por la ONU y la OEA, los primeros considerados democráticos en la historia del país. Asumió en febrero de 1991 y fue derrocado por un golpe militar ocho meses después.
+  fuente:
+  - Hérodote
+  - https://www.herodote.net/16_decembre_1990-evenement-19901216.php
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/4/48/Jean-Bertrand_Aristide_1993.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Jean-Bertrand_Aristide_1993.png
+  credito: Christian Lambiotte · CC BY 4.0 · Wikimedia Commons
+- dia: 16
+  anio: 1989
+  titulo: Timisoara inicia la revolución contra Ceaușescu
+  pais: Rumania
+  texto: Vecinos de Timisoara se concentraron para impedir el desalojo del pastor húngaro László Tőkés, y la protesta se convirtió en una revuelta contra el régimen comunista. La represión no la frenó y en nueve días cayó Nicolae Ceaușescu, que fue juzgado y fusilado el 25 de diciembre.
+  fuente:
+  - Radio Romania International
+  - https://www.rri.ro/en/news-and-current-affairs/today-in-the-news/the-1989-revolution-started-in-timisoara-id962980.html
+  video: nHK7OEGShuI
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/6/6b/Revolutia_Bucuresti_1989_000.JPG
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Revolutia_Bucuresti_1989_000.JPG
+  credito: Autor no acreditado · Atribución · Wikimedia Commons
+- dia: 17
+  anio: 1830
+  titulo: Muere Simón Bolívar en Santa Marta
+  pais: Colombia, Venezuela
+  texto: El Libertador murió a los 47 años en la Quinta de San Pedro Alejandrino, cerca de Santa Marta, tras renunciar a la presidencia de la Gran Colombia. Murió enfermo, probablemente de tuberculosis, mientras el proyecto grancolombiano se desintegraba.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Quinta_de_San_Pedro_Alejandrino
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sim%C3%B3n_Bol%C3%ADvar._Toro_Moreno%2C_Luis._1922%2C_Legislative_Palace%2C_La_Paz.png/960px-Sim%C3%B3n_Bol%C3%ADvar._Toro_Moreno%2C_Luis._1922%2C_Legislative_Palace%2C_La_Paz.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Sim%C3%B3n_Bol%C3%ADvar._Toro_Moreno%2C_Luis._1922%2C_Legislative_Palace%2C_La_Paz.png
+  credito: Luis Enrique Toro Moreno · Dominio público · Wikimedia Commons
+- dia: 17
+  anio: 1996
+  titulo: El MRTA toma la residencia del embajador japonés en Lima
+  pais: Perú
+  texto: Un comando del Movimiento Revolucionario Túpac Amaru irrumpió en una recepción en la residencia del embajador de Japón y tomó cientos de rehenes. La crisis duró 126 días y terminó en abril de 1997 con la operación militar Chavín de Huántar, ordenada por el gobierno de Alberto Fujimori.
+  fuente:
+  - El Comercio
+  - https://elcomercio.pe/lima/ocurrio-1996-terroristas-toman-embajada-japon-314735-noticia/
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/e/e7/Operation_Chav%C3%ADn_de_Hu%C3%A1ntar_model.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Operation_Chav%C3%ADn_de_Hu%C3%A1ntar_model.jpg
+  credito: Ministerio de Defensa del Perú · CC BY 2.0 · Wikimedia Commons
+- dia: 17
+  anio: 2014
+  titulo: Obama y Raúl Castro anuncian el deshielo
+  pais: Cuba, Estados Unidos
+  texto: En discursos simultáneos, Barack Obama y Raúl Castro anunciaron que sus países restablecerían relaciones diplomáticas, rotas desde 1961, tras negociaciones secretas con mediación del Vaticano y Canadá. El acuerdo incluyó un intercambio de prisioneros.
+  fuente:
+  - Obama Presidential Library
+  - https://obamalibrary.archives.gov/timeline/announcement-restoration-relations-cuba
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Handshake_between_the_President_and_Cuban_President_Ra%C3%BAl_Castro.jpg/960px-Handshake_between_the_President_and_Cuban_President_Ra%C3%BAl_Castro.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Handshake_between_the_President_and_Cuban_President_Ra%C3%BAl_Castro.jpg
+  credito: Casa Blanca · Dominio público · Wikimedia Commons
+- dia: 18
+  anio: 2005
+  titulo: Evo Morales gana la presidencia de Bolivia
+  pais: Bolivia
+  texto: El dirigente cocalero Evo Morales, del Movimiento al Socialismo, ganó las elecciones con cerca del 54% de los votos, la primera mayoría absoluta en décadas. Asumió en enero de 2006 y es considerado el primer presidente indígena del país.
+  fuente:
+  - Encyclopædia Universalis
+  - https://www.universalis.fr/evenement/18-decembre-2005-election-du-syndicaliste-indien-evo-morales-a-la-presidence/
+  video: NRf8QAyFPu8
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Evo_Morales_Ayma_%28cropped_3%29.jpg/960px-Evo_Morales_Ayma_%28cropped_3%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Evo_Morales_Ayma_%28cropped_3%29.jpg
+  credito: EneasMx · CC BY-SA 4.0 · Wikimedia Commons
+- dia: 18
+  anio: 1865
+  titulo: Estados Unidos abole la esclavitud con la Decimotercera Enmienda
+  pais: Estados Unidos
+  texto: El secretario de Estado William Seward certificó la ratificación de la Decimotercera Enmienda, que prohibió la esclavitud en todo el territorio estadounidense. Llegó ocho meses después del fin de la guerra de Secesión y del asesinato de Abraham Lincoln.
+  fuente:
+  - National Constitution Center
+  - https://constitutioncenter.org/amp/blog/on-this-day-the-united-states-formally-outlaws-slavery
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 19
+  anio: 1990
+  titulo: El "ejercicio de enlace" del Ejército de Pinochet
+  pais: Chile
+  texto: Con Augusto Pinochet aún como comandante en jefe, el Ejército acuarteló a sus tropas en lo que llamó un ejercicio de enlace. Fue interpretado como una presión al gobierno de Patricio Aylwin mientras se investigaban los pagos del Ejército a un hijo de Pinochet, el caso Pinocheques.
+  fuente:
+  - Memoria Chilena
+  - https://www.memoriachilena.gob.cl/602/w3-article-92406.html
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Augusto_Pinochet_foto_oficial_%283x4_cropped%29.jpg/960px-Augusto_Pinochet_foto_oficial_%283x4_cropped%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Augusto_Pinochet_foto_oficial_%283x4_cropped%29.jpg
+  credito: Ministerio de Relaciones Exteriores de Chile · CC BY 2.0 CL · Wikimedia Commons
+- dia: 19
+  anio: 2021
+  titulo: Gabriel Boric gana la presidencia de Chile
+  pais: Chile
+  texto: El diputado de izquierda Gabriel Boric venció en segunda vuelta a José Antonio Kast con cerca del 56% de los votos. A los 35 años se convirtió en el presidente más joven de la historia de Chile; Kast reconoció la derrota esa misma noche.
+  fuente:
+  - La Nación
+  - https://www.lanacion.com.ar/el-mundo/las-elecciones-en-chile-en-vivo-como-se-vive-la-segunda-vuelta-entre-kast-y-boric-y-para-cuando-se-nid19122021
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Retrato_Oficial_Presidente_Boric_Font.jpg/960px-Retrato_Oficial_Presidente_Boric_Font.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Retrato_Oficial_Presidente_Boric_Font.jpg
+  credito: Gobierno de Chile · CC BY 3.0 CL · Wikimedia Commons
+- dia: 20
+  anio: 1989
+  titulo: Estados Unidos invade Panamá para derrocar a Noriega
+  pais: Panamá, Estados Unidos
+  texto: Unos 27.000 soldados estadounidenses participaron en la Operación Causa Justa para capturar al general Manuel Antonio Noriega, acusado de narcotráfico en Estados Unidos. Noriega se refugió en la Nunciatura y se entregó el 3 de enero de 1990. La cifra de muertos civiles sigue en disputa.
+  fuente:
+  - U.S. Army
+  - https://www.army.mil/article/14302/operation_just_cause_the_invasion_of_panama_december_1989
+  video: Hu7-JwHpmac
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Operation_Just_Cause.png/960px-Operation_Just_Cause.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Operation_Just_Cause.png
+  credito: LLs · CC BY-SA 4.0 · Wikimedia Commons
+- dia: 20
+  anio: 1973
+  titulo: ETA asesina a Carrero Blanco en Madrid
+  pais: España
+  texto: Una carga explosiva colocada en un túnel bajo la calle Claudio Coello hizo volar el coche del almirante Luis Carrero Blanco, presidente del Gobierno y sucesor previsto de Franco. Murieron él, su escolta y su chófer. ETA reivindicó el atentado, conocido como Operación Ogro.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Assassination_of_Luis_Carrero_Blanco
+  video: zx6rEmxDSyY
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/1/14/Placa_Carrero_Blanco.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Placa_Carrero_Blanco.jpg
+  credito: J. L. de Diego · Dominio público · Wikimedia Commons
+- dia: 20
+  anio: 2001
+  titulo: Fernando de la Rúa renuncia y deja la Casa Rosada en helicóptero
+  pais: Argentina
+  texto: Tras los saqueos, el estado de sitio decretado la noche anterior y la represión en Plaza de Mayo, el presidente Fernando de la Rúa presentó su renuncia y abandonó la Casa Rosada en helicóptero. Las protestas de esos dos días dejaron 39 muertos; en once días Argentina tuvo cinco presidentes.
+  fuente:
+  - La Capital
+  - https://www.lacapital.com.ar/politica/estallido-social-que-paso-el-19-y-20-diciembre-2001-la-argentina-n10170158.html
+  video: PfxxPYxLmlg
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Fernando_de_la_R%C3%BAa_con_bast%C3%B3n_y_banda_de_presidente.jpg/960px-Fernando_de_la_R%C3%BAa_con_bast%C3%B3n_y_banda_de_presidente.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Fernando_de_la_R%C3%BAa_con_bast%C3%B3n_y_banda_de_presidente.jpg
+  credito: Autor desconocido · CC BY 2.0 · Wikimedia Commons
+- dia: 21
+  anio: 1907
+  titulo: Matanza de la Escuela Santa María de Iquique
+  pais: Chile
+  texto: Tropas del Ejército dispararon contra miles de obreros del salitre en huelga, reunidos con sus familias en la Escuela Santa María de Iquique, por orden del general Roberto Silva Renard. El número de muertos sigue en discusión y las estimaciones van de cientos a más de dos mil.
+  fuente:
+  - Memoria Chilena
+  - https://www.memoriachilena.gob.cl/602/w3-article-3604.html
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/7/7c/Escuela_Santa_Mar%C3%ADa_de_Iquique_hacia_1907.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Escuela_Santa_Mar%C3%ADa_de_Iquique_hacia_1907.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 21
+  anio: 1988
+  titulo: Atentado contra el vuelo 103 de Pan Am sobre Lockerbie
+  pais: Reino Unido, Libia
+  texto: Una bomba destruyó en pleno vuelo el Boeing 747 de Pan Am que cubría la ruta Londres-Nueva York, sobre la localidad escocesa de Lockerbie. Murieron 270 personas, entre pasajeros, tripulantes y vecinos. Un agente de inteligencia libio fue condenado en 2001 por el atentado.
+  fuente:
+  - Britannica
+  - https://www.britannica.com/event/Pan-Am-flight-103
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Pan_Am_Flight_103._Crashed_Lockerbie%2C_Scotland%2C_21_December_1988.jpg/960px-Pan_Am_Flight_103._Crashed_Lockerbie%2C_Scotland%2C_21_December_1988.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Pan_Am_Flight_103._Crashed_Lockerbie%2C_Scotland%2C_21_December_1988.jpg
+  credito: Air Accidents Investigation Branch · OGL 2 · Wikimedia Commons
+- dia: 22
+  anio: 1997
+  titulo: Masacre de Acteal en Chiapas
+  pais: México
+  texto: Un grupo paramilitar asesinó a 45 indígenas tzotziles de la organización pacifista Las Abejas, entre ellos mujeres y niños, mientras rezaban en la comunidad de Acteal, municipio de Chenalhó. La matanza ocurrió en pleno conflicto entre el Estado mexicano y el EZLN.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Acteal_massacre
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/e/e8/ActealColumnofInfamy.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:ActealColumnofInfamy.jpg
+  credito: MattSoerens · CC BY 2.0 · Wikimedia Commons
+- dia: 22
+  anio: 1988
+  titulo: Asesinan a Chico Mendes en Xapuri
+  pais: Brasil
+  texto: El líder seringueiro y ambientalista Chico Mendes, que defendía la selva amazónica frente a la expansión ganadera, fue asesinado de un disparo a la puerta de su casa en Xapuri, Acre. Por el crimen fueron condenados el hacendado Darly Alves da Silva y su hijo Darci.
+  fuente:
+  - HISTORY
+  - https://www.history.com/this-day-in-history/december-22/chico-mendes-assassinated
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/1/14/Chico_Mendes_in_1988_%28cropped%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Chico_Mendes_in_1988_%28cropped%29.jpg
+  credito: Miranda Smith, Miranda Productions · CC BY-SA 3.0 · Wikimedia Commons
+- dia: 22
+  anio: 1989
+  titulo: Ceaușescu huye en helicóptero de Bucarest
+  pais: Rumania
+  texto: Ante una multitud que tomaba el centro de Bucarest, Nicolae Ceaușescu y su esposa Elena escaparon en helicóptero desde la azotea de la sede del Comité Central. Fueron capturados horas después cerca de Târgoviște, mientras el régimen comunista se derrumbaba.
+  fuente:
+  - HISTORY
+  - https://history.com/this-day-in-history/romanian-government-falls
+  video: nHK7OEGShuI
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/6/6b/Revolutia_Bucuresti_1989_000.JPG
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Revolutia_Bucuresti_1989_000.JPG
+  credito: Autor no acreditado · Atribución · Wikimedia Commons
+- dia: 23
+  anio: 1972
+  titulo: Terremoto destruye Managua
+  pais: Nicaragua
+  texto: Un sismo de magnitud 6,2 arrasó el centro de Managua y causó miles de muertos. La gestión de la ayuda internacional, controlada por Anastasio Somoza Debayle y su entorno, fue denunciada por corrupción y erosionó el apoyo a la dictadura.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/1972_Nicaragua_earthquake
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/1/1d/Terremoto_Managua_1972_-_USGS.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Terremoto_Managua_1972_-_USGS.jpg
+  credito: USGS · Dominio público · Wikimedia Commons
+- dia: 23
+  anio: 2001
+  titulo: Rodríguez Saá asume la presidencia y anuncia la suspensión de pagos
+  pais: Argentina
+  texto: En plena crisis tras la renuncia de Fernando de la Rúa, la Asamblea Legislativa eligió a Adolfo Rodríguez Saá como presidente interino. En su discurso de asunción anunció la suspensión del pago de la deuda externa; renunció una semana después.
+  fuente:
+  - Biblioteca del Congreso de la Nación
+  - https://bcn.gob.ar/uploads/adjuntos/Dossier-n-255-mensaje-asuncion-adolfo-rodriguez-saa.pdf
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/d/d3/Asunci%C3%B3n_Rodr%C3%ADguez_Sa%C3%A1.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Asunci%C3%B3n_Rodr%C3%ADguez_Sa%C3%A1.jpg
+  credito: Víctor Bugge · CC BY-SA 2.0 · Wikimedia Commons
+- dia: 24
+  anio: 1989
+  titulo: Noriega se refugia en la Nunciatura Apostólica
+  pais: Panamá, Estados Unidos
+  texto: Cuatro días después del inicio de la invasión estadounidense, el general Manuel Antonio Noriega pidió refugio en la Nunciatura del Vaticano en Ciudad de Panamá. Tropas de EE. UU. rodearon el edificio con música a todo volumen hasta su entrega, el 3 de enero de 1990.
+  fuente:
+  - La Prensa (Panamá)
+  - https://www.prensa.com/historias/las-horas-finales-de-noriega/
+  video: Hu7-JwHpmac
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Manuel_Noriega_1990_U.S._Marshal_mugshot.jpg/960px-Manuel_Noriega_1990_U.S._Marshal_mugshot.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Manuel_Noriega_1990_U.S._Marshal_mugshot.jpg
+  credito: U.S. Marshals Service · Dominio público · Wikimedia Commons
+- dia: 24
+  anio: 1979
+  titulo: La Unión Soviética inicia su intervención en Afganistán
+  pais: Afganistán, Unión Soviética
+  texto: Tropas soviéticas comenzaron a llegar a Kabul por puente aéreo para sostener al gobierno comunista afgano. Tres días después, fuerzas especiales mataron al presidente Hafizullah Amín. La guerra se prolongó hasta 1989.
+  fuente:
+  - HISTORY
+  - https://www.history.com/this-day-in-history/december-24/soviet-tanks-roll-into-afghanistan
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 25
+  anio: 1989
+  titulo: Fusilan a Nicolae y Elena Ceaușescu
+  pais: Rumania
+  texto: Tras un juicio sumario de cerca de una hora ante un tribunal militar en Târgoviște, el dictador rumano y su esposa fueron condenados a muerte y fusilados ese mismo día. Las imágenes se emitieron por televisión.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Trial_of_Nicolae_and_Elena_Ceaușescu
+  video: nHK7OEGShuI
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Nicolae_Ceau%C8%99escu.jpg/960px-Nicolae_Ceau%C8%99escu.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Nicolae_Ceau%C8%99escu.jpg
+  credito: Autor desconocido · Atribución · Wikimedia Commons
+- dia: 25
+  anio: 1991
+  titulo: Gorbachov renuncia a la presidencia de la URSS
+  pais: Unión Soviética
+  texto: En un mensaje televisado, Mijaíl Gorbachov dimitió como presidente de la Unión Soviética. Esa noche se arrió la bandera roja del Kremlin y se izó la tricolor rusa.
+  fuente:
+  - Britannica
+  - https://www.britannica.com/story/25th-anniversary-of-the-end-of-the-soviet-union
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/a/af/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%93%D0%BE%D1%80%D0%B1%D0%B0%D1%87%D1%91%D0%B2_%2803-12-1989%29.png
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%93%D0%BE%D1%80%D0%B1%D0%B0%D1%87%D1%91%D0%B2_%2803-12-1989%29.png
+  credito: Yuriy Somov / RIA Novosti · CC BY-SA 3.0 · Wikimedia Commons
+- dia: 26
+  anio: 1991
+  titulo: Se disuelve formalmente la Unión Soviética
+  pais: Unión Soviética
+  texto: El Sóviet de las Repúblicas del Sóviet Supremo aprobó una declaración que reconocía el fin de la URSS como Estado. Sus quince repúblicas pasaron a ser países independientes.
+  fuente:
+  - Wikipedia
+  - https://www.wikipedia.org/wiki/Soviet_collapse
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 26
+  anio: 1933
+  titulo: Se firma la Convención de Montevideo
+  pais: Uruguay, América
+  texto: En la VII Conferencia Panamericana se firmó la Convención sobre Derechos y Deberes de los Estados, que fijó criterios de Estado aún citados y estableció que ningún Estado tiene derecho a intervenir en los asuntos internos de otro.
+  fuente:
+  - Britannica
+  - https://www.britannica.com/event/Montevideo-Convention
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 27
+  anio: 1974
+  titulo: Comando sandinista asalta la casa de Chema Castillo
+  pais: Nicaragua
+  texto: Un comando del FSLN irrumpió en una fiesta en la residencia de José María Castillo, en Managua, y tomó como rehenes a altos funcionarios y diplomáticos del régimen de Somoza. A cambio, obtuvo la liberación de presos políticos, entre ellos Daniel Ortega, y un rescate.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/1974_Nicaraguan_hostage_crisis
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 27
+  anio: 2007
+  titulo: Asesinan a Benazir Bhutto en Rawalpindi
+  pais: Pakistán
+  texto: La ex primera ministra y líder opositora murió en un ataque con disparos y explosivos al terminar un mitin electoral. Había sido la primera mujer en gobernar un país de mayoría musulmana.
+  fuente:
+  - HISTORY
+  - https://www.history.com/this-day-in-history/december-27/pakistani-politician-benazir-bhutto-assassinated
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Oliver_Mark_-_Benazir_Bhutto%2C_Dubai_2006_%28cropped%29.jpg/960px-Oliver_Mark_-_Benazir_Bhutto%2C_Dubai_2006_%28cropped%29.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Oliver_Mark_-_Benazir_Bhutto%2C_Dubai_2006_%28cropped%29.jpg
+  credito: Oliver Mark · CC BY-SA 4.0 · Wikimedia Commons
+- dia: 28
+  anio: 1958
+  titulo: Comienza la Batalla de Santa Clara
+  pais: Cuba
+  texto: Columnas rebeldes al mando del Che Guevara iniciaron el ataque a Santa Clara, defendida por tropas de Batista. El 29 descarrilaron el tren blindado y la caída de la ciudad precipitó la huida del dictador.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Battle_of_Santa_Clara
+  video: CnV2LZP_LU8
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/1/13/Che_SClara.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Che_SClara.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 28
+  anio: 1973
+  titulo: Se publica en París 'Archipiélago Gulag'
+  pais: Francia, Unión Soviética
+  texto: Apareció el primer tomo de la obra de Aleksandr Solzhenitsyn sobre el sistema de campos de trabajo forzado soviético. Semanas después el autor fue detenido y expulsado de la URSS.
+  fuente:
+  - HISTORY
+  - https://www.history.com/this-day-in-history/december-28/solzhenitsyns-the-gulag-archipelago-published
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 29
+  anio: 1996
+  titulo: Firma del Acuerdo de Paz Firme y Duradera
+  pais: Guatemala
+  texto: El gobierno guatemalteco y la guerrilla URNG firmaron en la capital el acuerdo que puso fin a 36 años de conflicto armado interno. La guerra dejó unos 200.000 muertos y desaparecidos, según la comisión de esclarecimiento auspiciada por la ONU.
+  fuente:
+  - ONU Peacemaker
+  - https://peacemaker.un.org/sites/default/files/document/files/2024/05/gt961229agreementonfirmandlastingpeace28esp29.pdf
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: ''
+  imagen_pagina: ''
+  credito: ''
+- dia: 29
+  anio: 1890
+  titulo: Masacre de Wounded Knee
+  pais: Estados Unidos
+  texto: Soldados del 7.º de Caballería abrieron fuego contra un campamento lakota en Wounded Knee, Dakota del Sur, durante un intento de desarme. Murieron cerca de 300 lakotas, muchos de ellos mujeres y niños.
+  fuente:
+  - Britannica
+  - https://www.britannica.com/event/Wounded-Knee-Massacre
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Soldiers_at_a_burial_for_the_dead_at_Wounded_Knee%2C_South_Dakota%2C_c._1891.jpg/960px-Soldiers_at_a_burial_for_the_dead_at_Wounded_Knee%2C_South_Dakota%2C_c._1891.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Soldiers_at_a_burial_for_the_dead_at_Wounded_Knee%2C_South_Dakota%2C_c._1891.jpg
+  credito: Northwestern Photo Co. · Dominio público · Wikimedia Commons
+- dia: 30
+  anio: 1922
+  titulo: Nace la Unión Soviética
+  pais: Unión Soviética
+  texto: Delegados de Rusia, Ucrania, Bielorrusia y la Federación Transcaucásica aprobaron en Moscú el tratado que creó la Unión de Repúblicas Socialistas Soviéticas, que existiría hasta 1991.
+  fuente:
+  - Britannica
+  - https://www.britannica.com/on-this-day/December-30
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/3/30/Declaration_and_Treaty_on_the_Creation_of_the_USSR-1922-page3.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Declaration_and_Treaty_on_the_Creation_of_the_USSR-1922-page3.jpg
+  credito: Gobierno soviético · Dominio público · Wikimedia Commons
+- dia: 30
+  anio: 1896
+  titulo: Fusilan a José Rizal en Manila
+  pais: Filipinas, España
+  texto: Las autoridades coloniales españolas ejecutaron al escritor y reformista José Rizal, acusado de rebelión tras un juicio militar. Su muerte impulsó la revolución filipina contra España.
+  fuente:
+  - Britannica
+  - https://www.britannica.com/on-this-day/December-30
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/c/c9/Jose_Rizal_full.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Jose_Rizal_full.jpg
+  credito: Autor desconocido · Dominio público · Wikimedia Commons
+- dia: 30
+  anio: 2020
+  titulo: Argentina legaliza la interrupción voluntaria del embarazo
+  pais: Argentina
+  texto: El Senado aprobó por 38 votos a favor y 29 en contra la ley que permite el aborto voluntario hasta la semana 14 de gestación. Argentina se convirtió en uno de los pocos países de América Latina con esa legislación.
+  fuente:
+  - Wikipedia
+  - https://en.wikipedia.org/wiki/Voluntary_Interruption_of_Pregnancy_Law_(Argentina)
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Vigilia_IVE_Buenos_Aires_senadores_titi_nicola_periodicas-7_Aborto_Legal_2020_57.jpg/960px-Vigilia_IVE_Buenos_Aires_senadores_titi_nicola_periodicas-7_Aborto_Legal_2020_57.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Vigilia_IVE_Buenos_Aires_senadores_titi_nicola_periodicas-7_Aborto_Legal_2020_57.jpg
+  credito: TitiNicola · CC BY-SA 4.0 · Wikimedia Commons
+- dia: 31
+  anio: 1999
+  titulo: Panamá asume el control total del Canal
+  pais: Panamá, Estados Unidos
+  texto: En cumplimiento de los Tratados Torrijos-Carter de 1977, Estados Unidos transfirió a Panamá la administración del Canal y retiró su presencia militar de la antigua Zona del Canal.
+  fuente:
+  - HISTORY
+  - https://www.history.com/this-day-in-history/december-31/panama-canal-turned-over-to-panama
+  video: ''
+  articulo: ''
+  destacada: true
+  imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vessels_locking_into_the_Panama_Canal.jpg/960px-Vessels_locking_into_the_Panama_Canal.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:Vessels_locking_into_the_Panama_Canal.jpg
+  credito: Paul Harrison · CC BY-SA 4.0 · Wikimedia Commons
+- dia: 31
+  anio: 1999
+  titulo: Yeltsin dimite y Putin queda como presidente interino
+  pais: Rusia
+  texto: En un mensaje televisado de fin de año, Borís Yeltsin anunció su renuncia anticipada a la presidencia de Rusia. El primer ministro Vladímir Putin asumió el cargo de forma interina y ganó las elecciones de marzo de 2000.
+  fuente:
+  - HISTORY
+  - https://www.history.com/this-day-in-history/december-31/putin-becomes-president-russia
+  video: ''
+  articulo: ''
+  destacada: false
+  imagen: https://upload.wikimedia.org/wikipedia/commons/a/ac/%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87_%D0%95%D0%BB%D1%8C%D1%86%D0%B8%D0%BD-1.jpg
+  imagen_pagina: https://commons.wikimedia.org/wiki/File:%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87_%D0%95%D0%BB%D1%8C%D1%86%D0%B8%D0%BD-1.jpg
+  credito: Servicio de Prensa de la Presidencia de Rusia · CC BY 4.0 · Wikimedia Commons
